@@ -1,7 +1,7 @@
-CREATE TABLE `utilisateur` (
+CREATE TABLE `membre` (
   `id` int NOT NULL AUTO_INCREMENT,
   `pseudo` varchar(30) DEFAULT NULL,
-  `motdepasse` VARCHAR (200)DEFAULT NULL,
+  `mdp` VARCHAR (200)DEFAULT NULL,
   `role` VARCHAR(20) DEFAULT NULL,
 
   PRIMARY KEY (`id`)
@@ -9,4 +9,4 @@ CREATE TABLE `utilisateur` (
 )
 
 
-INSERT INTO `utilisateur` (`pseudo`,`motdepasse`,`role`) VALUES('root','root','administrateur');
+INSERT INTO `membre` (`pseudo`,`motdepasse`,`role`) VALUES('root','root','administrateur');
