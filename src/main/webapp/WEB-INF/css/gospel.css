@@ -1,34 +1,282 @@
-.red-background {background-color:#660000;}
+@font-face {
+    font-family: roboto-regular;
+    src: url(Roboto-Regular.ttf);
+}
 
-.yellow {color:gold;}
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #FCFAE1;
+	display: flex;
+	flex-direction: column;
+	font-family: roboto-regular;
+}
+
+/*barre de navigation*/
+
+.navbar{
+	margin: 0;
+	/*box-shadow: 0px 2px 10px black;*/
+}
+
+.icone{
+	width: 32px;
+	height: auto;
+	margin-right: 5px;
+}
+
+.navlinks{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #4C1B1B;
+}
+
+.bouton{
+	margin: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: 220px;
+	text-decoration: none;
+	color: #F6E497;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bouton img{
+	padding: 5px;
+}
+
+.bouton:hover, .dropdown-contenu:hover .bouton{
+	background-color: #B9121B;
+}
+
+/*menu déroulant*/
+
+.dropdown-contenu{
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 1px 1px 12px #555;
+	background-color: #FCFAE1;
+}
+
+.dropdown{
+	margin: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: 220px;
+	text-decoration: none;
+	color: #4C1B1B;
+	display: flex;
+	align-items: center;
+}
+
+.dropdown-contenu:hover .dropdown-menu{
+	display: block;
+}
+
+.dropdown:hover{
+	background-color: #BD8D46;
+}
+
+.dropdown .icone{
+	margin-left: 5px;
+}
+
+/*footer*/
 
 footer{
-background-color:#660000;
-color:gold;
-text-align:center;
-bottom: 0%;
-padding-bottom: 5px;
-
+	bottom: 0;
+	padding: 0;
+	margin-top: 30px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	background-color:#4C1B1B;
+	color: #F6E497;
+	font-size: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
 }
+
+footer p{
+	padding: 2px;
+}
+
+/*corps*/
 
 .corps{
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 10%;
-  padding-top: 10%;
+  padding: 0;
+  margin: 30px auto 0 auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-hr{
-  border-color: #660000;
-  
+/*tableau*/
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
 }
 
-.paragraphe{
-	margin-bottom: 5%;
-	margin-top: 2%
-
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-label,h4,h6 {
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+/*formulaire + boutons*/
+
+.formulaire{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.formulaire label{
 	font-weight: bold;
 }
+
+input[type=text], input[type=password] {
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border-color: #4C1B1B;
+	background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.groupe-boutons{
+	display: inline-block;
+}
+
+.groupe-boutons button {
+  color: #FCFAE1;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  opacity: 0.9;
+}
+
+.groupe-boutons button:hover {
+  opacity:1;
+}
+
+.cancel{
+	background-color: #B9121B;
+}
+
+.ok{
+	background-color: #1D702D;
+}
+
+/*radio boutons*/
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
