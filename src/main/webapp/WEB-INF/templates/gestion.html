@@ -3,17 +3,15 @@
     <title>Connexion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/bootstrap-theme.css" rel="stylesheet">
-    <link href="../css/gospel.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
+    <link href="css/gospel.css" rel="stylesheet">
+    <script src="js/main.js"></script>
     
    
   </head>
   <body>
     
 <div class="center">
- <a class="btnvert" href="/ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
+ <a class="btnvert" href="/ajoutermembre"><img src="icones/download.png"/>Ajouter un membre</a>
 </div>
 
   <hr/>
@@ -32,9 +30,9 @@
       </tr>
       <tr th:each="membre : ${membres}">
         <td th:text="${membre.pseudo}">quentin71@hot.fr</td>
-        <td>********* <img src="../icones/edit.png"></td>
-        <td th:text="${membre.role}">admin<img src="../icones/edit.png"></td>
-        <td><img src="../icones/close.png"></td>
+        <td>********* <img src="icones/edit.png"></td>
+        <td th:text="${membre.role}">admin<img src="icones/edit.png"></td>
+        <td><img src="icones/close.png"></td>
       </tr>
 
       

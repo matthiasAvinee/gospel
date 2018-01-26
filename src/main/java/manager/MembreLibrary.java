@@ -6,26 +6,26 @@ import entities.Membre;
 
 import java.util.List;
 
-public class membreLibrary {
+public class MembreLibrary {
     private static class membreLibraryHolder {
-        private final static membreLibrary instance = new membreLibrary();
+        private final static MembreLibrary instance = new MembreLibrary();
     }
 
-    public static membreLibrary getInstance() {
+    public static MembreLibrary getInstance() {
         return membreLibraryHolder.instance;
     }
 
     private MembreDao membreDao = new MembreDaoImpl();
 
 
-    private membreLibrary() {
+    private MembreLibrary() {
     }
 
-    public List<Membre> listFilms() {
+    public List<Membre> listMembres() {
         return membreDao.listMembres();
     }
 
-    public Membre getFilm(Integer id) {
+    public Membre getMembre(Integer id) {
         return membreDao.getmembre(id);
     }
 

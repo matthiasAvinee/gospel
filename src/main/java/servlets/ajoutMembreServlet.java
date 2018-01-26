@@ -1,7 +1,7 @@
 package servlets;
 
 import entities.Membre;
-import manager.membreLibrary;
+import manager.MembreLibrary;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
@@ -43,14 +43,14 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         // CREATE FILM
         Membre newMembre = new Membre(null, pseudo, mdp, role);
         try {
-            Membre createdMembre = membreLibrary.getInstance().addMembre(newMembre);
+            Membre createdMembre = MembreLibrary.getInstance().addMembre(newMembre);
 
         } catch (IllegalArgumentException e) {
             String errorMessage = e.getMessage();
 
             req.getSession().setAttribute("errorMessage", errorMessage);
 
-            resp.sendRedirect("ajoutermembre");
+            resp.sendRedirect("gestion");
         }
     }
 }
