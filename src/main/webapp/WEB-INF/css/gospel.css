@@ -256,7 +256,6 @@ input[type=text]:focus, input[type=password]:focus {
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-
 .container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
