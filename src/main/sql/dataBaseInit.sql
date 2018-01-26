@@ -9,4 +9,4 @@ CREATE TABLE `membre` (
 )
 
 
-INSERT INTO `membre` (`pseudo`,`motdepasse`,`role`) VALUES('root','root','administrateur');
+INSERT INTO `membre` (`pseudo`,`mdp`,`role`) VALUES('root','root','administrateur');
