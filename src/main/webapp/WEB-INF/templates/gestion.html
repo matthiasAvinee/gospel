@@ -1,4 +1,4 @@
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <title>Connexion</title>
     <meta charset="UTF-8">
@@ -30,18 +30,13 @@
         <th>Rôle</th>
 
       </tr>
-      <tr>
-        <td>quentin71@hot.fr</td>
-        <td>vive-le-Foot <img src="../icones/edit.png"></td>
-        <td>admin<img src="../icones/edit.png"></td>
+      <tr th:each="membre : ${membres}">
+        <td th:text="${membre.pseudo}">quentin71@hot.fr</td>
+        <td>********* <img src="../icones/edit.png"></td>
+        <td th:text="${membre.role}">admin<img src="../icones/edit.png"></td>
         <td><img src="../icones/close.png"></td>
       </tr>
-      <tr>
-        <td>matthias@gmail.fr</td>
-        <td>normal<img src="../icones/edit.png"></td>
-        <td>admin<img src="../icones/edit.png"></td>
-        <td><img src="../icones/close.png"></td>
-      </tr>
+
       
     </table>
   
