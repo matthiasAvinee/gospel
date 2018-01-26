@@ -6,27 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae0aea0-d891-4702-9ad9-23e6d9f4240e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/concerts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/css/bootstrap-grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/css/bootstrap-reboot.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/001-calendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/002-phone-call.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/gospel.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/gospel.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/gospel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/css/gospel.css" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/css/gospel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/contacter.html" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/contacter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/home.html" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/home.html" />
-    </list>
+    <list default="true" id="3ae0aea0-d891-4702-9ad9-23e6d9f4240e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +30,8 @@
       <file leaf-file-name="gospel.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/gospel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2168">
-              <caret line="257" column="1" lean-forward="false" selection-start-line="257" selection-start-column="1" selection-end-line="257" selection-end-column="1" />
+            <state relative-caret-position="323">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -452,12 +432,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516958581364</updated>
-      <workItem from="1516958589762" duration="122000" />
+      <workItem from="1516958589762" duration="170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426000" />
+    <option name="totallyTimeSpent" value="474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1386" height="788" extended-state="1" />
@@ -816,8 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/gospel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2168">
-          <caret line="257" column="1" lean-forward="false" selection-start-line="257" selection-start-column="1" selection-end-line="257" selection-end-column="1" />
+        <state relative-caret-position="323">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
