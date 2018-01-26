@@ -24,8 +24,9 @@ public class MembreDaoImpl implements MembreDao {
                         new Membre(
                                 resultSet.getInt("id"),
                                 resultSet.getString("pseudo"),
-                                resultSet.getString("role"),
-                                resultSet.getString("mdp"))
+                                resultSet.getString("mdp"),
+                                resultSet.getString("role")
+                                )
                 );
             }
         } catch (SQLException e) {

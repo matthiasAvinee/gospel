@@ -11,9 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
-@WebServlet("/ajoutermembre")
-public class ajoutMembreServlet extends AbstractGenericServlet {
+@WebServlet("/modifiermembre")
+public class modifierMembreServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
@@ -21,7 +20,7 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
 
 
-        templateEngine.process("ajoutMembre", context, resp.getWriter());
+        templateEngine.process("modifierCompte", context, resp.getWriter());
 
     }
 
