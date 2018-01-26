@@ -35,7 +35,7 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         try {
             pseudo = req.getParameter("pseudo");
             mdp = req.getParameter("mdp");
-            role = req.getParameter("role");
+            role = req.getParameter("radio");
 
         } catch (NumberFormatException e) {
 
