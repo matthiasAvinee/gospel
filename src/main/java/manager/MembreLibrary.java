@@ -42,4 +42,8 @@ public class MembreLibrary {
 
         return membreDao.addMembre(membre);
     }
+
+    public Membre updateMembre(int id, String pseudo, String mdp, String role){
+        return membreDao.updateMembre(id, pseudo, mdp, role);
+    }
 }

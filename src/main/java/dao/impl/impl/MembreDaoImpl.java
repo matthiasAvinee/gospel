@@ -26,7 +26,7 @@ public class MembreDaoImpl implements MembreDao {
                                 resultSet.getString("pseudo"),
                                 resultSet.getString("mdp"),
                                 resultSet.getString("role")
-                                )
+                        )
                 );
             }
         } catch (SQLException e) {
@@ -38,7 +38,7 @@ public class MembreDaoImpl implements MembreDao {
 
     @Override
     public Membre getmembre(Integer id) {
-        String query = "SELECT * FROM membre WHERE film_id=?";
+        String query = "SELECT * FROM membre WHERE id=?";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, id);
@@ -69,7 +69,7 @@ public class MembreDaoImpl implements MembreDao {
             statement.executeUpdate();
 
             try (ResultSet ids = statement.getGeneratedKeys()) {
-                if(ids.next()) {
+                if (ids.next()) {
                     int generatedId = ids.getInt(1);
                     membre.setId(generatedId);
                     return membre;
@@ -80,7 +80,24 @@ public class MembreDaoImpl implements MembreDao {
         }
         return null;
     }
+
+    @Override
+    public Membre updateMembre(int id, String pseudo, String mdp, String role) {
+        String query = "UPDATE membre SET pseudo=?,mdp=?,role=? WHERE id=?";
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, pseudo);
+            statement.setString(2, mdp);
+            statement.setString(3, role);
+            statement.setInt(4, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
+}
+
 
 
 

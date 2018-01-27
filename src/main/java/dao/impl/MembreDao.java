@@ -10,4 +10,6 @@ public interface MembreDao {
     public Membre getmembre(Integer id);
 
     public Membre addMembre(Membre membre);
+
+    public Membre updateMembre (int id, String pseudo, String mdp, String role);
 }
