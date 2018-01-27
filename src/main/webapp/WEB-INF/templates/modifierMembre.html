@@ -47,11 +47,8 @@
 			<label>Utilisateur</label>
     		<input type="text" placeholder="Entrez le pseudo du choriste" name="pseudo" th:value="${membre.pseudo}" required>
 
-    		<label>Mot de passe</label>
-    		<input type="password" placeholder="Définissez un mot de passe" name="mdp" required>
+            <a th:href="${'reinitialisationDuMdp?id='+membre.id}">réinitialiser le mot de passe</a>
 
-    		<label>Confirmez le mot de passe</label>
-    		<input type="password" placeholder="Ressaisissez le mot de passe" name="confirm-mdp" required>
 
 			<label class="container">Membre
 			    <input type="radio" checked="checked" name="radio" value="membre">

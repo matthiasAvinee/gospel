@@ -26,55 +26,50 @@ public class modifierMembreServlet extends AbstractGenericServlet {
 
             int id = Integer.parseInt(req.getParameter("id"));
 
-
-
-            if (req.getSession().getAttribute("posterError") != null) {
-                context.setVariable("errorMessage", req.getSession().getAttribute("posterError"));
-                req.getSession().removeAttribute("posterError");
+             if (id == 1) {
+                resp.sendRedirect("gestion");
             }
+            else {
+                 if (req.getSession().getAttribute("posterError") != null) {
+                     context.setVariable("errorMessage", req.getSession().getAttribute("posterError"));
+                     req.getSession().removeAttribute("posterError");
+                 }
 
-            context.setVariable("membre",MembreLibrary.getInstance().getMembre(id));
+                 context.setVariable("membre", MembreLibrary.getInstance().getMembre(id));
 
-        templateEngine.process("modifierMembre", context, resp.getWriter());
-
+                 templateEngine.process("modifierMembre", context, resp.getWriter());
+             }
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String pseudo = null;
-        String mdp = null;
         String role = null;
-        String confirmMdp = null;
+
         int id = Integer.parseInt(req.getParameter("id"));
 
-        try {
-            pseudo = req.getParameter("pseudo");
-            mdp = req.getParameter("mdp");
-            confirmMdp = req.getParameter("confirm-mdp");
-            role = req.getParameter("radio");
 
-        } catch (NumberFormatException e) {
-
-        }
-
-        if (mdp == confirmMdp || mdp.equals(confirmMdp)) {
             try {
-                Membre createdMembre = MembreLibrary.getInstance().updateMembre(id,pseudo,mdp,role);
+                pseudo = req.getParameter("pseudo");
+                role = req.getParameter("radio");
+
+            } catch (NumberFormatException e) {
+
+            }
+            try {
+                Membre createdMembre = MembreLibrary.getInstance().updateMembre(id, pseudo, role);
 
             } catch (IllegalArgumentException e) {
                 String errorMessage = e.getMessage();
 
                 req.getSession().setAttribute("errorMessage", errorMessage);
 
-                resp.sendRedirect("modifiermembre");
+                resp.sendRedirect("modifiermembre?id=" + id);
             }
             resp.sendRedirect("gestion");
         }
-        else {
-            String errorMessage = "Les deux mots de passe ne sont pas identiques";
-            req.getSession().setAttribute("errorMessage", errorMessage);
-            resp.sendRedirect("modifiermembre");
-        }
     }
 
-}
+
+
+
 

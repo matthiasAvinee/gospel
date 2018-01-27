@@ -82,19 +82,47 @@ public class MembreDaoImpl implements MembreDao {
     }
 
     @Override
-    public Membre updateMembre(int id, String pseudo, String mdp, String role) {
-        String query = "UPDATE membre SET pseudo=?,mdp=?,role=? WHERE id=?";
+    public Membre updateMembre(int id, String pseudo, String role) {
+        String query = "UPDATE membre SET pseudo=?,role=? WHERE id=?";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, pseudo);
-            statement.setString(2, mdp);
-            statement.setString(3, role);
-            statement.setInt(4, id);
+            statement.setString(2, role);
+            statement.setInt(3, id);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    @Override
+    public Membre modifierMdp(int id, String mdp) {
+        String query = "UPDATE membre SET mdp=? WHERE id=?";
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, mdp);
+            statement.setInt(2, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void supprimermembre(int id){
+            try (Connection connection = DataSourceProvider.getDataSource().getConnection()) {
+                try (PreparedStatement statement = connection.prepareStatement(
+                        "delete from membre where id=?")) {
+                    statement.setInt(1, id);
+                    statement.executeUpdate();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
     }
 }
 
