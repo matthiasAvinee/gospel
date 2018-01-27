@@ -65,14 +65,14 @@ public class modifierMembreServlet extends AbstractGenericServlet {
 
                 req.getSession().setAttribute("errorMessage", errorMessage);
 
-                resp.sendRedirect("ajoutermembre");
+                resp.sendRedirect("modifiermembre");
             }
             resp.sendRedirect("gestion");
         }
         else {
             String errorMessage = "Les deux mots de passe ne sont pas identiques";
             req.getSession().setAttribute("errorMessage", errorMessage);
-            resp.sendRedirect("ajoutermembre");
+            resp.sendRedirect("modifiermembre");
         }
     }
 
