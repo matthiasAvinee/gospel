@@ -19,9 +19,13 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
 
         WebContext context = new WebContext(req, resp, getServletContext());
-
+        context.setVariable("error", req.getSession().getAttribute("errorMessage"));
 
         templateEngine.process("ajoutMembre", context, resp.getWriter());
+
+        if(req.getSession().getAttribute("errorMessage") != null) {
+            context.setVariable("error", req.getSession().getAttribute("errorMessage"));
+            req.getSession().removeAttribute("errorMessage");}
 
     }
 
@@ -30,11 +34,13 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         String pseudo = null;
         String mdp = null;
         String role = null;
+        String confirmMdp = null;
 
 
         try {
             pseudo = req.getParameter("pseudo");
             mdp = req.getParameter("mdp");
+            confirmMdp = req.getParameter("confirm-mdp");
             role = req.getParameter("radio");
 
         } catch (NumberFormatException e) {
@@ -42,15 +48,24 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         }
 
         Membre newMembre = new Membre(null, pseudo, mdp, role);
-        try {
-            Membre createdMembre = MembreLibrary.getInstance().addMembre(newMembre);
 
-        } catch (IllegalArgumentException e) {
-            String errorMessage = e.getMessage();
+        if (mdp == confirmMdp || mdp.equals(confirmMdp)) {
+            try {
+                Membre createdMembre = MembreLibrary.getInstance().addMembre(newMembre);
 
-            req.getSession().setAttribute("errorMessage", errorMessage);
+            } catch (IllegalArgumentException e) {
+                String errorMessage = e.getMessage();
 
+                req.getSession().setAttribute("errorMessage", errorMessage);
+
+                resp.sendRedirect("ajoutermembre");
+            }
             resp.sendRedirect("gestion");
+        } else {
+            String errorMessage = "Les deux mots de passe ne sont pas identiques";
+            req.getSession().setAttribute("errorMessage", errorMessage);
+            resp.sendRedirect("ajoutermembre");
         }
     }
+
 }

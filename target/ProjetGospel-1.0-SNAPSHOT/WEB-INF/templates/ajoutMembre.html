@@ -38,6 +38,8 @@
 	
 	<div class="corps">
 
+	<p th:if="${error != null}" th:text="${error}"></p>
+
 		<form method="post" class="formulaire">
 			
 			<h1>Ajouter un choriste</h1>
@@ -48,8 +50,8 @@
     		<label>Mot de passe</label>
     		<input type="password" placeholder="Définissez un mot de passe" name="mdp" required>
 
-    		<!--<label>Confirmez le mot de passe</label>
-    		<input type="password" placeholder="Ressaisissez le mot de passe" name="confirm-mdp" required>-->
+    		<label>Confirmez le mot de passe</label>
+    		<input type="password" placeholder="Ressaisissez le mot de passe" name="confirm-mdp" required>
     		
 			<label class="container">Membre
 			    <input type="radio" checked="checked" name="radio" value="membre">
