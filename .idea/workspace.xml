@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae0aea0-d891-4702-9ad9-23e6d9f4240e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3ae0aea0-d891-4702-9ad9-23e6d9f4240e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ajoutMembreServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html" />
       </list>
     </option>
   </component>
@@ -447,16 +445,15 @@
       <updated>1516958581364</updated>
       <workItem from="1516958589762" duration="1786000" />
       <workItem from="1516960492854" duration="597000" />
-      <workItem from="1517060336629" duration="28000" />
+      <workItem from="1517060336629" duration="116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2715000" />
+    <option name="totallyTimeSpent" value="2803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
