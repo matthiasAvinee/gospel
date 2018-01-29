@@ -29,11 +29,22 @@
 
       </tr>
       <tr th:each="membre : ${membres}">
-        <td th:text="${membre.pseudo}">quentin71@hot.fr</td>
-        <td>********* <img src="icones/edit.png"></td>
-        <td th:text="${membre.role}">admin<img src="icones/edit.png"></td>
-        <td><img src="icones/close.png"></td>
+        <td th:text="${membre.pseudo}"></td>
+        <td>*********</td>
+        <td th:text="${membre.role}">admin</td>
+        <td>
+              <a th:href="${'modifiermembre?id='+membre.id}">
+                   <img src="icones/edit.png">
+              </a>
+        </td>
+        <td>
+            <a th:href="${'supprimermembre?id='+membre.id}">
+
+                <img src="icones/close.png">
+            </a>
+        </td>
       </tr>
+
 
       
     </table>
