@@ -5,6 +5,7 @@ import dao.impl.MembreDao;
 import entities.Membre;
 
 import java.util.List;
+import java.util.Map;
 
 public class MembreLibrary {
     private static class membreLibraryHolder {
@@ -53,5 +54,14 @@ public class MembreLibrary {
 
     public void supprimermembre(int id) {
         membreDao.supprimermembre(id);
+    }
+
+    public Map<String,String>listMembresAutorises(){
+        return membreDao.listMembresAutorises();
+    }
+
+    public Map<String,String>listAdminAutorises(){
+        return membreDao.listAdminAutorises();
+
     }
 }

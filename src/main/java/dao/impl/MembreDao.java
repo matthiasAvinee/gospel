@@ -3,6 +3,7 @@ package dao.impl;
 import entities.Membre;
 
 import java.util.List;
+import java.util.Map;
 
 public interface MembreDao {
     public List<Membre> listMembres();
@@ -16,4 +17,10 @@ public interface MembreDao {
     public Membre modifierMdp(int id, String mdp);
 
     void supprimermembre(int id);
+
+    public Map<String, String> listAdminAutorises();
+
+    public Map<String, String> listMembresAutorises();
+
+
 }

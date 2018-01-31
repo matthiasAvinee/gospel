@@ -1,5 +1,6 @@
 package servlets;
 
+import Utilis.MotdePasseUtilis;
 import entities.Membre;
 import manager.MembreLibrary;
 import org.thymeleaf.TemplateEngine;
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet("/ajoutermembre")
+@WebServlet("/administrateur/ajoutermembre")
 public class ajoutMembreServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -35,6 +36,8 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         String mdp = null;
         String role = null;
         String confirmMdp = null;
+        String motdepasse=null;
+        MotdePasseUtilis motdePasseUtilis= new MotdePasseUtilis();
 
 
         try {
@@ -42,12 +45,13 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
             mdp = req.getParameter("mdp");
             confirmMdp = req.getParameter("confirm-mdp");
             role = req.getParameter("radio");
+            motdepasse = motdePasseUtilis.genererMotDePasse(mdp);
 
         } catch (NumberFormatException e) {
 
         }
 
-        Membre newMembre = new Membre(null, pseudo, mdp, role);
+        Membre newMembre = new Membre(null, pseudo,motdepasse , role);
 
         if (mdp == confirmMdp || mdp.equals(confirmMdp)) {
             try {
