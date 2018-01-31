@@ -3,15 +3,15 @@
     <title>Gestion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/gospel.css" rel="stylesheet">
-    <script src="js/main.js"></script>
+    <link href="../css/gospel.css" rel="stylesheet">
+    <script src="../js/main.js"></script>
     
    
   </head>
   <body>
     
 <div class="center">
- <a class="btnvert" href="/ajoutermembre"><img src="icones/download.png"/>Ajouter un membre</a>
+ <a class="btnvert" href="/ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
 </div>
 
   <hr/>
@@ -34,13 +34,13 @@
         <td th:text="${membre.role}">admin</td>
         <td>
               <a th:href="${'modifiermembre?id='+membre.id}">
-                   <img src="icones/edit.png">
+                   <img src="../icones/edit.png">
               </a>
         </td>
         <td>
             <a th:href="${'supprimermembre?id='+membre.id}">
 
-                <img src="icones/close.png">
+                <img src="../icones/close.png">
             </a>
         </td>
       </tr>
