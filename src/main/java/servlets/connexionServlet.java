@@ -47,7 +47,7 @@ public class connexionServlet extends AbstractGenericServlet {
 
         if (listAdmin.containsKey(identifiant)
                 && motdePasseUtilis.validerMotDePasse(motDePasse,membreDao.getMotdePasse(identifiant))) {
-            
+
             req.getSession().setAttribute("adminConnecte", identifiant);
             req.getSession().setAttribute("membreConnecte", identifiant);
             resp.sendRedirect("home");
