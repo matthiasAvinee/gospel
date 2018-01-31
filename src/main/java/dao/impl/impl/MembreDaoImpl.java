@@ -5,14 +5,16 @@ import entities.Membre;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MembreDaoImpl implements MembreDao {
 
 
     @Override
     public List<Membre> listMembres() {
-        String query = "SELECT * FROM membre ORDER BY pseudo";
+        String query = "SELECT * FROM membre WHERE id>1 ORDER BY id";
         List<Membre> listOfMembres = new ArrayList<>();
         try (
                 Connection connection = DataSourceProvider.getDataSource().getConnection();
@@ -49,6 +51,22 @@ public class MembreDaoImpl implements MembreDao {
                             resultSet.getString("pseudo"),
                             resultSet.getString("mdp"),
                             resultSet.getString("role"));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public String getMotdePasse(String pseudo) {
+        String query = "SELECT mdp FROM membre WHERE pseudo=?";
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setString(1, pseudo);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return resultSet.getString("mdp");
                 }
             }
         } catch (SQLException e) {
@@ -124,6 +142,49 @@ public class MembreDaoImpl implements MembreDao {
                 e.printStackTrace();
             }
     }
+
+    @Override
+    public Map<String, String> listAdminAutorises() {
+
+            Map<String, String> list = new HashMap<>();
+
+            try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+                 Statement statement = connection.createStatement();
+                 ResultSet resultSet = statement.executeQuery("SELECT pseudo,mdp FROM membre WHERE role='administrateur'")) {
+
+                while (resultSet.next()) {
+
+                    list.put(resultSet.getString("pseudo"), resultSet.getString("mdp"));
+                }
+            } catch (SQLException e) {
+
+            }
+
+            return list;
+        }
+
+
+    @Override
+    public Map<String, String> listMembresAutorises() {
+        Map<String, String> list = new HashMap<>();
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT pseudo,mdp FROM membre WHERE role='membre'")) {
+
+            while (resultSet.next()) {
+
+                list.put(resultSet.getString("pseudo"), resultSet.getString("mdp"));
+            }
+        } catch (SQLException e) {
+
+        }
+
+        return list;
+    }
+
+
+
 }
 
 

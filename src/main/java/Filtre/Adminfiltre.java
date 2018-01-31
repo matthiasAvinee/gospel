@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-public class Authentificationfiltre implements javax.servlet.Filter {
+public class Adminfiltre implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -15,12 +15,12 @@ public class Authentificationfiltre implements javax.servlet.Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
-        String identifiant = (String) httpRequest.getSession().getAttribute("utilisateurConnecte");
+        String identifiant = (String) httpRequest.getSession().getAttribute("adminConnecte");
         HttpServletResponse httpResponse = (HttpServletResponse) response;
 
         if(identifiant == null || "".equals(identifiant)) {
 
-            httpResponse.sendRedirect("../redirect");
+            httpResponse.sendRedirect("../connexion");
             return;
 
         }else

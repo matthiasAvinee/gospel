@@ -1,5 +1,6 @@
 package servlets;
 
+import Utilis.MotdePasseUtilis;
 import entities.Membre;
 import manager.MembreLibrary;
 import org.thymeleaf.TemplateEngine;
@@ -11,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/reinitialisationDuMdp")
+@WebServlet("/administrateur/reinitialisationDuMdp")
 public class modifierMdpServlet extends AbstractGenericServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
@@ -41,6 +42,8 @@ public class modifierMdpServlet extends AbstractGenericServlet {
         String mdp = null;
         String confirmMdp = null;
         int id = Integer.parseInt(req.getParameter("id"));
+        MotdePasseUtilis motdePasseUtilis= new MotdePasseUtilis();
+        String motdepasse=null;
 
         if (id==1) {
             resp.sendRedirect("gestion");
@@ -56,7 +59,8 @@ public class modifierMdpServlet extends AbstractGenericServlet {
 
         if (mdp == confirmMdp || mdp.equals(confirmMdp)) {
             try {
-                Membre createdMembre = MembreLibrary.getInstance().modifierMdp(id,mdp);
+                motdepasse= motdePasseUtilis.genererMotDePasse(mdp);
+                Membre createdMembre = MembreLibrary.getInstance().modifierMdp(id,motdepasse);
 
             } catch (IllegalArgumentException e) {
                 String errorMessage = e.getMessage();
