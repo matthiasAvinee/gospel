@@ -23,7 +23,8 @@ public class connexionServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
         templateEngine.process("connexion", context, resp.getWriter());
         ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver(req.getServletContext());
-
+        context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
         if(req.getSession().getAttribute("connexionError") != null) {
             context.setVariable("errorMessage", req.getSession().getAttribute("connexionError"));
             req.getSession().removeAttribute("connexionError");}
@@ -48,14 +49,14 @@ public class connexionServlet extends AbstractGenericServlet {
         if (listAdmin.containsKey(identifiant)
                 && motdePasseUtilis.validerMotDePasse(motDePasse,membreDao.getMotdePasse(identifiant))) {
 
-            req.getSession().setAttribute("adminConnecte", identifiant);
-            req.getSession().setAttribute("membreConnecte", identifiant);
+            req.getSession().setAttribute("adminConnecte", identifiant.toUpperCase());
+            req.getSession().setAttribute("membreConnecte", identifiant.toUpperCase());
             resp.sendRedirect("home");
         }
 
        else if (listMembre.containsKey(identifiant) && motdePasseUtilis.validerMotDePasse(motDePasse,membreDao.getMotdePasse(identifiant))) {
 
-            req.getSession().setAttribute("membreConnecte", identifiant);
+            req.getSession().setAttribute("membreConnecte", identifiant.toUpperCase());
             resp.sendRedirect("home");
         }
 

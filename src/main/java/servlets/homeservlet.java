@@ -22,6 +22,8 @@ public class homeservlet extends AbstractGenericServlet {
 
             WebContext context = new WebContext(req, resp, getServletContext());
 
+            context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+            context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
 
             templateEngine.process("home", context, resp.getWriter());
 

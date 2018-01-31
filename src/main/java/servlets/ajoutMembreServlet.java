@@ -21,7 +21,8 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
 
         WebContext context = new WebContext(req, resp, getServletContext());
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
-
+        context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
         templateEngine.process("ajoutMembre", context, resp.getWriter());
 
         if(req.getSession().getAttribute("errorMessage") != null) {
@@ -68,7 +69,7 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         } else {
             String errorMessage = "Les deux mots de passe ne sont pas identiques";
             req.getSession().setAttribute("errorMessage", errorMessage);
-            resp.sendRedirect("ajoutermembre");
+            resp.sendRedirect("/administrateur/ajoutermembre");
         }
     }
 

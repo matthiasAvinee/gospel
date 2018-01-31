@@ -20,7 +20,8 @@ public class modifierMdpServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
 
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
-
+        context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
 
         int id = Integer.parseInt(req.getParameter("id"));
 
@@ -46,7 +47,7 @@ public class modifierMdpServlet extends AbstractGenericServlet {
         String motdepasse=null;
 
         if (id==1) {
-            resp.sendRedirect("gestion");
+            resp.sendRedirect("/administrateur/gestion");
         }
         else
         try {
@@ -67,14 +68,14 @@ public class modifierMdpServlet extends AbstractGenericServlet {
 
                 req.getSession().setAttribute("errorMessage", errorMessage);
 
-                resp.sendRedirect("reinitialisationDuMdp?id="+id);
+                resp.sendRedirect("/administrateur/reinitialisationDuMdp?id="+id);
             }
-            resp.sendRedirect("modifiermembre?id="+id);
+            resp.sendRedirect("/administrateur/modifiermembre?id="+id);
         }
         else {
             String errorMessage = "Les deux mots de passe ne sont pas identiques";
             req.getSession().setAttribute("errorMessage", errorMessage);
-            resp.sendRedirect("reinitialisationDuMdp?id="+id);
+            resp.sendRedirect("/administrateur/reinitialisationDuMdp?id="+id);
 
         }
     }

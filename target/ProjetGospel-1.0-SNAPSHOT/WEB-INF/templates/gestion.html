@@ -1,29 +1,21 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
-<<<<<<< HEAD
     <title>Gestion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/gospel.css" rel="stylesheet">
-    <script src="js/main.js"></script>
-    
-   
-=======
-        <title>Connexion</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/gospel.css" rel="stylesheet">
-        <script src="js/main.js"></script>
->>>>>>> Quentin
+    <script src="../js/main.js"></script>
   </head>
 
   <body>
 
   <nav th:replace="~{fragments::navbar}"></nav>
     
-        <div class="center">
-            <a class="btnvert" href="/ajoutermembre"><img src="icones/download.png"/>Ajouter un membre</a>
-        </div>
+
+<div class="center">
+ <a class="btnvert" href="/ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
+</div>
+
 
         <hr/>
   
@@ -56,6 +48,7 @@
         </table>
 
   <footer th:replace="~{fragments::footer}"></footer>
+
 
 </body>
 </html>

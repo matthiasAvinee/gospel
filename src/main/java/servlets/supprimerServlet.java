@@ -23,11 +23,11 @@ public class supprimerServlet extends AbstractGenericServlet {
 
         if(id==1){
 
-            resp.sendRedirect("gestion");
+            resp.sendRedirect("/administrateur/gestion");
         }
         else {
             MembreLibrary.getInstance().supprimermembre(id);
-            resp.sendRedirect("gestion");
+            resp.sendRedirect("/administrateur/gestion");
         }
 
     }
