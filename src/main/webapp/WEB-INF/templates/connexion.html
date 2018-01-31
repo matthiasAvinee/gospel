@@ -1,4 +1,4 @@
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
 	<title>connexion</title>
@@ -7,6 +7,8 @@
 </head>
 
 <body>
+
+	<nav th:replace="~{fragments::navbar}"></nav>
 
 	<div class="corps">
 
@@ -27,6 +29,8 @@
     	</form>
 
 	</div>
+
+	<footer th:replace="~{fragments::footer}"></footer>
 
 </body>
 </html>

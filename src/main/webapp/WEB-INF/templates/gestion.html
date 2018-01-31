@@ -1,5 +1,6 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
+<<<<<<< HEAD
     <title>Gestion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,32 @@
     <script src="../js/main.js"></script>
     
    
+=======
+        <title>Connexion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/gospel.css" rel="stylesheet">
+        <script src="js/main.js"></script>
+>>>>>>> Quentin
   </head>
+
   <body>
+
+  <nav th:replace="~{fragments::navbar}"></nav>
     
+<<<<<<< HEAD
 <div class="center">
  <a class="btnvert" href="/ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
 </div>
+=======
+        <div class="center">
+            <a class="btnvert" href="/ajoutermembre"><img src="icones/download.png"/>Ajouter un membre</a>
+        </div>
+>>>>>>> master
 
-  <hr/>
+        <hr/>
   
+<<<<<<< HEAD
     <h2 class="titre">Gestion des membres</h2>
   </div>
   <hr/>
@@ -48,6 +66,37 @@
 
       
     </table>
+=======
+        <h2 class="titre">Gestion des membres</h2>
+
+        <hr/>
+
+
+        <table id="membres">
+              <tr>
+                    <th>Membre</th>
+                    <th>Mot de Passe</th>
+                    <th>Rôle</th>
+              </tr>
+              <tr th:each="membre : ${membres}">
+                    <td th:text="${membre.pseudo}"></td>
+                    <td>*********</td>
+                    <td th:text="${membre.role}">admin</td>
+                    <td>
+                          <a th:href="${'modifiermembre?id='+membre.id}">
+                               <img src="icones/edit.png">
+                          </a>
+                    </td>
+                    <td>
+                        <a th:href="${'supprimermembre?id='+membre.id}">
+                            <img src="icones/close.png">
+                        </a>
+                    </td>
+              </tr>
+        </table>
+
+  <footer th:replace="~{fragments::footer}"></footer>
+>>>>>>> master
 
 </body>
 </html>
