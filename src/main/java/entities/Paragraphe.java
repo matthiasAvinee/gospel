@@ -8,13 +8,15 @@ public class Paragraphe {
     String titre;
     String texte;
     Part img;
+    String page;
 
 
-    public Paragraphe(String idBalise, String titre, String texte, Part img) {
+    public Paragraphe(String idBalise, String titre, String texte, Part img, String page) {
         this.idBalise = idBalise;
         this.titre = titre;
         this.texte = texte;
         this.img = img;
+        this.page= page;
     }
 
     public String getIdBalise() {
@@ -47,5 +49,13 @@ public class Paragraphe {
 
     public void setImg(Part img) {
         this.img = img;
+    }
+
+    public String getPage() {
+        return page;
+    }
+
+    public void setPage(String page) {
+        this.page = page;
     }
 }

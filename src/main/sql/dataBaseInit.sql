@@ -13,6 +13,7 @@ CREATE TABLE `paragraphe` (
   `titre` varchar(50) DEFAULT NULL,
   `texte` VARCHAR (1000)DEFAULT NULL,
   `img` blob DEFAULT NULL,
+  `page` VARCHAR (30)DEFAULT NULL,
 
   PRIMARY KEY (`id`)
 

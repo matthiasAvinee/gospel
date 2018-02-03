@@ -4,7 +4,7 @@
 <head>
 	<title>Accueil</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/gospel.css">
+	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
 </head>
 
 <body>
@@ -17,6 +17,9 @@
 			
 			<h1>Rédiger un paragraphe</h1>
 
+			<label>Id du paragraphe</label>
+            <input type="text" placeholder="id" name="id" required>
+
 			<label>Titre</label>
     		<input type="text" placeholder="Titre du paragraphe" name="titre">
 
@@ -25,21 +28,21 @@
 
     		<label>Ajouter une photo</label>
     		<input type="file" name="image">
-    		
+
 
     		<label class="container">Page d'accueil
-			    <input type="radio" checked="checked" name="radio">
+			    <input type="radio" checked="checked" name="radio" value="accueil">
 				<span class="checkmark"></span>
 			</label>
 
 			<label class="container">Page de contacts
-			    <input type="radio" name="radio">
+			    <input type="radio" name="radio" value="contact">
 				<span class="checkmark"></span>
 			</label>
 
     		<div class="groupe-boutons">
-      			<button type="button" class="cancel">Annuler</button>
-      			<button type="submit" class="ok">Ajout du paragraphe</button>
+      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
+      			<button type="submit" class="ok" >Ajout du paragraphe</button>
     		</div>
 
     	</form>

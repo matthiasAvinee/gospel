@@ -24,7 +24,8 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
                                 resultSet.getString("id"),
                                 resultSet.getString("titre"),
                                 resultSet.getString("texte"),
-                                (Part) resultSet.getBlob("img")
+                                (Part) resultSet.getBlob("img"),
+                                resultSet.getString("page")
                         )
                 );
             }
@@ -46,7 +47,9 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
                             resultSet.getString("id"),
                             resultSet.getString("titre"),
                             resultSet.getString("texte"),
-                            (Part) resultSet.getBlob("img"));
+                            (Part) resultSet.getBlob("img"),
+                            resultSet.getString("page")
+                    );
                 }
             }
         } catch (SQLException e) {
@@ -57,13 +60,14 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
 
     @Override
     public Paragraphe addParagraphe(Paragraphe paragraphe) {
-        String query = "INSERT INTO paragraphe(id,titre,texte,img) VALUES(?,?, ?, ?)";
+        String query = "INSERT INTO paragraphe(id,titre,texte,img,page) VALUES(?,?, ?, ?,?)";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, paragraphe.getIdBalise());
             statement.setString(2, paragraphe.getTitre());
             statement.setString(3, paragraphe.getTexte());
             statement.setBlob(4, (Blob) paragraphe.getImg());
+            statement.setString(5,paragraphe.getPage());
             statement.executeUpdate();
 
             try (ResultSet ids = statement.getGeneratedKeys()) {
