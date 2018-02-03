@@ -6,7 +6,7 @@ CREATE TABLE `membre` (
 
   PRIMARY KEY (`id`)
 
-)
+);
 
 
 INSERT INTO `membre` (`pseudo`,`mdp`,`role`) VALUES('root','root','administrateur');
