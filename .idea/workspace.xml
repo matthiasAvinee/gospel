@@ -64,19 +64,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParagrapheDaoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParagrapheDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1517672050771" expanded="true" signature="331:367" ph="SELECT * FRO... paragraphe" />
-                <marker date="1517672050771" expanded="true" signature="1324:1359" ph="SELECT * FRO... paragraphe" />
-                <marker date="1517672050771" expanded="true" signature="2198:2258" ph="INSERT INTO paragraphe... " />
-                <marker date="1517672050771" expanded="true" signature="3108:3162" ph="UPDATE parag... " />
-                <marker date="1517672050771" expanded="true" signature="3949:3982" ph="delete from " />
+                <marker date="1517672308725" expanded="true" signature="331:367" ph="SELECT * FRO... paragraphe" />
+                <marker date="1517672308725" expanded="true" signature="1324:1359" ph="SELECT * FRO... paragraphe" />
+                <marker date="1517672308725" expanded="true" signature="2198:2258" ph="INSERT INTO paragraphe... " />
+                <marker date="1517672308725" expanded="true" signature="3108:3162" ph="UPDATE parag... " />
+                <marker date="1517672308725" expanded="true" signature="3949:3982" ph="delete from " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gospel.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/gospel.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="281" column="5" lean-forward="false" selection-start-line="281" selection-start-column="5" selection-end-line="281" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gestion.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,6 +239,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gospel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
@@ -433,12 +461,12 @@
       <updated>1517655783719</updated>
       <workItem from="1517655803488" duration="227000" />
       <workItem from="1517656925593" duration="60000" />
-      <workItem from="1517669135608" duration="3005000" />
+      <workItem from="1517669135608" duration="3415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3292000" />
+    <option name="totallyTimeSpent" value="3702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
@@ -588,14 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMdp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -626,12 +646,28 @@
           <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1517672050771" expanded="true" signature="331:367" ph="SELECT * FRO... paragraphe" />
-            <marker date="1517672050771" expanded="true" signature="1324:1359" ph="SELECT * FRO... paragraphe" />
-            <marker date="1517672050771" expanded="true" signature="2198:2258" ph="INSERT INTO paragraphe... " />
-            <marker date="1517672050771" expanded="true" signature="3108:3162" ph="UPDATE parag... " />
-            <marker date="1517672050771" expanded="true" signature="3949:3982" ph="delete from " />
+            <marker date="1517672308725" expanded="true" signature="331:367" ph="SELECT * FRO... paragraphe" />
+            <marker date="1517672308725" expanded="true" signature="1324:1359" ph="SELECT * FRO... paragraphe" />
+            <marker date="1517672308725" expanded="true" signature="2198:2258" ph="INSERT INTO paragraphe... " />
+            <marker date="1517672308725" expanded="true" signature="3108:3162" ph="UPDATE parag... " />
+            <marker date="1517672308725" expanded="true" signature="3949:3982" ph="delete from " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/gospel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="281" column="5" lean-forward="false" selection-start-line="281" selection-start-column="5" selection-end-line="281" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
