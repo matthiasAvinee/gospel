@@ -6,7 +6,7 @@ CREATE TABLE `membre` (
 
   PRIMARY KEY (`id`)
 
-)
+);
 
 CREATE TABLE `paragraphe` (
   `id` VARCHAR (30) NOT NULL,
