@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/modifiermembre")
+@WebServlet("/administrateur/modifiermembre")
 public class modifierMembreServlet extends AbstractGenericServlet {
 
 
@@ -20,7 +20,8 @@ public class modifierMembreServlet extends AbstractGenericServlet {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
 
         WebContext context = new WebContext(req, resp, getServletContext());
-
+        context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
 
 
@@ -65,7 +66,7 @@ public class modifierMembreServlet extends AbstractGenericServlet {
 
                 resp.sendRedirect("modifiermembre?id=" + id);
             }
-            resp.sendRedirect("gestion");
+            resp.sendRedirect("/administrateur/gestion");
         }
     }
 

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/supprimermembre")
+@WebServlet("/administrateur/supprimermembre")
 public class supprimerServlet extends AbstractGenericServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -23,11 +23,11 @@ public class supprimerServlet extends AbstractGenericServlet {
 
         if(id==1){
 
-            resp.sendRedirect("gestion");
+            resp.sendRedirect("/administrateur/gestion");
         }
         else {
             MembreLibrary.getInstance().supprimermembre(id);
-            resp.sendRedirect("gestion");
+            resp.sendRedirect("/administrateur/gestion");
         }
 
     }

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/gestion")
+@WebServlet("/administrateur/gestion")
 public class gestionServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -23,6 +23,8 @@ public class gestionServlet extends AbstractGenericServlet {
 
         WebContext context = new WebContext(req, resp, getServletContext());
         context.setVariable("membres", listOfMembres);
+        context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
 
         templateEngine.process("gestion", context, resp.getWriter());
 

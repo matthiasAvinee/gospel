@@ -1,5 +1,6 @@
 package servlets;
 
+import Utilis.MotdePasseUtilis;
 import entities.Membre;
 import manager.MembreLibrary;
 import org.thymeleaf.TemplateEngine;
@@ -11,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/reinitialisationDuMdp")
+@WebServlet("/administrateur/reinitialisationDuMdp")
 public class modifierMdpServlet extends AbstractGenericServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
@@ -19,7 +20,8 @@ public class modifierMdpServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
 
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
-
+        context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
 
         int id = Integer.parseInt(req.getParameter("id"));
 
@@ -41,9 +43,11 @@ public class modifierMdpServlet extends AbstractGenericServlet {
         String mdp = null;
         String confirmMdp = null;
         int id = Integer.parseInt(req.getParameter("id"));
+        MotdePasseUtilis motdePasseUtilis= new MotdePasseUtilis();
+        String motdepasse=null;
 
         if (id==1) {
-            resp.sendRedirect("gestion");
+            resp.sendRedirect("/administrateur/gestion");
         }
         else
         try {
@@ -56,21 +60,22 @@ public class modifierMdpServlet extends AbstractGenericServlet {
 
         if (mdp == confirmMdp || mdp.equals(confirmMdp)) {
             try {
-                Membre createdMembre = MembreLibrary.getInstance().modifierMdp(id,mdp);
+                motdepasse= motdePasseUtilis.genererMotDePasse(mdp);
+                Membre createdMembre = MembreLibrary.getInstance().modifierMdp(id,motdepasse);
 
             } catch (IllegalArgumentException e) {
                 String errorMessage = e.getMessage();
 
                 req.getSession().setAttribute("errorMessage", errorMessage);
 
-                resp.sendRedirect("reinitialisationDuMdp?id="+id);
+                resp.sendRedirect("/administrateur/reinitialisationDuMdp?id="+id);
             }
-            resp.sendRedirect("modifiermembre?id="+id);
+            resp.sendRedirect("/administrateur/modifiermembre?id="+id);
         }
         else {
             String errorMessage = "Les deux mots de passe ne sont pas identiques";
             req.getSession().setAttribute("errorMessage", errorMessage);
-            resp.sendRedirect("reinitialisationDuMdp?id="+id);
+            resp.sendRedirect("/administrateur/reinitialisationDuMdp?id="+id);
 
         }
     }

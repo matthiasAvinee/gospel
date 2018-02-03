@@ -7,4 +7,24 @@
 		<welcome-file>home</welcome-file>
 	</welcome-file-list>
 
+	<filter>
+		<filter-name>MembreFiltre</filter-name>
+		<filter-class>Filtre.Membrefiltre</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>MembreFiltre</filter-name>
+		<url-pattern>/membre/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>AdminFiltre</filter-name>
+		<filter-class>Filtre.Adminfiltre</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>AdminFiltre</filter-name>
+		<url-pattern>/administrateur/*</url-pattern>
+	</filter-mapping>
+
 </web-app>
