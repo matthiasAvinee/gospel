@@ -8,5 +8,13 @@ CREATE TABLE `membre` (
 
 )
 
+CREATE TABLE `paragraphe` (
+  `id` VARCHAR (30) NOT NULL,
+  `titre` varchar(50) DEFAULT NULL,
+  `texte` VARCHAR (1000)DEFAULT NULL,
+  `img` blob DEFAULT NULL,
 
-INSERT INTO `membre` (`pseudo`,`mdp`,`role`) VALUES('root','root','administrateur');
+  PRIMARY KEY (`id`)
+
+)
+
