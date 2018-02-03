@@ -13,15 +13,15 @@
     
 
 <div class="center">
- <a class="btnvert" href="/ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
+ <a class="btnvert" href="administrateur/ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
 </div>
 
 
-        <hr/>
+        <hr align="center"/>
   
         <h2 class="titre">Gestion des membres</h2>
 
-        <hr/>
+        <hr align="center"/>
 
 
         <table id="membres">
@@ -32,16 +32,16 @@
               </tr>
               <tr th:each="membre : ${membres}">
                     <td th:text="${membre.pseudo}"></td>
-                    <td>*********</td>
+                    <td>***********</td>
                     <td th:text="${membre.role}">admin</td>
                     <td>
                           <a th:href="${'modifiermembre?id='+membre.id}">
-                               <img src="icones/edit.png">
+                               <img src="../icones/edit.png">
                           </a>
                     </td>
                     <td>
                         <a th:href="${'supprimermembre?id='+membre.id}">
-                            <img src="icones/close.png">
+                            <img src="../icones/close.png">
                         </a>
                     </td>
               </tr>
