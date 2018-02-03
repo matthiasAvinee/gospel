@@ -11,7 +11,22 @@
 
 <nav th:replace="~{fragments::navbar}"></nav>
 
+<div class="corps">
+    <div class="center" th:if="${pseudoA!=null}">
+         <a class="btnvert" href="/ajouterparagraphe"><img src="../icones/download.png"/>Ajouter un paragraphe</a>
+    </div>
+
+    <div class="paragraphe">
+        <h4 class="titreparagraphe">Patati patata</h4>
+        <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+        <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+        <blockquote>Le Malopolski (polonais : koń małopolski) est une race de chevaux originaire de Pologne. Développée au xixe siècle dans la région de Petite-Pologne, elle en tient son nom. Mise au point à partir de chevaux indigènes polonais, croisés avec des Pur-sangs et des Arabes, elle aboutit ainsi à un type proche de l'Anglo-arabe, et ses origines génétiques sont marquées par la forte influence du Pur-sang. Polyvalent, le Malopolski est utilisé de nos jours pour la traction légère et toute forme d'équitation, avec une recherche de type plus performant dans les sports équestres.
+        </blockquote>
+     </div>
+
+</div>
 <footer th:replace="~{fragments::footer}"></footer>
+
 
 </body>
 
