@@ -7,14 +7,16 @@ import java.util.List;
 
 public interface ParagrapheDao {
 
-    public List<Paragraphe> listParagraphes();
+    public List<Paragraphe> listParagraphesAcceuil();
 
-    public Paragraphe getparagraphe(String idBalise);
+    public List<Paragraphe> listParagraphesContact();
+
+    public Paragraphe getparagraphe(Integer idBalise);
 
     public Paragraphe addParagraphe(Paragraphe paragraphe);
 
-    public Paragraphe updateParagraphe(String idBalise, String titre, String texte, Part img);
+    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, Part img, int ordre);
 
-    void supprimerParagraphe(String idBalise);
+    void supprimerParagraphe(Integer idBalise);
 
 }

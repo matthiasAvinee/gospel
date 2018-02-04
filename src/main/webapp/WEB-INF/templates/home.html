@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 	<title>Accueil</title>
@@ -16,11 +16,16 @@
          <a class="btnvert" href="/administrateur/ajouterarticle?ch=home"><img src="../icones/download.png"/>Ajouter un paragraphe</a>
     </div>
 
-    <div class="paragraphe">
-        <h4 class="titreparagraphe">Patati patata</h4>
-        <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
-        <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
-        <blockquote>Le Malopolski (polonais : koń małopolski) est une race de chevaux originaire de Pologne. Développée au xixe siècle dans la région de Petite-Pologne, elle en tient son nom. Mise au point à partir de chevaux indigènes polonais, croisés avec des Pur-sangs et des Arabes, elle aboutit ainsi à un type proche de l'Anglo-arabe, et ses origines génétiques sont marquées par la forte influence du Pur-sang. Polyvalent, le Malopolski est utilisé de nos jours pour la traction légère et toute forme d'équitation, avec une recherche de type plus performant dans les sports équestres.
+    <div class="paragraphe" th:each="paragraphe : ${paragraphes}">
+        <h4 class="titreparagraphe" th:text="${paragraphe.titre}">Patati patata</h4>
+         <a th:href="${'administrateur/modifierparagraphe?id='+paragraphe.idBalise}">
+            <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+         </a>
+         <a th:href="${'administrateur/supprimerparagraphe?id='+paragraphe.idBalise}">
+            <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+         </a>
+
+        <blockquote th:text="${paragraphe.texte}">Le Malopolski (polonais : koń małopolski) est une race de chevaux originaire de Pologne. Développée au xixe siècle dans la région de Petite-Pologne, elle en tient son nom. Mise au point à partir de chevaux indigènes polonais, croisés avec des Pur-sangs et des Arabes, elle aboutit ainsi à un type proche de l'Anglo-arabe, et ses origines génétiques sont marquées par la forte influence du Pur-sang. Polyvalent, le Malopolski est utilisé de nos jours pour la traction légère et toute forme d'équitation, avec une recherche de type plus performant dans les sports équestres.
         </blockquote>
      </div>
 

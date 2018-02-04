@@ -23,11 +23,15 @@ public class ParagrapheLibrary {
     private ParagrapheLibrary() {
     }
 
-    public List<Paragraphe> listParagraphes() {
-        return paragrapheDao.listParagraphes();
+    public List<Paragraphe> listParagraphesAcceuil() {
+        return paragrapheDao.listParagraphesAcceuil();
     }
 
-    public Paragraphe getParagraphe(String id) {
+    public List<Paragraphe> listParagraphesContact() {
+        return paragrapheDao.listParagraphesContact();
+    }
+
+    public Paragraphe getParagraphe(Integer id) {
         return paragrapheDao.getparagraphe(id);
     }
 
@@ -43,13 +47,13 @@ public class ParagrapheLibrary {
         return paragrapheDao.addParagraphe(paragraphe);
     }
 
-    public Paragraphe updateParagraphe(String id, String titre, String texte, Part img) {
-        return paragrapheDao.updateParagraphe(id, titre, texte,img);
+    public Paragraphe updateParagraphe(int id, String titre, String texte, Part img, int ordre) {
+        return paragrapheDao.updateParagraphe(id, titre, texte,img, ordre);
     }
 
 
 
-    public void supprimermembre(String id) {
+    public void supprimerParagraphe(int id) {
         paragrapheDao.supprimerParagraphe(id);
     }
 

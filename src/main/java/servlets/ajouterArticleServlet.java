@@ -33,14 +33,14 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String idBalise = null;
+        Integer idBalise = null;
         String titre = null;
         String texte = null;
         Part img = null;
         String page = null;
+        Integer ordre=null;
 
         try {
-            idBalise = req.getParameter("id");
             titre = req.getParameter("titre");
             texte = req.getParameter("article");
             page = req.getParameter("radio");
@@ -50,11 +50,11 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
         }
 
-        Paragraphe newParagraphe = new Paragraphe(idBalise, titre, texte , img, page);
+        Paragraphe newParagraphe = new Paragraphe(null, titre, texte , img, page,null);
 
             try {
-                Paragraphe createdMembre = ParagrapheLibrary.getInstance().addParagraphe(newParagraphe);
-
+                Paragraphe createdParagraphe = ParagrapheLibrary.getInstance().addParagraphe(newParagraphe);
+                resp.sendRedirect("/"+createdParagraphe.getPage());
             } catch (IllegalArgumentException e) {
                 String errorMessage = e.getMessage();
 
@@ -62,7 +62,7 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
                 resp.sendRedirect("ajouterparagraphe");
             }
-            resp.sendRedirect("/home");
+
 
     }
 }

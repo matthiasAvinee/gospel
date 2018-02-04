@@ -9,11 +9,12 @@ CREATE TABLE `membre` (
 );
 
 CREATE TABLE `paragraphe` (
-  `id` VARCHAR (30) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `titre` varchar(50) DEFAULT NULL,
   `texte` VARCHAR (1000)DEFAULT NULL,
   `img` blob DEFAULT NULL,
   `page` VARCHAR (30)DEFAULT NULL,
+  `ordre` int (30)DEFAULT NULL,
 
   PRIMARY KEY (`id`)
 
