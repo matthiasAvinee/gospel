@@ -3,17 +3,24 @@ package servlets;
 
 import entities.Membre;
 import entities.Paragraphe;
+import javafx.scene.image.ImageView;
 import manager.ParagrapheLibrary;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
+import javax.swing.*;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Blob;
 
+@MultipartConfig
 @WebServlet("/administrateur/ajouterarticle")
 public class ajouterArticleServlet extends AbstractGenericServlet {
 
@@ -44,7 +51,11 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
             titre = req.getParameter("titre");
             texte = req.getParameter("article");
             page = req.getParameter("radio");
-            //img = req.getPart("image");
+            img = req.getPart("image");
+
+            InputStream input=img.getInputStream();
+
+
 
         } catch (NumberFormatException e) {
 

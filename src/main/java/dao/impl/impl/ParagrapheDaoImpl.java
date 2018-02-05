@@ -3,7 +3,13 @@ package dao.impl.impl;
 import dao.impl.ParagrapheDao;
 import entities.Paragraphe;
 
+import javax.imageio.ImageIO;
 import javax.servlet.http.Part;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +41,7 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
         }
         return listOfParagraphes;
     }
+
     @Override
     public List<Paragraphe> listParagraphesContact() {
         String query = "SELECT * FROM paragraphe WHERE page='contacter' ORDER BY ordre ";
@@ -94,7 +101,7 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
             statement.setString(1, paragraphe.getTitre());
             statement.setString(2, paragraphe.getTexte());
             statement.setBlob(3, (Blob) paragraphe.getImg());
-            statement.setString(4,paragraphe.getPage());
+            statement.setString(4, paragraphe.getPage());
             statement.executeUpdate();
 
             try (ResultSet ids = statement.getGeneratedKeys()) {
@@ -119,7 +126,7 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
             statement.setString(1, titre);
             statement.setString(2, texte);
             statement.setBlob(3, (Blob) img);
-            statement.setInt(4,ordre);
+            statement.setInt(4, ordre);
             statement.setInt(5, idBalise);
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -144,4 +151,5 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
             e.printStackTrace();
         }
     }
+
 }
