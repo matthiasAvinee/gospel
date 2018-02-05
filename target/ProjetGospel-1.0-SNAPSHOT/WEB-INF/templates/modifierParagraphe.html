@@ -18,21 +18,21 @@
 			<h1>Rédiger un paragraphe</h1>
 
 			<label>Titre</label>
-    		<input type="text" placeholder="Titre du paragraphe" name="titre">
+    		<input type="text" placeholder="Titre du paragraphe" name="titre" th:value="${paragraphe.titre}">
 
     		<label>Rédiger l'article</label>
-    		<textarea name="article" placeholder="Rédigez votre article (obligatoire)" ></textarea>
+    		<textarea name="article" placeholder="Rédigez votre article (obligatoire)" th:text="${paragraphe.texte}"></textarea>
 
     		<label>Ajouter une photo</label>
     		<input type="file" name="image">
 
     		<label>Ordre</label>
-            <input type="number" placeholder="n°" name="ordre">
+            <input type="number" placeholder="n°" name="ordre" th:value="${paragraphe.ordre}">
 
 
     		<div class="groupe-boutons">
       			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
-      			<button type="submit" class="ok" >Ajout du paragraphe</button>
+      			<button type="submit" class="ok" >Modifier le paragraphe</button>
     		</div>
 
     	</form>

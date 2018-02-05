@@ -23,17 +23,18 @@ public class connexionServlet extends AbstractGenericServlet {
         req.setCharacterEncoding("UTF-8");
 
         WebContext context = new WebContext(req, resp, getServletContext());
-        templateEngine.process("connexion", context, resp.getWriter());
+
 
         ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver(req.getServletContext());
 
-        context.setVariable("error", req.getSession().getAttribute("errorMessage"));
+
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
         context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
+        context.setVariable("error", req.getSession().getAttribute("errorMessage"));
         if(req.getSession().getAttribute("errorMessage") != null) {
             context.setVariable("error", req.getSession().getAttribute("errorMessage"));
             req.getSession().removeAttribute("errorMessage");}
-
+        templateEngine.process("connexion", context, resp.getWriter());
     }
 
     @Override
@@ -65,9 +66,8 @@ public class connexionServlet extends AbstractGenericServlet {
             resp.sendRedirect("home");
         }
 
-
-
         else{
+
             String errorMessage = "Le compte n'existe pas ou le mot de passe est faux";
             req.getSession().setAttribute("errorMessage", errorMessage);
             resp.sendRedirect("connexion");

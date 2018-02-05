@@ -38,7 +38,7 @@ public class modifieraccueilServlet extends AbstractGenericServlet  {
             }
 
 
-
+            context.setVariable("paragraphe", ParagrapheLibrary.getInstance().getParagraphe(idBalise));
             templateEngine.process("modifierParagraphe", context, resp.getWriter());
         }
 
