@@ -338,3 +338,15 @@ figcaption{
 	display: flex;
 	justify-content: center;
 }
+hr{
+  border-color: #4C1B1B;
+  margin-bottom: 2%;
+  margin-top: 2%;
+ 
+
+}
+.paragraphe{
+	margin-bottom: 5%;
+	margin-top: 2%
+
+}
