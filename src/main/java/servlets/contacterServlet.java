@@ -17,6 +17,9 @@ import java.util.List;
 public class contacterServlet extends AbstractGenericServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
+        resp.setContentType("text/html;charset=UTF-8");
+        req.setCharacterEncoding("UTF-8");
+
         List<Paragraphe> listOfMembres = ParagrapheLibrary.getInstance().listParagraphesContact();
         WebContext context = new WebContext(req, resp, getServletContext());
 

@@ -26,11 +26,13 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
-
+        resp.setContentType("text/html;charset=UTF-8");
+        req.setCharacterEncoding("UTF-8");
         WebContext context = new WebContext(req, resp, getServletContext());
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
         templateEngine.process("ajoutArticle", context, resp.getWriter());
+
 
         if(req.getSession().getAttribute("errorMessage") != null) {
             context.setVariable("error", req.getSession().getAttribute("errorMessage"));
@@ -43,7 +45,6 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
         Integer idBalise = null;
         String titre = null;
         String texte = null;
-        Part img = null;
         String page = null;
         Integer ordre=null;
 
@@ -51,9 +52,9 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
             titre = req.getParameter("titre");
             texte = req.getParameter("article");
             page = req.getParameter("radio");
-            img = req.getPart("image");
+            ordre = Integer.parseInt(req.getParameter("ordre"));
 
-            InputStream input=img.getInputStream();
+
 
 
 
@@ -61,7 +62,7 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
         }
 
-        Paragraphe newParagraphe = new Paragraphe(null, titre, texte , img, page,null);
+        Paragraphe newParagraphe = new Paragraphe(null, titre, texte , null, page,ordre);
 
             try {
                 Paragraphe createdParagraphe = ParagrapheLibrary.getInstance().addParagraphe(newParagraphe);

@@ -11,8 +11,8 @@ CREATE TABLE `membre` (
 CREATE TABLE `paragraphe` (
   `id` int NOT NULL AUTO_INCREMENT,
   `titre` varchar(50) DEFAULT NULL,
-  `texte` VARCHAR (1000)DEFAULT NULL,
-  `img` blob DEFAULT NULL,
+  `texte` VARCHAR (5000)DEFAULT NULL,
+  `img` varchar(100) DEFAULT NULL,
   `page` VARCHAR (30)DEFAULT NULL,
   `ordre` int (30)DEFAULT NULL,
 

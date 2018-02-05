@@ -7,15 +7,15 @@ public class Paragraphe {
     Integer idBalise;
     String titre;
     String texte;
-    Part img;
+    String chemin;
     String page;
     Integer ordre;
 
-    public Paragraphe(Integer idBalise, String titre, String texte, Part img, String page, Integer ordre) {
+    public Paragraphe(Integer idBalise, String titre, String texte, String chemin, String page, Integer ordre) {
         this.idBalise = idBalise;
         this.titre = titre;
         this.texte = texte;
-        this.img = img;
+        this.chemin=chemin;
         this.page = page;
         this.ordre = ordre;
     }
@@ -35,14 +35,6 @@ public class Paragraphe {
 
     public void setTexte(String texte) {
         this.texte = texte;
-    }
-
-    public Part getImg() {
-        return img;
-    }
-
-    public void setImg(Part img) {
-        this.img = img;
     }
 
     public String getPage() {
@@ -68,6 +60,14 @@ public class Paragraphe {
 
     public void setIdBalise(Integer idBalise) {
         this.idBalise = idBalise;
+    }
+
+    public String getChemin() {
+        return chemin;
+    }
+
+    public void setChemin(String chemin) {
+        this.chemin = chemin;
     }
 }
 

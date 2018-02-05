@@ -39,7 +39,7 @@ public class ParagrapheLibrary {
         if (paragraphe == null) {
             throw new IllegalArgumentException("Le membre ne doit pas être vide");
         }
-        if (paragraphe.getTexte() == null && paragraphe.getTitre()==null && paragraphe.getImg()==null ) {
+        if (paragraphe.getTexte() == null && paragraphe.getTitre()==null && paragraphe.getChemin()==null ) {
             throw new IllegalArgumentException("Le pseudo ne doit pas être vide");
         }
 
@@ -47,8 +47,8 @@ public class ParagrapheLibrary {
         return paragrapheDao.addParagraphe(paragraphe);
     }
 
-    public Paragraphe updateParagraphe(int id, String titre, String texte, Part img, int ordre) {
-        return paragrapheDao.updateParagraphe(id, titre, texte,img, ordre);
+    public Paragraphe updateParagraphe(int id, String titre, String texte, String chemin, int ordre) {
+        return paragrapheDao.updateParagraphe(id, titre, texte,chemin, ordre);
     }
 
 
