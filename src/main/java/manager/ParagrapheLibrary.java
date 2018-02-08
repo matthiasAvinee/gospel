@@ -63,14 +63,6 @@ public class ParagrapheLibrary {
 
 
 
-    public Path getPictureParagraphe(Integer id){
-        Path picturePath=paragrapheDao.getPicturePath(id);
-        if (picturePath == null) {
-            picturePath = null;
 
-        }
-        return picturePath;
-
-    }
 
 }
