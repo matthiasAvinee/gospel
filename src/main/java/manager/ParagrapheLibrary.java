@@ -5,6 +5,9 @@ import dao.impl.impl.ParagrapheDaoImpl;
 import entities.Paragraphe;
 
 import javax.servlet.http.Part;
+import java.net.URISyntaxException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class ParagrapheLibrary {
@@ -57,5 +60,17 @@ public class ParagrapheLibrary {
         paragrapheDao.supprimerParagraphe(id);
     }
 
+
+
+
+    public Path getPictureParagraphe(Integer id){
+        Path picturePath=paragrapheDao.getPicturePath(id);
+        if (picturePath == null) {
+            picturePath = null;
+
+        }
+        return picturePath;
+
+    }
 
 }
