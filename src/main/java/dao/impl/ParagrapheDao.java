@@ -3,6 +3,7 @@ package dao.impl;
 import entities.Paragraphe;
 
 import javax.servlet.http.Part;
+import java.nio.file.Path;
 import java.util.List;
 
 public interface ParagrapheDao {
@@ -19,4 +20,5 @@ public interface ParagrapheDao {
 
     void supprimerParagraphe(Integer idBalise);
 
+  
 }

@@ -5,6 +5,9 @@ import dao.impl.impl.ParagrapheDaoImpl;
 import entities.Paragraphe;
 
 import javax.servlet.http.Part;
+import java.net.URISyntaxException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class ParagrapheLibrary {
@@ -56,6 +59,10 @@ public class ParagrapheLibrary {
     public void supprimerParagraphe(int id) {
         paragrapheDao.supprimerParagraphe(id);
     }
+
+
+
+
 
 
 }
