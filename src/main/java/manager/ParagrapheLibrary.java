@@ -42,7 +42,7 @@ public class ParagrapheLibrary {
         if (paragraphe == null) {
             throw new IllegalArgumentException("Le membre ne doit pas être vide");
         }
-        if (paragraphe.getTexte() == null && paragraphe.getTitre()==null && paragraphe.getChemin()==null ) {
+        if (paragraphe.getTexte() == null && paragraphe.getTitre()==null ) {
             throw new IllegalArgumentException("Le pseudo ne doit pas être vide");
         }
 
