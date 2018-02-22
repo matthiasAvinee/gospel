@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Photos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+</head>
+<body>
+
+	<nav th:replace="~{fragments::navbar}"></nav>
+
+	<div class="corps">
+		<div class="groupe-boutons" id="btn-alt">
+	      	<button type="submit" class="ok">Ajouter un album</button>
+	    </div>
+    </div>
+
+	<div class="dispo-photos">
+
+		<figure th:each="album:${albumsList}">
+			<a class="album" href=""><img class="cover" src="../img/got.jpg"></a>
+			<figcaption th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></figcaption>
+		</figure>
+
+	</div>
+
+</body>
+</html>

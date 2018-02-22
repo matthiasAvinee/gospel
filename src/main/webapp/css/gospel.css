@@ -210,7 +210,7 @@ textarea{
 	display: inline-block;
 }
 
-.groupe-boutons button {
+.groupe-boutons button{
   color: #FCFAE1;
   padding: 14px 20px;
   margin: 8px 0;
@@ -221,7 +221,7 @@ textarea{
   opacity: 0.9;
 }
 
-.groupe-boutons button:hover {
+.groupe-boutons button:hover{
   opacity:1;
 }
 
@@ -290,3 +290,51 @@ textarea{
   background: white;
 }
 
+/*disposition des albums*/
+
+.dispo-photos{
+	padding: 0;
+  	margin: 0 auto 0 auto;
+  	width: 80%;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-around;
+}
+
+figure{
+	margin: 30px;
+}
+
+.album{
+	margin: 0;
+	padding: 0;
+}
+
+figcaption{
+	margin-top: 5px;
+	text-align: center;
+}
+
+.cover{
+	height: 150px;
+	width: auto;
+}
+
+.cover:hover, .photo:hover{
+	opacity: 0.8;
+}
+
+/*disposition des photos*/
+
+.photo{
+	margin: 30px;
+	height: 150px;
+	width: auto;
+}
+
+/*bouton alternatif*/
+
+#btn-alt{
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Accueil</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+</head>
+
+<body>
+
+	<nav th:replace="~{fragments::navbar}"></nav>
+
+	<div class="corps">
+
+		<form method="post" class="formulaire">
+			
+			<h1>Ajouter un album</h1>
+
+			<label>Nom de l'album</label>
+    		<input type="text" placeholder="Nom de l'album" name="nom-album">
+
+    		<label>Ajouter des photos</label>
+    		<input type="file" name="image" multiple="">
+
+    		<div class="groupe-boutons">
+      			<button type="button" class="cancel">Annuler</button>
+      			<button type="submit" class="ok">Ajout de l'album</button>
+    		</div>
+
+    	</form>
+
+	</div>	
+
+	<footer th:replace="~{fragments::footer}"></footer>
+
+</body>
+
+</html>
