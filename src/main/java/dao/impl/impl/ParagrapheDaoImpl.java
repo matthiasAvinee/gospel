@@ -97,8 +97,8 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, paragraphe.getTitre());
             statement.setString(2, paragraphe.getTexte());
-            statement.setString(4, paragraphe.getPage());
-            statement.setInt(5,paragraphe.getOrdre());
+            statement.setString(3, paragraphe.getPage());
+            statement.setInt(4,paragraphe.getOrdre());
             statement.executeUpdate();
 
             try (ResultSet ids = statement.getGeneratedKeys()) {
