@@ -338,18 +338,6 @@ figcaption{
 	display: flex;
 	justify-content: center;
 }
-hr{
-  border-color: #4C1B1B;
-  margin-bottom: 2%;
-  margin-top: 2%;
- 
-
-}
-.paragraphe{
-	margin-bottom: 5%;
-	margin-top: 2%
-
-}
 
 .btnvert{
  
@@ -358,8 +346,8 @@ hr{
   background:rgba(230, 247, 255,0.5);
   color:black;
   border-radius:10px;
-  width:220px;
-  height: 70px;
+  width:300px;
+  height: 120px;
   border:3px solid #3F9952;
   box-shadow:1px 1px 3px #999;
   align-items: center;
@@ -378,10 +366,11 @@ table{
 }
 
 th, td {
-  border-bottom: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
 } 
 
 
 tr:hover {background-color: #f5f5f5;
 
 } 
+

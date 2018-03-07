@@ -23,9 +23,6 @@
     		<label>Rédiger l'article</label>
     		<textarea name="article" placeholder="Rédigez votre article (obligatoire)" th:text="${paragraphe.texte}"></textarea>
 
-    		<label>Ajouter une photo</label>
-    		<input type="file" name="image">
-
     		<label>Ordre</label>
             <input type="number" placeholder="n°" name="ordre" th:value="${paragraphe.ordre}">
 

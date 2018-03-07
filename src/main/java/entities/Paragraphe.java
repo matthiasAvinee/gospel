@@ -7,15 +7,13 @@ public class Paragraphe {
     Integer idBalise;
     String titre;
     String texte;
-    String chemin;
     String page;
     Integer ordre;
 
-    public Paragraphe(Integer idBalise, String titre, String texte, String chemin, String page, Integer ordre) {
+    public Paragraphe(Integer idBalise, String titre, String texte, String page, Integer ordre) {
         this.idBalise = idBalise;
         this.titre = titre;
         this.texte = texte;
-        this.chemin=chemin;
         this.page = page;
         this.ordre = ordre;
     }
@@ -62,12 +60,6 @@ public class Paragraphe {
         this.idBalise = idBalise;
     }
 
-    public String getChemin() {
-        return chemin;
-    }
 
-    public void setChemin(String chemin) {
-        this.chemin = chemin;
-    }
 }
 
