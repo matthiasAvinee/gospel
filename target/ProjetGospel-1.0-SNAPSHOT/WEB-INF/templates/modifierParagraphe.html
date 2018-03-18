@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>modifier-paragraphe</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+</head>
+
+<body>
+
+	<nav th:replace="~{fragments::navbar}"></nav>
+
+	<div class="corps">
+
+		<form method="post" class="formulaire">
+
+			<h1>Rédiger un paragraphe</h1>
+
+			<label>Titre</label>
+    		<input type="text" placeholder="Titre du paragraphe" name="titre" th:value="${paragraphe.titre}">
+
+    		<label>Rédiger l'article</label>
+    		<textarea name="article" placeholder="Rédigez votre article (obligatoire)" th:text="${paragraphe.texte}"></textarea>
+
+    		<label>Ordre</label>
+            <input type="number" placeholder="n°" name="ordre" th:value="${paragraphe.ordre}">
+
+
+    		<div class="groupe-boutons">
+      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
+      			<button type="submit" class="ok" >Modifier le paragraphe</button>
+    		</div>
+
+    	</form>
+
+	</div>
+
+	<footer th:replace="~{fragments::footer}"></footer>
+
+</body>
+
+</html>

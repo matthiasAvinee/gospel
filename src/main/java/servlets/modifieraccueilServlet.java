@@ -2,7 +2,9 @@ package servlets;
 
 
 import entities.Membre;
+import entities.Paragraphe;
 import manager.MembreLibrary;
+import manager.ParagrapheLibrary;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
@@ -13,20 +15,21 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.IOException;
 
-@WebServlet("/administrateur/modifieracceuil")
+@WebServlet("/administrateur/modifierparagraphe")
 public class modifieraccueilServlet extends AbstractGenericServlet  {
 
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
-
+        resp.setContentType("text/html;charset=UTF-8");
+        req.setCharacterEncoding("UTF-8");
         WebContext context = new WebContext(req, resp, getServletContext());
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
         context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
 
 
-        String idBalise = req.getParameter("id");
+        int idBalise = Integer.parseInt(req.getParameter("id"));
 
 
             if (req.getSession().getAttribute("posterError") != null) {
@@ -35,8 +38,8 @@ public class modifieraccueilServlet extends AbstractGenericServlet  {
             }
 
 
-
-            templateEngine.process("modifierAcceuil", context, resp.getWriter());
+            context.setVariable("paragraphe", ParagrapheLibrary.getInstance().getParagraphe(idBalise));
+            templateEngine.process("modifierParagraphe", context, resp.getWriter());
         }
 
 
@@ -44,28 +47,30 @@ public class modifieraccueilServlet extends AbstractGenericServlet  {
         String texte = null;
         String titre = null;
         Part img=null;
+        Integer ordre=null;
 
-        String idBalise = req.getParameter("id");
-
+        Integer idBalise = Integer.parseInt(req.getParameter("id"));
+        Paragraphe paragraphe2= ParagrapheLibrary.getInstance().getParagraphe(idBalise);
 
         try {
-            texte = req.getParameter("titre");
-            titre = req.getParameter("texte");
+            titre = req.getParameter("titre");
+            texte = req.getParameter("article");
+            ordre= Integer.parseInt(req.getParameter("ordre"));
 
         } catch (NumberFormatException e) {
 
         }
         try {
-            //Paragraphe paragraphe = MembreLibrary.getInstance().updateParagraphe(idBalise, titre,texte,img );
+            Paragraphe paragraphe = ParagrapheLibrary.getInstance().updateParagraphe(idBalise,titre,texte,null,ordre);
 
         } catch (IllegalArgumentException e) {
             String errorMessage = e.getMessage();
 
             req.getSession().setAttribute("errorMessage", errorMessage);
 
-            resp.sendRedirect("modifieraccueil?id=" + idBalise);
+            resp.sendRedirect("modifierparagraphe?id=" + idBalise);
         }
-        resp.sendRedirect("/administrateur/gestion");
+        resp.sendRedirect("/"+paragraphe2.getPage());
     }
 }
 

@@ -1,4 +1,4 @@
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 	<title>connexion</title>
@@ -11,6 +11,8 @@
 	<nav th:replace="~{fragments::navbar}"></nav>
 
 	<div class="corps">
+
+    <p th:if="${error != null}" th:text="${error}"></p>
 
 		<form method="post" class="formulaire">
 			
