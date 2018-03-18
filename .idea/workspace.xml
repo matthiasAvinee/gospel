@@ -6,30 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="c16d7668-4295-4cb4-9519-8da41f3e8deb" name="Default" comment="" />
-=======
-<<<<<<< HEAD
-    <list default="true" id="c01a4725-02f0-4c5c-a1ab-2d310c0fcf87" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/ParagrapheDaoImpl.class" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/ParagrapheDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/impl/impl/ParagrapheDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/impl/impl/ParagrapheDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java" />
-<<<<<<< HEAD
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/Paragraphe.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Paragraphe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java" afterPath="$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/dataBaseInit.sql" afterPath="$PROJECT_DIR$/src/main/sql/dataBaseInit.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html" />
-=======
-    <list default="true" id="53d63491-167b-4da8-8ee8-c909f35158f4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-    </list>
->>>>>>> master
+    <list default="true" id="946116cb-dc24-460f-b2ef-9afc42962b62" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,264 +15,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="gospel" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file leaf-file-name="listeAlbumsServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="27" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="homeservlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/homeservlet.java">
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="ParagrapheLibrary.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java">
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="32" column="92" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="92" />
-              <folding>
-                <element signature="imports" expanded="true" />
-<<<<<<< HEAD
-=======
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-=======
-      <file leaf-file-name="FichiersDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="modifieraccueilServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifieraccueilServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="41" column="84" lean-forward="false" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="ParagrapheDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/ParagrapheDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-=======
-      <file leaf-file-name="ajouterPhotos.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="modifierMdpServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifierMdpServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="42" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="MembreDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/MembreDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-=======
-      <file leaf-file-name="ajouterPhotosServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="modifierMembreServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifierMembreServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="Membre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Membre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-=======
+    <leaf>
       <file leaf-file-name="listeAlbumsServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="75" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
+            <state relative-caret-position="85">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="ajouterArticleServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="modifierParagraphe.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-=======
-      <file leaf-file-name="FichiersBibliotheque.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="albumsPhotos.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="albumsPhotos.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/albumsPhotos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="17" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="17" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="ajoutArticle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html">
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="supprimerArticleServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerArticleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" column="42" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="20" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="supprimerServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="153">
-              <caret line="18" column="42" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="42" />
-              <folding />
-=======
-            <state relative-caret-position="-667">
-              <caret line="82" column="53" lean-forward="true" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
-              <folding>
-                <marker date="1519332183510" expanded="true" signature="527:585" ph="SELECT * FRO... paragraphe" />
-                <marker date="1519332183510" expanded="true" signature="1594:1656" ph="SELECT * FRO... paragraphe" />
-                <marker date="1519332183510" expanded="true" signature="2667:2702" ph="SELECT * FRO... paragraphe" />
-                <marker date="1519332183510" expanded="true" signature="3607:3670" ph="INSERT INTO paragraphe... " />
-                <marker date="1519332183510" expanded="true" signature="4685:4741" ph="UPDATE parag... " />
-                <marker date="1519332183510" expanded="true" signature="5520:5553" ph="delete from " />
-=======
-      <file leaf-file-name="FichiersDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="62" column="43" lean-forward="false" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
-              <folding>
-                <marker date="1519335229249" expanded="true" signature="356:393" ph="SELECT * FRO... album" />
-                <marker date="1519335229249" expanded="true" signature="1113:1149" ph="SELECT * FRO... album" />
-                <marker date="1519335229249" expanded="true" signature="1825:1837" ph="INSERT INTO album... " />
-                <marker date="1519335229249" expanded="true" signature="1825:1863" ph="INSERT INTO album... " />
-                <marker date="1519335229249" expanded="true" signature="2289:2323" ph="DELETE FROM " />
-                <marker date="1519335229249" expanded="true" signature="2744:2801" ph="SELECT * FRO... photo" />
-                <marker date="1519335229249" expanded="true" signature="3552:3593" ph="SELECT chemi... photo" />
-                <marker date="1519335229249" expanded="true" signature="4333:4385" ph="INSERT INTO photo... " />
-                <marker date="1519335229249" expanded="true" signature="5350:5384" ph="DELETE FROM photo... " />
->>>>>>> Quentin
-              </folding>
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="connexionServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/connexionServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="Paragraphe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Paragraphe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-=======
-      <file leaf-file-name="Photo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Photo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
+            <state relative-caret-position="289">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -303,22 +39,6 @@
       </file>
     </leaf>
   </component>
-<<<<<<< HEAD
-=======
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-<<<<<<< HEAD
-        <option value="Class" />
-        <option value="HTML File" />
-=======
-        <option value="Interface" />
-        <option value="Class" />
->>>>>>> Quentin
-      </list>
-    </option>
-  </component>
->>>>>>> master
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -327,100 +47,12 @@
       <projects_view />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html" />
-=======
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/paragraphe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/paragrapheDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/a.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/ParagraphDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlety.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/ParagrapheDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMdp.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMembre.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/supprimerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/supprimerArticleServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/modifierMembreServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/modifierMdpServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/homeservlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/gestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/deconnexionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/contacterServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/AbstractGenericServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/modifieraccueilServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ajoutMembreServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/connexionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/gospel.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html" />
-        <option value="$PROJECT_DIR$/src/main/sql/dataBaseInit.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Paragraphe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java" />
-=======
-=======
-        <option value="$PROJECT_DIR$/src/main/java/entities/Album.java" />
-        <option value="$PROJECT_DIR$/src/main/sql/photosInit.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Photo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/photos.html" />
->>>>>>> master
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterAlbum.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/photos.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/albumsPhotos.html" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds" extendedState="6">
-=======
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
-=======
-  <component name="ProjectFrameBounds" extendedState="7">
->>>>>>> master
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="745" />
->>>>>>> Quentin
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -436,18 +68,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-=======
-<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-=======
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -458,11 +81,6 @@
             <path>
               <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
               <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -477,74 +95,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Filtre" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="Filtre" type="462c0819:PsiDirectoryNode" />
-=======
-<<<<<<< HEAD
-=======
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-=======
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
@@ -559,26 +109,7 @@
               <item name="gospel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gospel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="css" type="462c0819:PsiDirectoryNode" />
->>>>>>> master
             </path>
             <path>
               <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
@@ -601,56 +132,15 @@
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scope" />
-=======
-<<<<<<< HEAD
-      <pane id="Scope" />
-      <pane id="Scratches" />
-=======
-<<<<<<< HEAD
-=======
-      <pane id="Scratches" />
->>>>>>> master
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-<<<<<<< HEAD
-=======
-      <pane id="Scope" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../almanach" />
-=======
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/AvineeMatthias" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-=======
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/almanach" />
->>>>>>> Quentin
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="dao.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Utilisateur\Documents\GitHub\gospel\src\main\webapp\css" />
-      <recent name="C:\Users\Utilisateur\Documents\GitHub\gospel\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\perso\Documents\GitHub\gospel\src\main\webapp\css" />
-    </key>
->>>>>>> master
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -664,11 +154,6 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.46" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-=======
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -745,20 +230,11 @@
       <properties />
       <listeners />
     </configuration>
-<<<<<<< HEAD
-=======
-    <configuration name="serveurGospel" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.46" ALTERNATIVE_JRE_ENABLED="false">
->>>>>>> Quentin
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="ProjetGospel:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
+      <deployment />
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_gospel_6" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_gospel_2" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -767,7 +243,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61288" />
+        <option name="DEBUG_PORT" value="59581" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -814,13 +290,7 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="ProjetGospel:war exploded" />
-        </option>
-      </method>
     </configuration>
->>>>>>> master
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -836,162 +306,52 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="c16d7668-4295-4cb4-9519-8da41f3e8deb" name="Default" comment="" />
-      <created>1520872076691</created>
+      <changelist id="946116cb-dc24-460f-b2ef-9afc42962b62" name="Default" comment="" />
+      <created>1521387868228</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1520872076691</updated>
-      <workItem from="1520872079842" duration="674000" />
-      <workItem from="1520873020523" duration="14000" />
-      <workItem from="1521378014843" duration="657000" />
-      <workItem from="1521385039440" duration="2351000" />
-=======
-      <changelist id="c01a4725-02f0-4c5c-a1ab-2d310c0fcf87" name="Default" comment="" />
-      <created>1517655783719</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1517655783719</updated>
-      <workItem from="1517655803488" duration="227000" />
-      <workItem from="1517656925593" duration="60000" />
-      <workItem from="1517669135608" duration="6741000" />
-      <workItem from="1517737099169" duration="6708000" />
-      <workItem from="1517824241840" duration="3563000" />
-      <workItem from="1517828305727" duration="137000" />
-      <workItem from="1517835924867" duration="8710000" />
-      <workItem from="1517925886785" duration="329000" />
-      <workItem from="1518101814123" duration="1610000" />
-      <workItem from="1518179933787" duration="614000" />
-      <workItem from="1518622552231" duration="357000" />
-      <workItem from="1519142427320" duration="84000" />
-      <workItem from="1519144902001" duration="628000" />
-<<<<<<< HEAD
-      <workItem from="1519330625992" duration="1688000" />
-      <workItem from="1519335106741" duration="248000" />
-      <workItem from="1519336178787" duration="703000" />
-=======
-      <workItem from="1519330625992" duration="1603000" />
-=======
-      <updated>1517670094285</updated>
-      <workItem from="1517670100458" duration="3206000" />
-      <workItem from="1518014038943" duration="647000" />
-      <workItem from="1518162983766" duration="96000" />
-      <workItem from="1518172299100" duration="1347000" />
-      <workItem from="1518440983370" duration="1107000" />
-      <workItem from="1518875631988" duration="6231000" />
-      <workItem from="1519141161701" duration="536000" />
-      <workItem from="1519143053082" duration="35000" />
-      <workItem from="1519229159090" duration="14705000" />
-      <workItem from="1519342753833" duration="129000" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
+      <updated>1521387868228</updated>
+      <workItem from="1521387869365" duration="358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="3696000" />
+    <option name="totallyTimeSpent" value="358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-=======
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="32407000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-=======
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="31371000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="28039000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
->>>>>>> Quentin
->>>>>>> master
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-=======
-<<<<<<< HEAD
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45662847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30332828" sideWeight="0.4940171" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-=======
->>>>>>> master
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19635417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22474378" sideWeight="0.49453977" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22474378" sideWeight="0.5054602" order="2" side_tool="true" content_ui="tabs" />
->>>>>>> Quentin
->>>>>>> master
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25488997" sideWeight="0.50598294" order="2" side_tool="true" content_ui="tabs" />
-=======
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
->>>>>>> Quentin
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-=======
-<<<<<<< HEAD
-=======
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1005,1002 +365,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterAlbumServlet.java">
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Paragraphe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="63" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="62" lean-forward="false" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Filtre/Adminfiltre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifierMembreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifieraccueilServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutMembreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/MembreDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/MembreLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html">
->>>>>>> Quentin
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/a.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/ParagraphDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/DataSourceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/MembreLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/MembreDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMdp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AbstractGenericServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/contacterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-<<<<<<< HEAD
-          <caret line="20" column="42" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="20" selection-end-column="42" />
-=======
-          <caret line="20" column="42" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="20" selection-end-column="42" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html">
->>>>>>> master
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-<<<<<<< HEAD
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="27" />
-=======
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterAlbumServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="166">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="153">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="42" />
-          <folding />
-=======
-        <state relative-caret-position="136">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="306">
-          <caret line="21" column="115" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="115" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="204">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="42" />
-          <folding />
-=======
         <state relative-caret-position="85">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="36" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="238">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="170">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="14" selection-end-column="0" />
-          <folding />
-=======
-        <state relative-caret-position="468">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="391">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-=======
-        <state relative-caret-position="-42">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/gospel.css">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="102">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="170">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="20" selection-end-column="42" />
-          <folding />
-=======
-        <state relative-caret-position="85">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
->>>>>>> master
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="27" />
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterAlbumServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-<<<<<<< HEAD
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="27" />
-          <folding />
-=======
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/gospel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5034">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Membre.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="357">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-=======
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
->>>>>>> Quentin
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="166">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-=======
-        <state relative-caret-position="170">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> master
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="391">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
-=======
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="306">
-          <caret line="21" column="115" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="115" />
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html">
-=======
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-=======
-        <state relative-caret-position="17">
-          <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Quentin
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/dataBaseInit.sql">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="544">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="969">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/ParagrapheDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/MembreDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Paragraphe.java">
->>>>>>> master
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-=======
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-=======
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-<<<<<<< HEAD
-=======
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/contacterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
-          <folding>
-            <marker date="1519335347581" expanded="true" signature="527:585" ph="SELECT * FRO... paragraphe" />
-            <marker date="1519335347581" expanded="true" signature="1594:1656" ph="SELECT * FRO... paragraphe" />
-            <marker date="1519335347581" expanded="true" signature="2667:2702" ph="SELECT * FRO... paragraphe" />
-            <marker date="1519335347581" expanded="true" signature="3607:3670" ph="INSERT INTO paragraphe... " />
-            <marker date="1519335347581" expanded="true" signature="4685:4741" ph="UPDATE parag... " />
-            <marker date="1519335347581" expanded="true" signature="5520:5553" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Filtre/Adminfiltre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutMembreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="935">
-          <caret line="65" column="51" lean-forward="false" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
-=======
-        <state relative-caret-position="-17">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="42" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/Filtre/Adminfiltre.java">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/Filtre/Membrefiltre.java">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/connexionServlet.java">
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutMembreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="65" column="51" lean-forward="false" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/deconnexionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/gestionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifieraccueilServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="84" lean-forward="false" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifierMdpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifierMembreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="170">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="20" selection-end-column="42" />
-=======
-        <state relative-caret-position="187">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-=======
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/ServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AbstractGenericServlet.java">
->>>>>>> master
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/photosInit.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/dataBaseInit.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/DataSourceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-=======
-        <state relative-caret-position="187">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerServlet.java">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="42" />
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/MembreDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterAlbum.html">
->>>>>>> master
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="164">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-=======
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/photos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/connexionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="75" />
->>>>>>> Quentin
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterAlbumServlet.java">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Paragraphe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
->>>>>>> master
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <marker date="1520871595857" expanded="true" signature="356:393" ph="SELECT * FRO... album" />
-            <marker date="1520871595857" expanded="true" signature="1113:1149" ph="SELECT * FRO... album" />
-            <marker date="1520871595857" expanded="true" signature="1825:1863" ph="INSERT INTO album... " />
-            <marker date="1520871595857" expanded="true" signature="2289:2323" ph="DELETE FROM album... " />
-            <marker date="1520871595857" expanded="true" signature="2744:2801" ph="SELECT * FRO... photo" />
-            <marker date="1520871595857" expanded="true" signature="3552:3593" ph="SELECT chemi... photo" />
-            <marker date="1520871595857" expanded="true" signature="4333:4385" ph="INSERT INTO photo... " />
-            <marker date="1520871595857" expanded="true" signature="5350:5384" ph="DELETE FROM photo... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="68">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-=======
-        <state relative-caret-position="374">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="17" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterAlbum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="82" column="53" lean-forward="true" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
-          <folding>
-            <marker date="1519332183510" expanded="true" signature="527:585" ph="SELECT * FRO... paragraphe" />
-            <marker date="1519332183510" expanded="true" signature="1594:1656" ph="SELECT * FRO... paragraphe" />
-            <marker date="1519332183510" expanded="true" signature="2667:2702" ph="SELECT * FRO... paragraphe" />
-            <marker date="1519332183510" expanded="true" signature="3607:3670" ph="INSERT INTO paragraphe... " />
-            <marker date="1519332183510" expanded="true" signature="4685:4741" ph="UPDATE parag... " />
-            <marker date="1519332183510" expanded="true" signature="5520:5553" ph="delete from " />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="62" column="43" lean-forward="false" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
-          <folding>
-            <marker date="1519335229249" expanded="true" signature="356:393" ph="SELECT * FRO... album" />
-            <marker date="1519335229249" expanded="true" signature="1113:1149" ph="SELECT * FRO... album" />
-            <marker date="1519335229249" expanded="true" signature="1825:1837" ph="INSERT INTO album... " />
-            <marker date="1519335229249" expanded="true" signature="1825:1863" ph="INSERT INTO album... " />
-            <marker date="1519335229249" expanded="true" signature="2289:2323" ph="DELETE FROM " />
-            <marker date="1519335229249" expanded="true" signature="2744:2801" ph="SELECT * FRO... photo" />
-            <marker date="1519335229249" expanded="true" signature="3552:3593" ph="SELECT chemi... photo" />
-            <marker date="1519335229249" expanded="true" signature="4333:4385" ph="INSERT INTO photo... " />
-            <marker date="1519335229249" expanded="true" signature="5350:5384" ph="DELETE FROM photo... " />
->>>>>>> Quentin
-          </folding>
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="306">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-=======
-        <state relative-caret-position="187">
-          <caret line="64" column="70" lean-forward="true" selection-start-line="64" selection-start-column="70" selection-end-line="64" selection-end-column="70" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/albumsPhotos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="289">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="27" />
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/homeservlet.java">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java">
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="32" column="92" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-<<<<<<< HEAD
-=======
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
->>>>>>> master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-=======
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>gospel:war</last-edited>
+          <last-edited>gospel:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -2031,6 +430,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2042,7 +442,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>gospel</last-edited>
+          <last-edited>ProjetGospel</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2066,7 +466,5 @@
         </settings>
       </state>
     </states>
->>>>>>> Quentin
->>>>>>> ffa50b7b33bcd88ca24affd771429996c1c94a50
   </component>
 </project>
