@@ -9,9 +9,12 @@
 
 	<nav th:replace="~{fragments::navbar}"></nav>
 
-	<div class="corps">
+	<div class="corps" th:if="${pseudoA!=null}">
 		<div class="groupe-boutons" id="btn-alt">
-	      	<button type="submit" class="ok">Ajouter un album</button>
+			<a href="/administrateur/ajouterAlbum">
+				<button class="ok">Ajouter un album
+			</button>
+			</a>
 	    </div>
     </div>
 

@@ -24,6 +24,8 @@ public class ajouterPhotosServlet extends AbstractGenericServlet {
         Album album = null;
         String albumId = request.getParameter("id");
 
+
+
         try {
             album = FichiersBibliotheque.getInstance().getAlbum(Integer.parseInt(albumId));
         } catch (NumberFormatException ignored) {
@@ -51,8 +53,13 @@ public class ajouterPhotosServlet extends AbstractGenericServlet {
         Album album = FichiersBibliotheque.getInstance().getAlbum(Integer.parseInt(albumId));
         context.setVariable("album", album);
 
+        context.setVariable("pseudoA", request.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", request.getSession().getAttribute("membreConnecte"));
+
         TemplateEngine templateEngine = this.createTemplateEngine(request);
         templateEngine.process("ajouterPhotos", context, response.getWriter());
+
+
 
     }
 }
