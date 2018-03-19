@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.IOException;
 
-@WebServlet("/ajouter-photos")
+@WebServlet("/administrateur/ajouter-photos")
 @MultipartConfig
 public class ajouterPhotosServlet extends AbstractGenericServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

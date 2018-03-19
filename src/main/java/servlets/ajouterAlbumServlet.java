@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/ajouterAlbum")
+@WebServlet("/administrateur/ajouterAlbum")
 public class ajouterAlbumServlet extends AbstractGenericServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
