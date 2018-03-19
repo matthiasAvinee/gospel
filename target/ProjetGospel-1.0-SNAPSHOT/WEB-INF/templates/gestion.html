@@ -1,17 +1,17 @@
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
   <head>
     <title>Gestion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/gospel.css" rel="stylesheet">
+    <link href="/css/gospel.css" rel="stylesheet">
     <script src="../js/main.js"></script>
   </head>
 
   <body>
 
   <nav th:replace="~{fragments::navbar}"></nav>
-    
 
+  <div class="corps">
 <div class="center">
  <a class="btnvert" href="ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
 </div>
@@ -46,7 +46,7 @@
                     </td>
               </tr>
         </table>
-
+  </div>
   <footer th:replace="~{fragments::footer}"></footer>
 
 

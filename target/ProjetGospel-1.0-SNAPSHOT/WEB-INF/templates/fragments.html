@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Fragments</title>
@@ -12,7 +12,7 @@
 
         <a class="bouton" href="/home"><img src="../icones/home.png" class="icone"><div>ACCUEIL</div></a>
         <a class="bouton" href="/contacter"><img src="../icones/phone.png" class="icone"><div>NOUS CONTACTER</div></a>
-        <a class="bouton" href="/concert"><img src="../icones/calendar.png" class="icone"><div>NOS CONCERTS</div></a>
+        <a class="bouton" href="#"><img src="../icones/calendar.png" class="icone"><div>NOS CONCERTS</div></a>
         <a class="bouton" href="/membre" th:if="${pseudoM ==null}"><img src="../icones/gospel.png" class="icone"><div>ESPACE MEMBRE</div></a>
 
         <div class="dropdown-contenu" th:if="${pseudoM !=null}">
@@ -21,7 +21,7 @@
 
             <div class="dropdown-menu">
                 <a class="dropdown" href=""><img src="../icones/lyrics.png" class="icone"><div>PAROLES</div></a>
-                <a class="dropdown" href=""><img src="../icones/camera.png" class="icone"><div>PHOTOS</div></a>
+                <a class="dropdown" href="/membre/albums-photos"><img src="../icones/camera.png" class="icone"><div>PHOTOS</div></a>
                 <a class="dropdown" href=""><img src="../icones/video.png" class="icone"><div>VIDÉOS</div></a>
                 <a class="dropdown" href=""><img src="../icones/microphone.png" class="icone" ><div>ENREGISTREMENTS</div></a>
             </div>

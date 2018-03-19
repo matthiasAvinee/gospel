@@ -12,7 +12,7 @@
 		<filter-class>Filtre.Membrefiltre</filter-class>
 	</filter>
 
-	<!--<filter-mapping>
+	<filter-mapping>
 		<filter-name>MembreFiltre</filter-name>
 		<url-pattern>/membre/*</url-pattern>
 	</filter-mapping>
@@ -25,6 +25,6 @@
 	<filter-mapping>
 		<filter-name>AdminFiltre</filter-name>
 		<url-pattern>/administrateur/*</url-pattern>
-	</filter-mapping>-->
+	</filter-mapping>
 
 </web-app>

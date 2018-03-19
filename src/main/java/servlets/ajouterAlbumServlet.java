@@ -29,20 +29,25 @@ public class ajouterAlbumServlet extends AbstractGenericServlet {
         try {
             FichiersBibliotheque.getInstance().addAlbum(nomAlbum);
 
-            response.sendRedirect("home");
+            response.sendRedirect("/membre/albums-photos");
         } catch (IllegalArgumentException e) {
             String errorMessage = e.getMessage();
 
             request.getSession().setAttribute("errorMessage", errorMessage);
 
-            response.sendRedirect("home");
+            response.sendRedirect("/administrateur/ajouterAlbum");
         }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         WebContext context = new WebContext(request, response, request.getServletContext());
 
+        context.setVariable("pseudoA", request.getSession().getAttribute("adminConnecte"));
+        context.setVariable("pseudoM", request.getSession().getAttribute("membreConnecte"));
+
         TemplateEngine templateEngine = this.createTemplateEngine(request);
         templateEngine.process("ajouterAlbum", context, response.getWriter());
+
+
     }
 }
