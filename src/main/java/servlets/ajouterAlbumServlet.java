@@ -29,13 +29,13 @@ public class ajouterAlbumServlet extends AbstractGenericServlet {
         try {
             FichiersBibliotheque.getInstance().addAlbum(nomAlbum);
 
-            response.sendRedirect("../home");
+            response.sendRedirect("/membre/albums-photos");
         } catch (IllegalArgumentException e) {
             String errorMessage = e.getMessage();
 
             request.getSession().setAttribute("errorMessage", errorMessage);
 
-            response.sendRedirect("../home");
+            response.sendRedirect("/administrateur/ajouterAlbum");
         }
     }
 

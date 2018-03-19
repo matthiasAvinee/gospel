@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.IOException;
 
-@WebServlet("/ajouter-photos")
+@WebServlet("/administrateur/ajouter-photos")
 @MultipartConfig
 public class ajouterPhotosServlet extends AbstractGenericServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,13 +35,13 @@ public class ajouterPhotosServlet extends AbstractGenericServlet {
         try {
             Photo createdPhoto = FichiersBibliotheque.getInstance().addPhoto(newPhoto, picture);
 
-            response.sendRedirect("home");
+            response.sendRedirect("/membre/listePhotos?id="+albumId);
         } catch (IllegalArgumentException e) {
             String errorMessage = e.getMessage();
 
             request.getSession().setAttribute("errorMessage", errorMessage);
 
-            response.sendRedirect("ajouter-photos");
+            response.sendRedirect("/administrateur/ajouter-photos?id="+albumId);
         }
     }
 
