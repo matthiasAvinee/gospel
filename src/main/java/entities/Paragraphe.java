@@ -4,11 +4,11 @@ import javax.servlet.http.Part;
 
 public class Paragraphe {
 
-    Integer idBalise;
-    String titre;
-    String texte;
-    String page;
-    Integer ordre;
+    private Integer idBalise;
+    private String titre;
+    private String texte;
+    private String page;
+    private Integer ordre;
 
     public Paragraphe(Integer idBalise, String titre, String texte, String page, Integer ordre) {
         this.idBalise = idBalise;
