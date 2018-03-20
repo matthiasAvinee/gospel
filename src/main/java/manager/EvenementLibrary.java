@@ -23,6 +23,10 @@ public class EvenementLibrary {
         private EvenementLibrary() {
         }
 
+        public List<Evenement> listEvenement() {
+        return evenementDao.listEvenement();
+    }
+
         public List<Evenement> listEvenementAvant(Date date) {
             return evenementDao.listEvenementsAvant(date);
         }

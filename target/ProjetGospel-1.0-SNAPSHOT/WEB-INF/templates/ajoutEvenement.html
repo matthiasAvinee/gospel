@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Ajouter un evenement</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+</head>
+
+<body>
+
+	<nav th:replace="~{fragments::navbar}"></nav>
+
+	<div class="corps">
+
+		<form method="post" class="formulaire">
+			
+			<h1>Créer un événement</h1>
+
+			<label>Nom de l'événement</label>
+    		<input type="text" placeholder="Nom" name="nom" required/>
+
+    		<label>Prix</label>
+            <input type="number" placeholder="Prix" name="prix" required/>
+
+            <label>Description de l'événement</label>
+            <textarea name="article" placeholder="Rédigez votre article (obligatoire)" required></textarea>
+
+            <label>Date de l'événement</label>
+            <input type="date"/>
+
+            <h1>Adresse</h1>
+
+            <label>Ville</label>
+            <input type="text" placeholder="ville" name="ville" required/>
+
+            <label>Rue</label>
+            <input type="text" placeholder="rue et n°" name="rue" required/>
+
+            <label>Code Postal</label>
+            <input type="text" placeholder="Code Postal" name="codePostal" required/>
+
+
+
+    		<div class="groupe-boutons">
+      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
+      			<button type="submit" class="ok" >Ajout du paragraphe</button>
+    		</div>
+
+    	</form>
+
+	</div>	
+
+	<footer th:replace="~{fragments::footer}"></footer>
+
+</body>
+
+</html>

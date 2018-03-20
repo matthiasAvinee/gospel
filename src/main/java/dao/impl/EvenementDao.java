@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface EvenementDao {
 
+    public List<Evenement> listEvenement();
+
     public List<Evenement> listEvenementsAvant(Date date);
 
     public List<Evenement> listEvenementsApres(Date date);
@@ -18,4 +20,6 @@ public interface EvenementDao {
     public Evenement updateEvenement (int id, int prix, String nom, String adresse, String description, Date date);
 
     void supprimerEvenement(int id);
+
+
 }

@@ -1,9 +1,5 @@
 package servlets;
 
-import entities.Evenement;
-import entities.Paragraphe;
-import manager.EvenementLibrary;
-import manager.ParagrapheLibrary;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
@@ -12,24 +8,24 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet("/evenement")
-public class evenementServlet extends AbstractGenericServlet {
+@WebServlet("/administrateur/ajouterevenement")
+public class ajoutEvenement extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
-        List<Evenement> listEvenement = EvenementLibrary.getInstance().listEvenement();
         resp.setContentType("text/html;charset=UTF-8");
         req.setCharacterEncoding("UTF-8");
-
         WebContext context = new WebContext(req, resp, getServletContext());
-
-        context.setVariable("evenements", listEvenement);
+        context.setVariable("error", req.getSession().getAttribute("errorMessage"));
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
-        context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
 
-        templateEngine.process("evenement", context, resp.getWriter());
+
+
+        if(req.getSession().getAttribute("errorMessage") != null) {
+            context.setVariable("error", req.getSession().getAttribute("errorMessage"));
+            req.getSession().removeAttribute("errorMessage");}
+        templateEngine.process("ajoutEvenement", context, resp.getWriter());
 
     }
 }
