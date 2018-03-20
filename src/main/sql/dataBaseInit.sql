@@ -18,6 +18,17 @@ CREATE TABLE `paragraphe` (
   PRIMARY KEY (`id`)
 
 )
+
+CREATE TABLE `evenement` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `prix` int DEFAULT NULL,
+  `nom` VARCHAR (500)DEFAULT NULL,
+  `description` VARCHAR (5000)DEFAULT NULL,
+  `adresse` VARCHAR (500)DEFAULT NULL,
+  `date` DATE DEFAULT NULL ,
+  PRIMARY KEY (`id`)
+)
+
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `paragraphe` (`id`,`titre`,`texte`,`page`,`ordre`) VALUES(1,'Paragraphe 1','Elle est probablement construite vers le milieu du xiie siècle bien qu''à quelques décennies près cette datation soit encore discutée, ce qui entretient l''incertitude sur l''ordre monastique, bénédictin ou cartusien, qui l''a fondée. De même, sa dédicace à saint Jean, pouvant s''appliquer à un autre monument, est contestée. Elle est rattachée à la chartreuse du Liget jusqu''à la Révolution française ; c''est alors que, déjà ruinée, elle est vendue à des propriétaires privés puis à l''État. Ce dernier en entreprend la restauration dans les années 1860 après qu''elle est classée au titre des monuments historiques en 1862. La chapelle est la propriété de la commune de Sennevières depuis 2007.','home',1);
@@ -26,6 +37,8 @@ INSERT INTO `paragraphe` (`id`,`titre`,`texte`,`page`,`ordre`) VALUES(3,'Paragra
 INSERT INTO `paragraphe` (`id`,`titre`,`texte`,`page`,`ordre`) VALUES(4,'Paragraphe 1','Elle est probablement construite vers le milieu du xiie siècle bien qu''à quelques décennies près cette datation soit encore discutée, ce qui entretient l''incertitude sur l''ordre monastique, bénédictin ou cartusien, qui l''a fondée. De même, sa dédicace à saint Jean, pouvant s''appliquer à un autre monument, est contestée. Elle est rattachée à la chartreuse du Liget jusqu''à la Révolution française ; c''est alors que, déjà ruinée, elle est vendue à des propriétaires privés puis à l''État. Ce dernier en entreprend la restauration dans les années 1860 après qu''elle est classée au titre des monuments historiques en 1862. La chapelle est la propriété de la commune de Sennevières depuis 2007.','contacter',1);
 INSERT INTO `paragraphe` (`id`,`titre`,`texte`,`page`,`ordre`) VALUES(5,'Paragraphe 2','Elle est probablement construite vers le milieu du xiie siècle bien qu''à quelques décennies près cette datation soit encore discutée, ce qui entretient l''incertitude sur l''ordre monastique, bénédictin ou cartusien, qui l''a fondée. De même, sa dédicace à saint Jean, pouvant s''appliquer à un autre monument, est contestée. Elle est rattachée à la chartreuse du Liget jusqu''à la Révolution française ; c''est alors que, déjà ruinée, elle est vendue à des propriétaires privés puis à l''État. Ce dernier en entreprend la restauration dans les années 1860 après qu''elle est classée au titre des monuments historiques en 1862. La chapelle est la propriété de la commune de Sennevières depuis 2007.','contacter',2);
 INSERT INTO `paragraphe` (`id`,`titre`,`texte`,`page`,`ordre`) VALUES(6,'Paragraphe 3','Elle est probablement construite vers le milieu du xiie siècle bien qu''à quelques décennies près cette datation soit encore discutée, ce qui entretient l''incertitude sur l''ordre monastique, bénédictin ou cartusien, qui l''a fondée. De même, sa dédicace à saint Jean, pouvant s''appliquer à un autre monument, est contestée. Elle est rattachée à la chartreuse du Liget jusqu''à la Révolution française ; c''est alors que, déjà ruinée, elle est vendue à des propriétaires privés puis à l''État. Ce dernier en entreprend la restauration dans les années 1860 après qu''elle est classée au titre des monuments historiques en 1862. La chapelle est la propriété de la commune de Sennevières depuis 2007.','contacter',3);
+
+INSERT INTO  `evenement` (`id`,`prix`,`nom`,`description`,`adresse`,`date`) VALUES(2,10,'Elle sa dédicace à saint Jean, ','pouvant s''appliquer à un autre monument, est contestée. Elle est rattachée à la chartreuse du Lla propriété de la commune de Sennevières depuis 2007.','3 rue de machin 566980',2018-05-15);
 
 
 INSERT INTO `membre` (`id`,`pseudo`,`mdp`,`role`) VALUES(1,'root','$argon2i$v=19$m=65536,t=2,p=1$4BBf74e80ETLZiQT/WvCxw$bsZ1wJcaUY1OalxuMgvwXSKyf0LT+HhFp4M516lzlTQ','administrateur');
