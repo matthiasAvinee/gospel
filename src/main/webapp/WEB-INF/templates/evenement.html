@@ -46,10 +46,10 @@
      </div>
 
     <div th:each="evenement : ${evenements}">
-        <a th:href="mama">
+        <a th:href="${'administrateur/modifierevenement?id='+evenement.id}">
             <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
         </a>
-        <a th:href="aaaa">
+        <a th:href="${'administrateur/supprimerevenement?id='+evenement.id}">
             <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
         </a>
     <button class="accordion" th:text="${evenement.nom}">
@@ -57,15 +57,34 @@
 
     </button>
 
-    <div class="panel" >
+    <div class="panel">
 
-            <p th:text="${evenement.adresse}"></p>
-            <p th:text="${evenement.prix}"></p>
-            <p th:text="${evenement.description}"></p>
-            <div id="map" style="width:100%;height:400px;"></div>
+            <p>Adresse:<span th:text="${evenement.adresse}"></span></p>
+            <p>Date:<span th:text="${evenement.date}"></span></p>
+            <p>Prix:<span th:text="${evenement.prix}"></span>€</p>
+            <p>Description:<span th:text="${evenement.description}"></span></p>
+           <!-- <div id="map" style="width:100%;height:400px;"></div> -->
     </div>
 
 </div>
+
+<hr width="40%">
+
+<h4>Evénements passés</h4>
+
+<div th:each="evenementpasse : ${evenementspasse}">
+
+<span th:text="${evenementpasse.nom}"></span>
+<span th:text="${evenementpasse.date}"></span>
+    <a th:href="${'administrateur/modifierevenement?id='+evenementpasse.id}">
+            <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+    </a>
+    <a th:href="${'administrateur/supprimerevenement?id='+evenementpasse.id}">
+            <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+    </a>
+</div>
+
+
 </div>
 
 

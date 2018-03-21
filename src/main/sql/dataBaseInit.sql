@@ -25,7 +25,7 @@ CREATE TABLE `evenement` (
   `nom` VARCHAR (500)DEFAULT NULL,
   `description` VARCHAR (5000)DEFAULT NULL,
   `adresse` VARCHAR (500)DEFAULT NULL,
-  `date` DATE DEFAULT NULL ,
+  `date` VARCHAR (15)DEFAULT NULL ,
   PRIMARY KEY (`id`)
 )
 

@@ -10,6 +10,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Explication des fonctions sur ParagrapheDaoImpl
+ */
+
 public class ParagrapheLibrary {
 
     private static class ParagrapheLibraryHolder {
@@ -51,7 +55,7 @@ public class ParagrapheLibrary {
     }
 
     public Paragraphe updateParagraphe(int id, String titre, String texte, String chemin, int ordre) {
-        return paragrapheDao.updateParagraphe(id, titre, texte,chemin, ordre);
+        return paragrapheDao.updateParagraphe(id, titre, texte, ordre);
     }
 
 

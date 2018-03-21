@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>Ajouter un evenement</title>
+	<title>Modifier un événement</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
 </head>
@@ -18,26 +18,26 @@
 			<h1>Créer un événement</h1>
 
 			<label>Nom de l'événement</label>
-    		<input type="text" placeholder="Nom" name="nom" required/>
+    		<input type="text" name="nom" th:value="${evenement.nom}" required/>
 
     		<label>Prix</label>
-            <input type="number" placeholder="Prix" name="prix" required/>
+            <input type="number" name="prix" th:value="${evenement.prix}" required/>
 
             <label>Description de l'événement</label>
-            <textarea name="description" placeholder="Rédigez votre description" required></textarea>
+            <textarea name="description" th:text="${evenement.description}" required></textarea>
 
             <label>Date de l'événement</label>
-            <input type="date" name="date" required/>
+            <input type="date" name="date" th:value="${evenement.date}" required/>
 
 
 
             <label>Adresse</label>
-            <input type="text" placeholder="n°, rue, ville, code postal" name="adresse" required/>
+            <input type="text" name="adresse" th:value="${evenement.adresse}" required/>
 
 
     		<div class="groupe-boutons">
       			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
-      			<button type="submit" class="ok" >Ajout de l'événement</button>
+      			<button type="submit" class="ok" >Modification de l'événement</button>
     		</div>
 
     	</form>

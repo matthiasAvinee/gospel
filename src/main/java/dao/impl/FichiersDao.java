@@ -6,6 +6,10 @@ import entities.Photo;
 import java.nio.file.Path;
 import java.util.List;
 
+/**
+ * Interface définissant FichierDaoImpl, Explication des fonctions sur la page FichierDaoImpl
+ */
+
 public interface FichiersDao {
 
     public List<Album> listAlbums();
