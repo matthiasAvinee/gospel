@@ -29,12 +29,13 @@ public class evenementServlet extends AbstractGenericServlet {
 
         Date aujourdhui = new Date();
 
-       // String date=aujourdhui.toString();
-
+       //String date=aujourdhui.toString();
         String date="2018-03-21";
+
 
         List<Evenement> listEvenementAvant = EvenementLibrary.getInstance().listEvenementAvant(date);
         List<Evenement> listEvenementApres = EvenementLibrary.getInstance().listEvenementApres(date);
+
 
         context.setVariable("evenements", listEvenementApres);
         context.setVariable("evenementspasse", listEvenementAvant);
