@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>Album exemple</title>
 	<meta charset="utf-8">
@@ -15,10 +15,10 @@
 
 	<div class="dispo-photos">
 
-		<div th:each="photo:${photosList}">
-			<img th:src="'picture?id='+${photo.idPhoto}" class="photo">
+		<div th:each="photo:${photosList}" class="photo">
+			<span th:text="${photo.idPhoto}"></span>
 		</div>
-		
+
 	</div>
 
 </body>

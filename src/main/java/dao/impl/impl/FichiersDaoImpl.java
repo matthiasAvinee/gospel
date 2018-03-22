@@ -4,6 +4,7 @@ import dao.impl.FichiersDao;
 import entities.Album;
 import entities.Photo;
 
+import javax.xml.crypto.Data;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.*;
@@ -82,25 +83,27 @@ public class FichiersDaoImpl implements FichiersDao {
 
     @Override
     public List<Photo> listPhotos(Integer id) {
-        String query = "SELECT * FROM photo ORDER BY photo_id WHERE album_id_fk=?";
+        String query = "SELECT * FROM photo JOIN album ON photo.album_id_fk = album.album_id ORDER BY photo_id WHERE album_id_fk=?";
         List<Photo> listOfPhotos = new ArrayList<>();
 
-        try(
-                Connection connection = DataSourceProvider.getDataSource().getConnection();
-                Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery(query)
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
         ){
-            while (resultSet.next()){
-                listOfPhotos.add
-                        (new Photo(resultSet.getInt("photo_id"),
-                                new Album(resultSet.getInt("album_id"), resultSet.getString("nom_album"))));
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                while (resultSet.next()){
+                    listOfPhotos.add(new Photo(resultSet.getInt("photo_id"),
+                            new Album(resultSet.getInt("album_id"), resultSet.getString("nom_album"))));
+                }
             }
-        } catch (SQLException e){
+
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return listOfPhotos;
     }
+
 
     public Path getPicturePath(Integer id){
         String query = "SELECT chemin FROM photo WHERE photo_id=?";
@@ -124,27 +127,6 @@ public class FichiersDaoImpl implements FichiersDao {
 
         return null;
     }
-
-    /*public List<String> listChemins(Integer id){
-        String query = "SELECT chemin FROM photo ORDER BY photo_id WHERE album_id_fk=?";
-        List<String> listOfChemins = new ArrayList<>();
-
-        try(
-                Connection connection = DataSourceProvider.getDataSource().getConnection();
-                Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery(query)
-        ){
-            while (resultSet.next()){
-                listOfChemins.add
-                        (resultSet.getString("chemin"));
-            }
-        } catch (SQLException e){
-            e.printStackTrace();
-        }
-
-        return listOfChemins;
-    }*/
-
 
     public Photo addPhoto(Photo photo, Path picturePath) {
         String query = "INSERT INTO photo (chemin, album_id_fk) VALUES (?,?)";
