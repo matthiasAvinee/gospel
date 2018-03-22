@@ -40,10 +40,13 @@
 
 <div class="corps">
 
+<h3>Evénement à venir</h3>
+
      <div class="center" th:if="${pseudoA!=null}">
              <a class="btnvert" href="/administrateur/ajouterevenement"><img src="../icones/download.png"/>
              Ajouter un événement</a>
      </div>
+
 
     <div th:each="evenement : ${evenements}">
         <a th:href="${'administrateur/modifierevenement?id='+evenement.id}">
@@ -53,26 +56,20 @@
             <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
         </a>
     <button class="accordion" th:text="${evenement.nom}">
-
-
     </button>
 
-<span th:text="${date.toString()}"></span>
-
     <div class="panel">
-
             <p>Adresse:<span th:text="${evenement.adresse}"></span></p>
-            <p>Date:<span th:text="${evenement.date}"></span></p>
+            <p>Date:<span th:text="${evenement.date}" id="date"></span></p>
             <p>Prix:<span th:text="${evenement.prix}"></span>€</p>
             <p>Description:<span th:text="${evenement.description}"></span></p>
-           <!-- <div id="map" style="width:100%;height:400px;"></div> -->
     </div>
 
 </div>
 
 <hr width="40%">
 
-<h4>Evénements passés</h4>
+<h3>Evénements passés</h3>
 
 <div th:each="evenementpasse : ${evenementspasse}">
 
@@ -108,18 +105,12 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
-</script>
-<script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(30, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-}
+
+var coolVar = document.getElementById("date");
+var partsArray = coolVar.split(/-/);
+console.log(partsArray[2]+partsArray[1]+partsArray[0])
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 </body>
 </html>

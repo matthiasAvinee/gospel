@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -27,10 +28,10 @@ public class evenementServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
 
 
-        Date aujourdhui = new Date();
+        Date actuelle = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String date = dateFormat.format(actuelle);
 
-       //String date=aujourdhui.toString();
-        String date="2018-03-21";
 
 
         List<Evenement> listEvenementAvant = EvenementLibrary.getInstance().listEvenementAvant(date);
