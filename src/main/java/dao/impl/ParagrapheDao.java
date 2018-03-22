@@ -6,6 +6,10 @@ import javax.servlet.http.Part;
 import java.nio.file.Path;
 import java.util.List;
 
+/**
+ * Interface définissant ParagrapheDaoImpl, Explication des fonctions sur la page ParagrapheDaoImpl
+ */
+
 public interface ParagrapheDao {
 
     public List<Paragraphe> listParagraphesAcceuil();
@@ -16,7 +20,7 @@ public interface ParagrapheDao {
 
     public Paragraphe addParagraphe(Paragraphe paragraphe);
 
-    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, String chemin, int ordre);
+    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, int ordre);
 
     void supprimerParagraphe(Integer idBalise);
 

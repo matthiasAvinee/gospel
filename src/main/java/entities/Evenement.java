@@ -1,16 +1,16 @@
 package entities;
 
-import java.sql.Date;
+
 
 public class Evenement {
-    private int id;
+    private Integer id;
     private int prix;
     private String nom;
     private String adresse;
     private String description;
-    private Date date;
+    private String date;
 
-    public Evenement(int id, int prix, String nom, String adresse, String description, Date date) {
+    public Evenement(Integer id, int prix, String nom, String adresse, String description, String date) {
         this.id = id;
         this.prix = prix;
         this.nom = nom;
@@ -59,11 +59,11 @@ public class Evenement {
         this.description = description;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

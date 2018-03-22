@@ -7,6 +7,11 @@ import entities.Membre;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Explication des fonctions sur MembretDaoImpl
+ */
+
+
 public class MembreLibrary {
     private static class membreLibraryHolder {
         private final static MembreLibrary instance = new MembreLibrary();

@@ -5,17 +5,26 @@ import entities.Evenement;
 import java.sql.Date;
 import java.util.List;
 
+
+/**
+ * Interface définissant EvenementDaoImpl, Explication des fonctions sur la page EvenementDaoImpl
+ */
 public interface EvenementDao {
 
-    public List<Evenement> listEvenementsAvant(Date date);
 
-    public List<Evenement> listEvenementsApres(Date date);
+
+
+    public List<Evenement> listEvenementsAvant(String date);
+
+    public List<Evenement> listEvenementsApres(String date);
 
     public Evenement getEvenement(Integer id);
 
     public Evenement addEvenement(Evenement evenement);
 
-    public Evenement updateEvenement (int id, int prix, String nom, String adresse, String description, Date date);
+    public Evenement updateEvenement (Integer id, int prix, String nom, String adresse, String description, String date);
 
     void supprimerEvenement(int id);
+
+
 }

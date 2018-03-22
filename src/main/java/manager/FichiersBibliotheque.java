@@ -12,6 +12,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Explication des fonctions sur FichiertDaoImpl
+ */
+
 public class FichiersBibliotheque {
 
     private static final String IMAGE_DIRECTORY_PATH = "C:/imagesDevWeb";

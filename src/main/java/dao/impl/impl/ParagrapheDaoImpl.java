@@ -14,8 +14,15 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ParagrapheDaoImpl implements ParagrapheDao {
     @Override
+
+
+    /**
+     * Permet de récuper la liste des paragraphes de la page d'acceuil à partir de la BDD
+     */
+
     public List<Paragraphe> listParagraphesAcceuil() {
         String query = "SELECT * FROM paragraphe  WHERE page='home' ORDER BY ordre";
         List<Paragraphe> listOfParagraphes = new ArrayList<>();
@@ -41,6 +48,9 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
         return listOfParagraphes;
     }
 
+    /**
+     *Permet de récuper la liste des paragraphes de la page d'acceuil à partir de la BDD
+     */
     @Override
     public List<Paragraphe> listParagraphesContact() {
         String query = "SELECT * FROM paragraphe WHERE page='contacter' ORDER BY ordre ";
@@ -67,6 +77,11 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
         return listOfParagraphes;
     }
 
+    /**
+     * Permet de récuper un paragraphe
+     * @param idBalise id du paragraphe que l'on veut récuperer
+     * @return le paragraphe ayant pour id l'id passé en paramètre
+     */
     @Override
     public Paragraphe getparagraphe(Integer idBalise) {
         String query = "SELECT * FROM paragraphe WHERE id=?";
@@ -90,6 +105,11 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
         return null;
     }
 
+    /**
+     * Permet d'ajouter un paragraphe dans la BDD
+     * @param paragraphe le paragraphe que l'on veut ajouter
+     * @return le paragraphe ajouté à la BDD
+     */
     @Override
     public Paragraphe addParagraphe(Paragraphe paragraphe) {
         String query = "INSERT INTO paragraphe(titre,texte,page,ordre) VALUES(?, ?,?,?)";
@@ -114,8 +134,16 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
         return null;
     }
 
+    /**
+     * Permet de mettre à jour un paragraphe de la BSS
+     * @param idBalise id du paragraphe que l'on veut modifier
+     * @param titre nouveau titre que l'on veut donner
+     * @param texte nouveau texte que l'on veut donner
+     * @param ordre nouvel ordre que l'on veut donner
+     * @return
+     */
     @Override
-    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, String chemin, int ordre) {
+    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, int ordre) {
 
         String query = "UPDATE paragraphe SET titre=?,texte=?,ordre=? WHERE id=?";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
@@ -131,6 +159,10 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
         return null;
     }
 
+    /**
+     * Permet de supprimer un paragraphe de la BDD
+     * @param idBalise id du paragraphe que l'on veut supprimer
+     */
     @Override
     public void supprimerParagraphe(Integer idBalise) {
 

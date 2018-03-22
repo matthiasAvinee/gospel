@@ -5,6 +5,11 @@ import entities.Membre;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * Interface définissant MembreDaoImpl, Explication des fonctions sur la page MembreDaoImpl
+ */
+
 public interface MembreDao {
     public List<Membre> listMembres();
 

@@ -7,6 +7,11 @@ import entities.Evenement;
 import java.sql.Date;
 import java.util.List;
 
+/**
+ * Explication des fonctions sur EvenementDaoImpl
+ */
+
+
 public class EvenementLibrary {
 
         private static class evenementLibraryHolder {
@@ -23,11 +28,13 @@ public class EvenementLibrary {
         private EvenementLibrary() {
         }
 
-        public List<Evenement> listEvenementAvant(Date date) {
+
+
+        public List<Evenement> listEvenementAvant(String date) {
             return evenementDao.listEvenementsAvant(date);
         }
 
-        public List<Evenement> listEvenementApres(Date date) {
+        public List<Evenement> listEvenementApres(String date) {
         return evenementDao.listEvenementsApres(date);
     }
 
@@ -43,7 +50,7 @@ public class EvenementLibrary {
             return evenementDao.addEvenement(evenement);
         }
 
-        public Evenement updateEvenement(int id, int prix, String nom, String adresse, String description, Date date) {
+        public Evenement updateEvenement(int id, int prix, String nom, String adresse, String description, String date) {
             return evenementDao.updateEvenement(id, prix, nom, adresse, description, date);
         }
 

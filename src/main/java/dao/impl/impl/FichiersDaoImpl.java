@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FichiersDaoImpl implements FichiersDao {
+
+
+
     @Override
     public List<Album> listAlbums() {
         String query = "SELECT * FROM album ORDER BY album_id";
