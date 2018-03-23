@@ -20,7 +20,7 @@
       <file leaf-file-name="evenementServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/evenementServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="17">
               <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding />
             </state>
@@ -37,30 +37,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FichiersDaoImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FichiersDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="97" column="46" lean-forward="false" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
+            <state relative-caret-position="272">
+              <caret line="88" column="99" lean-forward="false" selection-start-line="88" selection-start-column="99" selection-end-line="88" selection-end-column="99" />
               <folding>
-                <marker date="1521823092225" expanded="true" signature="389:426" ph="SELECT * FRO... album" />
-                <marker date="1521823092225" expanded="true" signature="1146:1182" ph="SELECT * FRO... album" />
-                <marker date="1521823092225" expanded="true" signature="1858:1896" ph="INSERT INTO album... " />
-                <marker date="1521823092225" expanded="true" signature="2322:2356" ph="DELETE FROM " />
-                <marker date="1521823092225" expanded="true" signature="2777:2883" ph="SELECT * FRO... photo" />
-                <marker date="1521823092225" expanded="true" signature="3745:3786" ph="SELECT chemi... photo" />
-                <marker date="1521823092225" expanded="true" signature="4525:4577" ph="INSERT INTO photo... " />
-                <marker date="1521823092225" expanded="true" signature="5542:5576" ph="DELETE FROM " />
+                <marker date="1521824866844" expanded="true" signature="389:426" ph="SELECT * FRO... album" />
+                <marker date="1521824866844" expanded="true" signature="1146:1182" ph="SELECT * FRO... album" />
+                <marker date="1521824866844" expanded="true" signature="1858:1896" ph="INSERT INTO album... " />
+                <marker date="1521824866844" expanded="true" signature="2322:2356" ph="DELETE FROM " />
+                <marker date="1521824866844" expanded="true" signature="2777:2883" ph="SELECT * FRO... photo" />
+                <marker date="1521824866844" expanded="true" signature="2777:2884" ph="SELECT * FRO... photo" />
+                <marker date="1521824866844" expanded="true" signature="3746:3787" ph="SELECT chemi... photo" />
+                <marker date="1521824866844" expanded="true" signature="4526:4578" ph="INSERT INTO photo... " />
+                <marker date="1521824866844" expanded="true" signature="5543:5577" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeservlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeservlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/homeservlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photosInit.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/sql/photosInit.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FichiersBibliotheque.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/main/java/servlets/modifierEvenementServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutEvenement.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierEvenement.html" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/EvenementDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/MembreDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/ParagrapheDaoImpl.java" />
@@ -110,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/main/java/manager/ParagrapheLibrary.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/evenementServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -132,6 +153,12 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="402" />
+    <option name="width" value="1508" />
+    <option name="height" value="666" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -147,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,10 +295,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,11 +489,12 @@
       <workItem from="1521719414716" duration="3904000" />
       <workItem from="1521823151216" duration="370000" />
       <workItem from="1521823600801" duration="482000" />
+      <workItem from="1521824140125" duration="1153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20263000" />
+    <option name="totallyTimeSpent" value="21416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -482,11 +510,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5476464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24327628" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24633251" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -775,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/manager/MembreLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -797,11 +818,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/evenementServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="86" lean-forward="false" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -813,10 +841,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/sql/photosInit.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/homeservlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="9" column="86" lean-forward="false" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -829,36 +865,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/evenementServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="97" column="46" lean-forward="false" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
+        <state relative-caret-position="272">
+          <caret line="88" column="99" lean-forward="false" selection-start-line="88" selection-start-column="99" selection-end-line="88" selection-end-column="99" />
           <folding>
-            <marker date="1521823092225" expanded="true" signature="389:426" ph="SELECT * FRO... album" />
-            <marker date="1521823092225" expanded="true" signature="1146:1182" ph="SELECT * FRO... album" />
-            <marker date="1521823092225" expanded="true" signature="1858:1896" ph="INSERT INTO album... " />
-            <marker date="1521823092225" expanded="true" signature="2322:2356" ph="DELETE FROM " />
-            <marker date="1521823092225" expanded="true" signature="2777:2883" ph="SELECT * FRO... photo" />
-            <marker date="1521823092225" expanded="true" signature="3745:3786" ph="SELECT chemi... photo" />
-            <marker date="1521823092225" expanded="true" signature="4525:4577" ph="INSERT INTO photo... " />
-            <marker date="1521823092225" expanded="true" signature="5542:5576" ph="DELETE FROM " />
+            <marker date="1521824866844" expanded="true" signature="389:426" ph="SELECT * FRO... album" />
+            <marker date="1521824866844" expanded="true" signature="1146:1182" ph="SELECT * FRO... album" />
+            <marker date="1521824866844" expanded="true" signature="1858:1896" ph="INSERT INTO album... " />
+            <marker date="1521824866844" expanded="true" signature="2322:2356" ph="DELETE FROM " />
+            <marker date="1521824866844" expanded="true" signature="2777:2883" ph="SELECT * FRO... photo" />
+            <marker date="1521824866844" expanded="true" signature="2777:2884" ph="SELECT * FRO... photo" />
+            <marker date="1521824866844" expanded="true" signature="3746:3787" ph="SELECT chemi... photo" />
+            <marker date="1521824866844" expanded="true" signature="4526:4578" ph="INSERT INTO photo... " />
+            <marker date="1521824866844" expanded="true" signature="5543:5577" ph="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/homeservlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
