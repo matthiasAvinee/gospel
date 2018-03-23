@@ -1,6 +1,7 @@
 package servlets;
 
 import entities.Album;
+import entities.Photo;
 import manager.FichiersBibliotheque;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
@@ -11,12 +12,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.List;
 
-@WebServlet("/membre/albums-photos")
-
-public class listeAlbumsServlet extends AbstractGenericServlet {
-
+@WebServlet("/membre/listePhotos")
+public class listePhotosServlet extends AbstractGenericServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -25,16 +25,22 @@ public class listeAlbumsServlet extends AbstractGenericServlet {
 
         WebContext context = new WebContext(request, response, request.getServletContext());
 
-        List<Album> listOfAlbums = FichiersBibliotheque.getInstance().listAlbums();
-        context.setVariable("albumsList", listOfAlbums);
+        String albumId = request.getParameter("id");
+
+        Album album = FichiersBibliotheque.getInstance().getAlbum(Integer.parseInt(albumId));
+        context.setVariable("album", album);
+
+        List<Photo> listOfPhotos = FichiersBibliotheque.getInstance().listPhotos(Integer.parseInt(albumId));
+        context.setVariable("photosList", listOfPhotos);
+
+        /*List<String> listOfChemins = FichiersBibliotheque.getInstance().listChemins(Integer.parseInt(albumId));
+        context.setVariable("cheminsList",listOfChemins);*/
 
         context.setVariable("pseudoA", request.getSession().getAttribute("adminConnecte"));
         context.setVariable("pseudoM", request.getSession().getAttribute("membreConnecte"));
 
         TemplateEngine templateEngine = this.createTemplateEngine(request);
-        templateEngine.process("albumsPhotos", context, response.getWriter());
-
-
+        templateEngine.process("photos", context, response.getWriter());
 
     }
 }

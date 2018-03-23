@@ -48,6 +48,8 @@ public class FichiersBibliotheque {
 
     public List<Photo> listPhotos(Integer id){return fichiersDao.listPhotos(id);}
 
+    /*public List<String> listChemins(Integer id){return fichiersDao.listChemins(id);}*/
+
     public Photo addPhoto(Photo photo, Part picture) {
 
         Path picturePath = null;

@@ -12,8 +12,7 @@
 	<div class="corps" th:if="${pseudoA!=null}">
 		<div class="groupe-boutons" id="btn-alt">
 			<a href="/administrateur/ajouterAlbum">
-				<button class="ok">Ajouter un album
-			</button>
+				<button class="ok">Ajouter un album</button>
 			</a>
 	    </div>
     </div>
@@ -21,7 +20,7 @@
 	<div class="dispo-photos">
 
 		<figure th:each="album:${albumsList}">
-			<a class="album" href=""><img class="cover" src="../img/got.jpg"></a>
+			<a class="album" th:href="${'listePhotos?id='+album.idAlbum}"><img class="cover" src="../img/got.jpg"></a>
 			<figcaption th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></figcaption>
 		</figure>
 
