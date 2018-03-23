@@ -86,21 +86,22 @@ public class FichiersDaoImpl implements FichiersDao {
         String query = "SELECT * FROM photo JOIN album ON photo.album_id_fk = album.album_id ORDER BY photo_id WHERE album_id_fk=?";
         List<Photo> listOfPhotos = new ArrayList<>();
 
-        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement(query)
-        ){
-            statement.setInt(1,id);
-            try (ResultSet resultSet = statement.executeQuery()){
-                while (resultSet.next()){
-                    listOfPhotos.add(new Photo(resultSet.getInt("photo_id"),
-                            new Album(resultSet.getInt("album_id"), resultSet.getString("nom_album"))));
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement(query)) {
+
+                statement.setInt(1, id);
+
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    while (resultSet.next()) {
+                        listOfPhotos.add(new Photo(resultSet.getInt("photo_id"),
+                                new Album(resultSet.getInt("album_id"),
+                                        resultSet.getString("nom_album"))));
+                    }
                 }
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return listOfPhotos;
     }
 
