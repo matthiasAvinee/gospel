@@ -44,11 +44,10 @@ public class FichiersBibliotheque {
 
     public List<Photo> listPhotos(Integer id){return fichiersDao.listPhotos(id);}
 
-    /*public List<String> listChemins(Integer id){return fichiersDao.listChemins(id);}*/
 
-    public Photo addPhoto(Photo photo, Part picture) {
+    public Photo addPhoto(Photo photo, Path picturePath) {
 
-        Path picturePath = null;
+        /*Path picturePath = null;
         if (picture!=null) {
             picturePath = Paths.get(IMAGE_DIRECTORY_PATH, picture.getSubmittedFileName());
             try {
@@ -56,7 +55,7 @@ public class FichiersBibliotheque {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
         return fichiersDao.addPhoto(photo, picturePath);
 

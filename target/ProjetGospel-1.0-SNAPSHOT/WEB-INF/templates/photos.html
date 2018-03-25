@@ -15,9 +15,7 @@
 
 	<div class="dispo-photos">
 
-		<div th:each="photo:${photosList}" class="photo">
-			<span th:text="${photo.idPhoto}"></span>
-		</div>
+		<img th:each="photo:${photosList}" class="photo" th:src="'/membre/picture?id='+${photo.idPhoto}">
 
 	</div>
 
