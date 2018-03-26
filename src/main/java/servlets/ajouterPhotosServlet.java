@@ -16,9 +16,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
+import javax.xml.ws.spi.Invoker;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
@@ -27,7 +29,9 @@ import java.util.List;
 public class ajouterPhotosServlet extends AbstractGenericServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        /*Part picture = request.getPart("file");
+        Collection<Part> pictures = request.getParts();
+
+        //Part picture = request.getPart("file");
 
         Album album = null;
         String albumId = request.getParameter("id");
@@ -37,59 +41,21 @@ public class ajouterPhotosServlet extends AbstractGenericServlet {
         } catch (NumberFormatException ignored) {
         }
 
+        Iterator i = pictures.iterator();
 
-        Photo newPhoto = new Photo(null, album);
-        try {
-            Photo createdPhoto = FichiersBibliotheque.getInstance().addPhoto(newPhoto, picture);
-        } catch (IllegalArgumentException e) {
-            String errorMessage = e.getMessage();
+        while (i.hasNext()){
 
-            request.getSession().setAttribute("errorMessage", errorMessage);
+            Part picture = (Part) i.next();
 
-            response.sendRedirect("/administrateur/ajouter-photos?id=" + albumId);
-        }
-
-
-        response.sendRedirect("/membre/listePhotos?id="+albumId);
-        */
-
-        Album album = null;
-        String albumId = request.getParameter("id");
-
-        try {
-            album = FichiersBibliotheque.getInstance().getAlbum(Integer.parseInt(albumId));
-        } catch (NumberFormatException ignored) {
-
-        }
-
-        boolean isMultipart = ServletFileUpload.isMultipartContent(request);
-        if (!isMultipart) {
-        } else {
-            FileItemFactory factory = new DiskFileItemFactory();
-            ServletFileUpload upload = new ServletFileUpload(factory);
-            List items = null;
+            Photo newPhoto = new Photo(null, album);
             try {
-                items = upload.parseRequest(request);
-            } catch (FileUploadException e) {
-                e.printStackTrace();
-            }
-            Iterator itr = items.iterator();
+                Photo createdPhoto = FichiersBibliotheque.getInstance().addPhoto(newPhoto, picture);
+            } catch (IllegalArgumentException e) {
+                String errorMessage = e.getMessage();
 
-            while (itr.hasNext()) {
-                FileItem item = (FileItem) itr.next();
-                if (item.isFormField()) {
-                } else {
-                    try {
-                        String itemName = item.getName();
-                        File savedFile = new File("C:/imagesDevWeb\\"+itemName);
-                        item.write(savedFile);
+                request.getSession().setAttribute("errorMessage", errorMessage);
 
-                        Photo newPhoto = new Photo(null, album);
-                        Photo createdPhoto = FichiersBibliotheque.getInstance().addPhoto(newPhoto, Paths.get("C:/imagesDevWeb\\" + itemName));
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+                response.sendRedirect("/administrateur/ajouter-photos?id=" + albumId);
             }
         }
 

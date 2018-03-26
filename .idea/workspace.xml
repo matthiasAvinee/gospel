@@ -7,26 +7,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1f76e4-a13b-4b8e-8563-703b1d53b3ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ProjetGospel_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ProjetGospel_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_commons_fileupload_1_3_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ProjetGospel.iml" afterPath="$PROJECT_DIR$/ProjetGospel.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" afterPath="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/photos.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/photos.html" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT.war" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/FichiersDaoImpl.class" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/FichiersDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque.class" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque.class" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterPhotosServlet.class" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterPhotosServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/ajouterPhotos.html" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/ajouterPhotos.html" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/photos.html" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/photos.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/impl/FichiersDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/impl/impl/FichiersDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Filtre/Adminfiltre.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Filtre/Membrefiltre.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Utilis/MotdePasseUtilis.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/EvenementDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/FichiersDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/MembreDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/ParagrapheDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/DataSourceProvider.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/EvenementDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/FichiersDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/MembreDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/ParagrapheDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Album.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Evenement.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Membre.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Paragraphe.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Photo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary$evenementLibraryHolder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque$FichiersBibliothequeHolder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary$ParagrapheLibraryHolder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/membreLibrary$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/membreLibrary$membreLibraryHolder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/membreLibrary.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/AbstractGenericServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/PictureServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/UploadServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajoutMembreServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterAlbumServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterArticleServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterPhotosServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/connexionServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/contacterServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/deconnexionServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/evenementServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/gestionServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/homeservlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/listeAlbumsServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/listePhotosServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifierMdpServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifierMembreServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifieraccueilServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/supprimerArticleServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/supprimerServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/argon2-jvm-2.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/jna-4.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.44.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/slf4j-simple-1.7.21.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/css/Roboto-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/css/gospel.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/calendar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/camera.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/close.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/download.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/edit.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/folder.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/gospel.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/home.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/lyrics.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/microphone.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/phone.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/social.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/video.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/wheel.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/img/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/img/photo-manquante.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/js/main.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/manager/FichiersBibliotheque.class" afterPath="$PROJECT_DIR$/target/classes/manager/FichiersBibliotheque.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlets/ajouterPhotosServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ajouterPhotosServlet.class" />
     </list>
@@ -43,31 +106,32 @@
       <file leaf-file-name="FichiersDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+            <state relative-caret-position="357">
+              <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
               <folding>
-                <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-                <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-                <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-                <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-                <marker date="1521824827924" expanded="true" signature="2774:2868" ph="SELECT * FRO... photo" />
-                <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-                <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-                <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-                <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+                <marker date="1522044804445" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+                <marker date="1522044804445" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+                <marker date="1522044804445" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+                <marker date="1522044804445" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+                <marker date="1522044804445" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+                <marker date="1522044804445" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+                <marker date="1522044804445" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+                <marker date="1522044804445" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FichiersBibliotheque.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FichiersBibliotheque.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="425">
+              <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
               <folding>
                 <element signature="e#614#615#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,19 +140,31 @@
       <file leaf-file-name="ajouterPhotos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-51">
               <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajouterPhotosServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajouterPhotosServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+            <state relative-caret-position="425">
+              <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +172,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+            <state relative-caret-position="1207">
+              <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -123,16 +199,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -150,10 +216,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/photos.html" />
         <option value="$PROJECT_DIR$/src/main/sql/photosInit.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
       </list>
     </option>
   </component>
@@ -170,10 +236,16 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -190,9 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,7 +363,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +379,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/commons-fileupload-1.3.3-bin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -397,7 +469,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="gospel-serveur" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.46" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ProjetGospel:war exploded">
@@ -407,7 +479,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_gospel_4" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_gospel_5" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -416,7 +488,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49883" />
+        <option name="DEBUG_PORT" value="51160" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -498,31 +570,34 @@
       <workItem from="1521981445231" duration="920000" />
       <workItem from="1521982413916" duration="7358000" />
       <workItem from="1522008323588" duration="1331000" />
+      <workItem from="1522044866307" duration="371000" />
+      <workItem from="1522045279134" duration="1135000" />
+      <workItem from="1522046750175" duration="2355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21811000" />
+    <option name="totallyTimeSpent" value="25672000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9045599" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6699029" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22087745" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1765625" sideWeight="0.5037116" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -558,6 +633,8 @@
           <folding>
             <element signature="e#614#615#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -590,7 +667,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -607,15 +686,14 @@
         <state relative-caret-position="1462">
           <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2868" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522044804445" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522044804445" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522044804445" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522044804445" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522044804445" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522044804445" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -627,6 +705,8 @@
           <folding>
             <element signature="e#614#615#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,7 +731,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,15 +750,14 @@
         <state relative-caret-position="1462">
           <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2868" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522044804445" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522044804445" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522044804445" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522044804445" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522044804445" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522044804445" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -688,6 +769,8 @@
           <folding>
             <element signature="e#614#615#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -712,7 +795,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -721,15 +806,14 @@
         <state relative-caret-position="1462">
           <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2868" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522044804445" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522044804445" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522044804445" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522044804445" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522044804445" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522044804445" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -741,6 +825,8 @@
           <folding>
             <element signature="e#614#615#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -779,7 +865,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="80" column="9" lean-forward="false" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,15 +899,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2868" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522044804445" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522044804445" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522044804445" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522044804445" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522044804445" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522044804445" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -829,15 +916,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2868" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522044804445" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522044804445" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522044804445" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522044804445" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522044804445" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522044804445" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -946,10 +1032,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -962,64 +1056,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="-51">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPhotos.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+        <state relative-caret-position="425">
+          <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+        <state relative-caret-position="357">
+          <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2868" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522044804445" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522044804445" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522044804445" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522044804445" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522044804445" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522044804445" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522044804445" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="425">
+          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding>
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
