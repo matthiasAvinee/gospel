@@ -49,9 +49,9 @@ public class FichiersBibliotheque {
 
         Path picturePath = null;
         if (picture!=null) {
-            //picturePath = Paths.get(IMAGE_DIRECTORY_PATH, picture.getSubmittedFileName());
+            picturePath = Paths.get(IMAGE_DIRECTORY_PATH, picture.getSubmittedFileName());
 
-            picturePath = Paths.get(IMAGE_DIRECTORY_PATH, photo.getIdPhoto().toString());
+            //picturePath = Paths.get(IMAGE_DIRECTORY_PATH, photo.getIdPhoto().toString());
             try {
                 Files.copy(picture.getInputStream(), picturePath);
             } catch (IOException e) {

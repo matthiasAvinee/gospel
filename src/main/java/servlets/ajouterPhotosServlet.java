@@ -3,11 +3,6 @@ package servlets;
 import entities.Album;
 import entities.Photo;
 import manager.FichiersBibliotheque;
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.FileItemFactory;
-import org.apache.commons.fileupload.FileUploadException;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 import javax.servlet.ServletException;
@@ -16,13 +11,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
-import javax.xml.ws.spi.Invoker;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.List;
+
 
 @WebServlet("/administrateur/ajouter-photos")
 @MultipartConfig
