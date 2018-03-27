@@ -8,21 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1f76e4-a13b-4b8e-8563-703b1d53b3ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.env" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/system.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_commons_fileupload_1_3_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ProjetGospel.iml" afterPath="$PROJECT_DIR$/ProjetGospel.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" afterPath="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/FichiersBibliotheque.class" afterPath="$PROJECT_DIR$/target/classes/manager/FichiersBibliotheque.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/UploadServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/ajouterPhotosServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ajouterPhotosServlet.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,17 +24,17 @@
       <file leaf-file-name="FichiersDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
+            <state relative-caret-position="0">
               <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
               <folding>
-                <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-                <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-                <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-                <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-                <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-                <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-                <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-                <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+                <marker date="1522108505037" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+                <marker date="1522108505037" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+                <marker date="1522108505037" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+                <marker date="1522108505037" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+                <marker date="1522108505037" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+                <marker date="1522108505037" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+                <marker date="1522108505037" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+                <marker date="1522108505037" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
               </folding>
             </state>
           </provider>
@@ -93,8 +80,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -284,10 +271,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -499,16 +482,15 @@
       <workItem from="1522046750175" duration="2355000" />
       <workItem from="1522098983440" duration="4135000" />
       <workItem from="1522106030139" duration="1516000" />
-      <workItem from="1522108053351" duration="66000" />
+      <workItem from="1522108053351" duration="1434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31389000" />
+    <option name="totallyTimeSpent" value="32757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -525,7 +507,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1765625" sideWeight="0.5037116" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -586,14 +568,14 @@
         <state relative-caret-position="1462">
           <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522108505037" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522108505037" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522108505037" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522108505037" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522108505037" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522108505037" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -643,14 +625,14 @@
         <state relative-caret-position="1462">
           <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522108505037" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522108505037" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522108505037" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522108505037" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522108505037" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522108505037" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -692,14 +674,14 @@
         <state relative-caret-position="1462">
           <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522108505037" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522108505037" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522108505037" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522108505037" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522108505037" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522108505037" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -780,14 +762,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522108505037" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522108505037" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522108505037" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522108505037" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522108505037" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522108505037" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -797,14 +779,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522108505037" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522108505037" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522108505037" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522108505037" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522108505037" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522108505037" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -944,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -964,17 +939,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
+        <state relative-caret-position="0">
           <caret line="147" column="33" lean-forward="false" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
           <folding>
-            <marker date="1521824827924" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
-            <marker date="1521824827924" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
-            <marker date="1521824827924" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
-            <marker date="1521824827924" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
-            <marker date="1521824827924" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
-            <marker date="1521824827924" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
-            <marker date="1521824827924" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
+            <marker date="1522108505037" expanded="true" signature="386:423" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1143:1179" ph="SELECT * FRO... album" />
+            <marker date="1522108505037" expanded="true" signature="1855:1893" ph="INSERT INTO album... " />
+            <marker date="1522108505037" expanded="true" signature="2319:2353" ph="DELETE FROM album... " />
+            <marker date="1522108505037" expanded="true" signature="2774:2886" ph="SELECT * FRO... photo" />
+            <marker date="1522108505037" expanded="true" signature="3748:3789" ph="SELECT chemi... photo" />
+            <marker date="1522108505037" expanded="true" signature="4528:4580" ph="INSERT INTO photo... " />
+            <marker date="1522108505037" expanded="true" signature="5545:5579" ph="DELETE FROM photo... " />
           </folding>
         </state>
       </provider>
@@ -992,10 +967,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding />
         </state>
       </provider>
