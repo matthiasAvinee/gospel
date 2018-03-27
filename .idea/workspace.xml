@@ -8,152 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1f76e4-a13b-4b8e-8563-703b1d53b3ce" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT.war" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Filtre/Adminfiltre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Filtre/Membrefiltre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Utilis/MotdePasseUtilis.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/EvenementDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/FichiersDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/MembreDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/ParagrapheDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/DataSourceProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/EvenementDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/FichiersDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/MembreDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/ParagrapheDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Album.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Evenement.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Membre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Paragraphe.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Photo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary$evenementLibraryHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque$FichiersBibliothequeHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/MembreLibrary$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/MembreLibrary$membreLibraryHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/MembreLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary$ParagrapheLibraryHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/AbstractGenericServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/PictureServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajoutMembreServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterAlbumServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterArticleServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterPhotosServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/connexionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/contacterServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/deconnexionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/evenementServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/gestionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/homeservlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/listeAlbumsServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/listePhotosServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifierMdpServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifierMembreServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifieraccueilServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/supprimerArticleServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/supprimerServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/argon2-jvm-2.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/jna-4.2.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.44.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.3.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/slf4j-simple-1.7.21.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.1.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-extras-java8time-3.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/unbescape-1.1.3.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/ajoutArticle.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/ajoutMembre.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/ajouterAlbum.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/ajouterPhotos.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/albumsPhotos.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/connexion.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/contacter.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/evenement.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/fragments.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/gestion.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/modifierMdp.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/modifierMembre.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/modifierParagraphe.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/templates/photos.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/css/Roboto-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/css/gospel.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/calendar.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/camera.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/close.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/download.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/edit.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/folder.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/gospel.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/home.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/lyrics.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/microphone.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/phone.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/social.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/video.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/wheel.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/img/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/img/photo-manquante.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/js/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Filtre/Adminfiltre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Filtre/Membrefiltre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilis/MotdePasseUtilis.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/EvenementDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/FichiersDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/MembreDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/ParagrapheDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/impl/DataSourceProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/impl/EvenementDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/impl/FichiersDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/impl/MembreDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/impl/ParagrapheDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Album.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Evenement.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Membre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Paragraphe.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Photo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/EvenementLibrary$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/EvenementLibrary$evenementLibraryHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/EvenementLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/FichiersBibliotheque$FichiersBibliothequeHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/FichiersBibliotheque.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/ParagrapheLibrary$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/ParagrapheLibrary$ParagrapheLibraryHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/ParagrapheLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/membreLibrary$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/membreLibrary$membreLibraryHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manager/membreLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/AbstractGenericServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/PictureServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/ajoutMembreServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/ajouterAlbumServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/ajouterArticleServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/ajouterPhotosServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/connexionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/contacterServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/deconnexionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/evenementServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/gestionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/homeservlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/listeAlbumsServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/listePhotosServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/modifierMdpServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/modifierMembreServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/modifieraccueilServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/supprimerArticleServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/supprimerServlet.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,8 +23,8 @@
       <file leaf-file-name="FichiersDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2227">
-              <caret line="140" column="33" lean-forward="false" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+            <state relative-caret-position="2108">
+              <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,8 +33,8 @@
       <file leaf-file-name="FichiersBibliotheque.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="e#614#615#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
@@ -315,9 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -419,7 +271,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -629,17 +484,20 @@
       <workItem from="1522108053351" duration="3820000" />
       <workItem from="1522158148977" duration="1215000" />
       <workItem from="1522159804330" duration="334000" />
+      <workItem from="1522160541659" duration="93000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36692000" />
+    <option name="totallyTimeSpent" value="36785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -647,26 +505,25 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66914105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1765625" sideWeight="0.5037116" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1002,16 +859,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="140" column="33" lean-forward="false" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+        <state relative-caret-position="2108">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#614#615#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
