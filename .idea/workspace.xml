@@ -9,8 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c1f76e4-a13b-4b8e-8563-703b1d53b3ce" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT.war" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,11 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="85" lean-forward="false" selection-start-line="0" selection-start-column="85" selection-end-line="0" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -140,6 +149,7 @@
         <option value="$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -282,6 +292,11 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gospel" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -493,12 +508,12 @@
       <workItem from="1522046750175" duration="2355000" />
       <workItem from="1522098983440" duration="4135000" />
       <workItem from="1522106030139" duration="1516000" />
-      <workItem from="1522108053351" duration="2063000" />
+      <workItem from="1522108053351" duration="2722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33386000" />
+    <option name="totallyTimeSpent" value="34045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -916,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -931,16 +939,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UploadServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="53" column="65" lean-forward="false" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -987,10 +985,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterPhotosServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="53" column="65" lean-forward="false" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="85" lean-forward="false" selection-start-line="0" selection-start-column="85" selection-end-line="0" selection-end-column="85" />
           <folding />
         </state>
       </provider>
