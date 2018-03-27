@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>ajout-membre</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+	<nav th:replace="~{fragments::navbar}"></nav>
+	
+	<div class="corps">
+
+	<p th:if="${error != null}" th:text="${error}"></p>
+
+		<form method="post" class="formulaire">
+			
+			<h1>Ajouter un choriste</h1>
+
+			<label>Utilisateur</label>
+    		<input type="text" placeholder="Entrez le pseudo du choriste" name="pseudo" required>
+
+    		<label>Mot de passe</label>
+    		<input type="password" placeholder="Définissez un mot de passe" name="mdp" required>
+
+    		<label>Confirmez le mot de passe</label>
+    		<input type="password" placeholder="Ressaisissez le mot de passe" name="confirm-mdp" required>
+    		
+			<label class="container">Membre
+			    <input type="radio" checked="checked" name="radio" value="membre">
+				<span class="checkmark"></span>
+			</label>
+
+			<label class="container">Administrateur
+			    <input type="radio" name="radio" value="administrateur">
+				<span class="checkmark"></span>
+			</label>
+
+    		<div class="groupe-boutons">
+      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
+      			<button type="submit" class="ok">Ajout du choriste</button>
+    		</div>
+
+
+    	</form>
+
+	</div>
+
+<footer th:replace="~{fragments::footer}"></footer>
+
+</body>
+</html>

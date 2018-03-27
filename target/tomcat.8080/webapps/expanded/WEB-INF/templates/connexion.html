@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>connexion</title>
+	<meta charset="UTF-8">
+	<link href="css/gospel.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav th:replace="~{fragments::navbar}"></nav>
+
+	<div class="corps">
+
+    <p th:if="${error != null}" th:text="${error}"></p>
+
+		<form method="post" class="formulaire">
+			
+			<h1>Accéder à l'espace membre</h1>
+
+			<label>Utilisateur</label>
+    		<input type="text" placeholder="Votre pseudonyme" name="pseudo" required>
+
+    		<label>Mot de passe</label>
+    		<input type="password" placeholder="Votre mot de passe" name="mdp" required>
+
+    		<div class="groupe-boutons">
+      			<button type="submit" class="ok">Se connecter</button>
+    		</div>
+
+    	</form>
+
+	</div>
+
+	<footer th:replace="~{fragments::footer}"></footer>
+
+</body>
+</html>

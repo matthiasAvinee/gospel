@@ -1,0 +1,73 @@
+
+
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Contact</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+  	<link href="../css/bootstrap-theme.css" rel="stylesheet">
+  	<link href="../css/gospel.css" rel="stylesheet">
+    <script src="../js/main.js"></script>
+   	
+
+
+    </head>
+    <body>
+
+
+  <nav th:replace="~{fragments::navbar}"></nav>
+
+  <div class="corps">
+
+   <div class="center" th:if="${pseudoA!=null}">
+           <a class="btnvert" href="/administrateur/ajouterarticle?ch=contacter"><img src="../icones/download.png"/>Ajouter un paragraphe</a>
+      </div>
+
+
+  <div class="paragraphe" th:each="paragraphe : ${paragraphes}">
+  <h4 th:text="${paragraphe.titre}">Nous rejoindre</h4>
+
+  <a th:href="${'administrateur/modifierparagraphe?id='+paragraphe.idBalise}">
+     <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+  </a>
+  <a th:href="${'administrateur/supprimerparagraphe?id='+paragraphe.idBalise}">
+    <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
+  </a>
+
+  <blockquote th:text="${paragraphe.texte}">Le Malopolski (polonais : koń małopolski) est une race de chevaux originaire de Pologne. Développée au xixe siècle dans la région de Petite-Pologne, elle en tient son nom. Mise au point à partir de chevaux indigènes polonais, croisés avec des Pur-sangs et des Arabes, elle aboutit ainsi à un type proche de l'Anglo-arabe, et ses origines génétiques sont marquées par la forte influence du Pur-sang. Polyvalent, le Malopolski est utilisé de nos jours pour la traction légère et toute forme d'équitation, avec une recherche de type plus performant dans les sports équestres.
+  </blockquote>
+  </div>
+
+   <hr width="40%">
+
+  <h6>Formulaire de contact</h6>
+  <p>Veuillez remplir tous les champs</p>
+
+  <form>
+    <div class="form-group">
+      <label for="email">Votre adresse mail:</label>
+      <input type="email" class="form-control" id="email" placeholder="exemple@mail.fr">
+    </div>
+
+    <div class="form-group">
+    <label for="comment">Objet:</label>
+    <textarea class="form-control" rows="1" id="comment" placeholder="la raison pour laquelle vous nous contactez"></textarea>
+    </div>
+
+    <div class="form-group">
+    <label for="comment">Message:</label>
+    <textarea class="form-control" rows="8" id="comment" placeholder="Bonjour, je vous contacte car j'aimerais..."></textarea>
+    </div>
+
+    <input type="submit" class="btn btn-primary red-background " value="Envoyer" />
+
+
+  
+  <input type="submit" class="btn" value="Envoyer" />
+  
+
+</form>
+</div>
+ </body>
+</html>

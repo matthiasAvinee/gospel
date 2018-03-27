@@ -1,9 +1,0 @@
-build:
-  languages:
-    - java
-  packages:
-    
-  config:
-   - RAILS_ENV: development
-run:
-  web: bundle exec webapp-runner -C target/dependency/webapp-runner.jar
