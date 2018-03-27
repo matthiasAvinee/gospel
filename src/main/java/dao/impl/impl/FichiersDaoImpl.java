@@ -86,11 +86,9 @@ public class FichiersDaoImpl implements FichiersDao {
 
     @Override
     public List<Photo> listPhotos(Integer id) {
-<<<<<<< HEAD
-        String query = "SELECT * FROM photo JOIN album ON photo.album_id_fk = album.album_id WHERE album_id_fk=? ORDER BY photo_id ";
-=======
+
         String query = "SELECT * FROM photo JOIN album ON photo.album_id_fk = album.album_id WHERE photo.album_id_fk=? ORDER BY photo_id";
->>>>>>> Quentin
+
         List<Photo> listOfPhotos = new ArrayList<>();
 
         try (Connection connection = DataSourceProvider.getDataSource().getConnection()) {
