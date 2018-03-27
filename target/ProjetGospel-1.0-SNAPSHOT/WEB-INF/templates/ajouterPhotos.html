@@ -18,7 +18,8 @@
 			<h1>Ajouter des photos à "<span th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></span>"</h1>
 
     		<label>Ajouter des photos</label>
-    		<input type="file" name="image" multiple="multiple">
+
+    		<input type="file" name="file" multiple="multiple" accept=".png, .jpg, .jpeg">
 
     		<div class="groupe-boutons">
       			<button type="button" class="cancel">Annuler</button>
