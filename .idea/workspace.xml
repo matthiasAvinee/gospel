@@ -7,9 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1f76e4-a13b-4b8e-8563-703b1d53b3ce" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="6c1f76e4-a13b-4b8e-8563-703b1d53b3ce" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -411,12 +409,12 @@
       <workItem from="1522158148977" duration="1215000" />
       <workItem from="1522159804330" duration="334000" />
       <workItem from="1522160541659" duration="662000" />
-      <workItem from="1522161825031" duration="73000" />
+      <workItem from="1522161825031" duration="93000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37427000" />
+    <option name="totallyTimeSpent" value="37447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
