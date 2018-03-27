@@ -8,190 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1f76e4-a13b-4b8e-8563-703b1d53b3ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT.war" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Filtre/Adminfiltre.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Filtre/Membrefiltre.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/Utilis/MotdePasseUtilis.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/EvenementDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/FichiersDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/MembreDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/ParagrapheDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/DataSourceProvider.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/EvenementDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/FichiersDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/MembreDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/dao/impl/impl/ParagrapheDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Album.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Evenement.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Membre.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Paragraphe.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/entities/Photo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary$evenementLibraryHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/EvenementLibrary.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque$FichiersBibliothequeHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/FichiersBibliotheque.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/MembreLibrary$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/MembreLibrary$membreLibraryHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/MembreLibrary.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary$ParagrapheLibraryHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/manager/ParagrapheLibrary.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/AbstractGenericServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/PictureServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajoutMembreServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterAlbumServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterArticleServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/ajouterPhotosServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/connexionServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/contacterServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/deconnexionServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/evenementServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/gestionServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/homeservlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/listeAlbumsServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/listePhotosServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifierMdpServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifierMembreServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/modifieraccueilServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/supprimerArticleServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/classes/servlets/supprimerServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/argon2-jvm-2.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.0.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/jna-4.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.44.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/WEB-INF/lib/slf4j-simple-1.7.21.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/css/Roboto-Regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/css/gospel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/calendar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/camera.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/download.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/edit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/folder.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/gospel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/home.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/lyrics.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/microphone.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/phone.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/social.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/video.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/icones/wheel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/img/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/img/photo-manquante.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT/js/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/dependency/webapp-runner.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/MANIFEST.MF" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/maven/Gospel/ProjetGospel/pom.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/maven/Gospel/ProjetGospel/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/war-tracker" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/Filtre/Adminfiltre.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/Filtre/Membrefiltre.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/Utilis/MotdePasseUtilis.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/EvenementDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/FichiersDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/MembreDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/ParagrapheDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/impl/DataSourceProvider.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/impl/EvenementDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/impl/FichiersDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/impl/MembreDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/dao/impl/impl/ParagrapheDaoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/entities/Album.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/entities/Evenement.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/entities/Membre.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/entities/Paragraphe.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/entities/Photo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/EvenementLibrary$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/EvenementLibrary$evenementLibraryHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/EvenementLibrary.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/FichiersBibliotheque$FichiersBibliothequeHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/FichiersBibliotheque.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/MembreLibrary$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/MembreLibrary$membreLibraryHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/MembreLibrary.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/ParagrapheLibrary$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/ParagrapheLibrary$ParagrapheLibraryHolder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/manager/ParagrapheLibrary.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/AbstractGenericServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/PictureServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/ajoutMembreServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/ajouterAlbumServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/ajouterArticleServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/ajouterPhotosServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/connexionServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/contacterServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/deconnexionServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/evenementServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/gestionServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/homeservlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/listeAlbumsServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/listePhotosServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/modifierMdpServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/modifierMembreServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/modifieraccueilServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/supprimerArticleServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/servlets/supprimerServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/argon2-jvm-2.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/attoparser-2.0.0.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/commons-fileupload-1.3.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/commons-io-2.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/javassist-3.20.0-GA.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/jna-4.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/mysql-connector-java-5.1.44.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/ognl-3.1.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/slf4j-api-1.6.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/slf4j-simple-1.7.21.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/thymeleaf-3.0.1.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/thymeleaf-extras-java8time-3.0.0.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/unbescape-1.1.3.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/ajoutArticle.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/ajoutMembre.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/ajouterAlbum.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/ajouterPhotos.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/albumsPhotos.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/connexion.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/contacter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/evenement.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/fragments.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/gestion.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/home.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/modifierMdp.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/modifierMembre.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/modifierParagraphe.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/templates/photos.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/web.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/css/Roboto-Regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/css/gospel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/calendar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/camera.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/download.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/edit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/folder.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/gospel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/home.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/lyrics.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/microphone.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/phone.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/social.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/video.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/icones/wheel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/img/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/img/photo-manquante.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/js/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/tomcat.8080/work/Tomcat/localhost/ROOT/SESSIONS.ser" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/heroku.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/ProjetGospel-1.0-SNAPSHOT.war" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -259,11 +78,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -664,15 +493,16 @@
       <workItem from="1522046750175" duration="2355000" />
       <workItem from="1522098983440" duration="4135000" />
       <workItem from="1522106030139" duration="1516000" />
-      <workItem from="1522108053351" duration="1699000" />
+      <workItem from="1522108053351" duration="2063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33022000" />
+    <option name="totallyTimeSpent" value="33386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -689,7 +519,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.49628845" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1765625" sideWeight="0.5037116" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1070,14 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1161,6 +983,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
