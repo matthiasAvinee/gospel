@@ -6,7 +6,7 @@ import javax.sql.DataSource;
 
 public class DataSourceProvider {
 
-    /*private static MysqlDataSource dataSource;
+    private static MysqlDataSource dataSource;
 
     public static DataSource getDataSource() {
         if (dataSource == null) {
@@ -18,9 +18,9 @@ public class DataSourceProvider {
             dataSource.setPassword("root");
         }
         return dataSource;
-    }*/
+    }
 
-    private static MysqlDataSource dataSource;
+    /*private static MysqlDataSource dataSource;
 
     public static DataSource getDataSource() {
         if (dataSource == null) {
@@ -32,5 +32,5 @@ public class DataSourceProvider {
             dataSource.setPassword("01cd2437");
         }
         return dataSource;
-    }
+    }*/
 }
