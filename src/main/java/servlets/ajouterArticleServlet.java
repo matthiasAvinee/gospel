@@ -1,7 +1,5 @@
 package servlets;
 
-
-
 import entities.Paragraphe;
 import manager.ParagrapheLibrary;
 import org.thymeleaf.TemplateEngine;
@@ -13,18 +11,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
 @MultipartConfig
 @WebServlet("/administrateur/ajouterarticle")
 public class ajouterArticleServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        TemplateEngine templateEngine = this.createTemplateEngine(req);
+        /*TemplateEngine templateEngine = this.createTemplateEngine(req);
         resp.setContentType("text/html;charset=UTF-8");
-        req.setCharacterEncoding("UTF-8");
+        req.setCharacterEncoding("UTF-8");*/
         WebContext context = new WebContext(req, resp, getServletContext());
+
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
+
+        TemplateEngine templateEngine = this.createTemplateEngine(req);
         templateEngine.process("ajoutArticle", context, resp.getWriter());
 
 
@@ -48,11 +48,7 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
             page = req.getParameter("radio");
             ordre = Integer.parseInt(req.getParameter("ordre"));
 
-
-
-
-
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException ignored) {
 
         }
 
