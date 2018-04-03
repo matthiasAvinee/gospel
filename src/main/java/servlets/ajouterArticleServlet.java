@@ -16,9 +16,7 @@ import java.io.IOException;
 public class ajouterArticleServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       // TemplateEngine templateEngine = this.createTemplateEngine(req);
-       // resp.setContentType("text/html;charset=UTF-8");
-       // req.setCharacterEncoding("UTF-8");
+
         WebContext context = new WebContext(req, resp, getServletContext());
 
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
