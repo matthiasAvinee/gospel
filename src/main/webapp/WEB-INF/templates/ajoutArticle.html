@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
@@ -14,10 +14,7 @@
 </head>
 
 <body>
-
 	<nav th:replace="~{fragments::navbar}"></nav>
-
-<<<<<<< HEAD
     <div class="container mt-3">
         <h4>Ajouter un paragraphe</h4>
         <form method="post" class="mt-3">
@@ -48,45 +45,6 @@
             <button type="submit" class="btn btn-primary form-group mt-3"><i class="fas fa-check-circle"></i>Envoyer</button>
         </form>
     </div>
-=======
-	<div class="corps">
-
-		<form method="post" class="formulaire">
-			
-			<h1>Rédiger un paragraphe</h1>
-
-			<label>Titre</label>
-    		<input type="text" placeholder="Titre du paragraphe" name="titre" required>
-
-    		<label>Ordre</label>
-            <input type="number" placeholder="n°" name="ordre" required>
-
-    		<label>Rédiger l'article</label>
-    		<textarea name="article" placeholder="Rédigez votre article (obligatoire)" required></textarea>
-
-
-    		<label class="container">Page d'accueil
-			    <input type="radio" checked="checked" name="radio" value="home" >
-				<span class="checkmark"></span>
-			</label>
-
-			<label class="container">Page de contacts
-			    <input type="radio" name="radio" value="contacter">
-				<span class="checkmark"></span>
-			</label>
-
-    		<div class="groupe-boutons">
-      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
-      			<button type="submit" class="ok" >Ajout du paragraphe</button>
-    		</div>
-
-    	</form>
-
-	</div>	
-
-	<footer th:replace="~{fragments::footer}"></footer>
->>>>>>> 0bf01e4293ac93d466e30a16b0698711348f8181
-
 </body>
 
 </html>
