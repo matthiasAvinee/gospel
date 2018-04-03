@@ -35,6 +35,7 @@ public class evenementServlet extends AbstractGenericServlet {
 
 
         List<Evenement> listEvenementAvant = EvenementLibrary.getInstance().listEvenementAvant(date);
+
         List<Evenement> listEvenementApres = EvenementLibrary.getInstance().listEvenementApres(date);
 
 
