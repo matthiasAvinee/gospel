@@ -60,7 +60,7 @@
 
     <div class="panel">
             <p>Adresse:<span th:text="${evenement.adresse}"></span></p>
-            <p>Date:<span th:text="${evenement.date}" id="date"></span></p>
+            <p>Date:<span id="date" th:text="${evenement.date}"></span></p>
             <p>Prix:<span th:text="${evenement.prix}"></span>€</p>
             <p>Description:<span th:text="${evenement.description}"></span></p>
     </div>
@@ -105,6 +105,18 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+var dateString = document.getElementsById("date");
+var monTexte = dateString.innerText || dateString.textContent;
+
+//var dateParts = dateString.split("-",3);
+
+//var dateObject = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+
+//document.body.innerHTML = dateObject.toString();
+console.log(monTexte);
+
+//console.log(dateString.split("-",3));
 
 </script>
 
