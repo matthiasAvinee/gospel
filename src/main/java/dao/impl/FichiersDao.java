@@ -18,6 +18,10 @@ public interface FichiersDao {
 
     public List<Photo> listPhotos(Integer id);
 
+    public List<Photo> listCouvertures();
+
+    public Photo getPhoto(Integer id);
+
     public Photo addPhoto(Photo photo, Path picturePath);
 
     public void supprimerPhoto(Integer id);

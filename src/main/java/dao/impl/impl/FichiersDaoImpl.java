@@ -105,6 +105,51 @@ public class FichiersDaoImpl implements FichiersDao {
         return listOfPhotos;
     }
 
+    @Override
+    public List<Photo> listCouvertures() {
+        String query = "SELECT * , MIN(album_id) AS premiere_photo FROM photo JOIN album ON photo.album_id_fk = album.album_id ORDER BY album_id_fk";
+        List<Photo> listOfCouvertures = new ArrayList<>();
+
+        try(
+                Connection connection = DataSourceProvider.getDataSource().getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)
+        ){
+            while (resultSet.next()){
+                listOfCouvertures.add
+                        (new Photo(resultSet.getInt("premiere_photo"),
+                                new Album(resultSet.getInt("album_id"),
+                                        resultSet.getString("nom_album"))));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return listOfCouvertures;
+    }
+
+    @Override
+    public Photo getPhoto(Integer id) {
+        String query = "SELECT * FROM photo WHERE photo_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    return  new Photo(resultSet.getInt("photo_id"),
+                            getAlbum(resultSet.getInt("album_id_fk")));
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 
     public Path getPicturePath(Integer id){
         String query = "SELECT chemin FROM photo WHERE photo_id=?";
