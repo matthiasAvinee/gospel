@@ -20,20 +20,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="corps">
 
     <h3>Evénement à venir</h3>
@@ -57,7 +43,8 @@
         <div class="panel">
                 <p>Adresse:<span th:text="${evenement.adresse}"></span></p>
                 <p>Date:<span th:text="${evenement.date}" id="date"></span></p>
-                <p>Prix:<span th:text="${evenement.prix}"></span>€</p>
+                <p>Prix:<span th:if="${evenement.prix}!=0.0" th:text="${evenement.prix}+'€'"></span>
+                <span th:if="${evenement.prix}==0.0" th:text="Gratuit"></span></p>
                 <p>Description:<span th:text="${evenement.description}"></span></p>
         </div>
 
