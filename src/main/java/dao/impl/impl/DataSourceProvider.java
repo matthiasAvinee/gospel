@@ -6,7 +6,7 @@ import javax.sql.DataSource;
 
 public class DataSourceProvider {
 
-    /*private static MysqlDataSource dataSource;
+   /* private static MysqlDataSource dataSource;
 
     public static DataSource getDataSource() {
         if (dataSource == null) {

@@ -24,7 +24,6 @@ public class homeservlet extends AbstractGenericServlet {
             TemplateEngine templateEngine = this.createTemplateEngine(req);
             List<Paragraphe> listOfMembres = ParagrapheLibrary.getInstance().listParagraphesAcceuil();
 
-
             WebContext context = new WebContext(req, resp, getServletContext());
 
             context.setVariable("paragraphes", listOfMembres);
