@@ -19,39 +19,18 @@
     <div class="container mt-3">
         <h4>Nos prochains concerts</h4>
 
-<<<<<<< HEAD
+
 
 
     <div class="corps">
 
-    <h3>Evénement à venir</h3>
-
-         <div class="center" th:if="${pseudoA!=null}">
-                 <a class="btnvert" href="/administrateur/ajouterevenement"><img src="../icones/download.png"/>
-                 Ajouter un événement</a>
-         </div>
 
 
-        <div th:each="evenement : ${evenements}">
-            <a th:href="${'administrateur/modifierevenement?id='+evenement.id}">
-                <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
-            </a>
-            <a th:href="${'administrateur/supprimerevenement?id='+evenement.id}">
-                <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
-            </a>
-        <button class="accordion" th:text="${evenement.nom}">
-        </button>
 
-        <div class="panel">
-                <p>Adresse:<span th:text="${evenement.adresse}"></span></p>
-                <p>Date:<span th:text="${evenement.date}" id="date"></span></p>
-                <p>Prix:<span th:if="${evenement.prix}!=0.0" th:text="${evenement.prix}+'€'"></span>
-                <span th:if="${evenement.prix}==0.0" th:text="Gratuit"></span></p>
-                <p>Description:<span th:text="${evenement.description}"></span></p>
-=======
+
         <div th:if="${pseudoA!=null}" class="text-center mt-3">
             <a href="/administrateur/ajouterevenement"><button type="button" class="btn btn-success"><i class="far fa-calendar-plus"></i>Ajouter un événement</button></a>
->>>>>>> a6d5c3f61c1a45889d64e085d4b9758531f9e2fc
+
         </div>
 
         <div id="accordion" class="mt-3">
