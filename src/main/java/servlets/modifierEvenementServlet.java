@@ -43,7 +43,7 @@ public class modifierEvenementServlet extends AbstractGenericServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String nom = null;
-        Integer prix=null;
+        Double prix=null;
         String description = null;
         String date=null;
         String  adresse= null;
@@ -53,7 +53,7 @@ public class modifierEvenementServlet extends AbstractGenericServlet {
             nom = req.getParameter("nom");
             adresse = req.getParameter("adresse");
             description = req.getParameter("description");
-            prix = Integer.parseInt(req.getParameter("prix"));
+            prix = Double.parseDouble(req.getParameter("prix"));
             date = req.getParameter("date");
 
 

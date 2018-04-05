@@ -1,14 +1,16 @@
 
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Fragments</title>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md bg-light navbar-light border" th:fragment="navbar">
     <a class="navbar-brand" href="/home">
-        <img src="../../img/logo.png" alt="Logo" style="max-width:120px;">
+        <img src="../../img/logo.png" alt="Logo" class="img-fluid" style="max-width:120px;">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -62,12 +64,6 @@
         </ul>
     </div>
 </nav>
-
-<footer th:fragment="footer">
-
-    <p> Ce site a été créé par Quentin Lejour et Matthias Avinée, étudiants à HEI Lille. </p>
-
-</footer>
 
 </body>
 </html>
