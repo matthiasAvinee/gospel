@@ -1,54 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/gos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <title>Nous contacter | Esprit Gospel</title>
+</head>
 
-<html xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <title>Contact</title>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/bootstrap.css" rel="stylesheet">
-  	<link href="../css/bootstrap-theme.css" rel="stylesheet">
-  	<link href="../css/gospel.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
-   	
+<body>
 
+<nav th:replace="~{fragments::navbar}"></nav>
 
-    </head>
-    <body>
+<div class="container mt-3">
+    <div th:if="${pseudoA!=null}" class="text-center">
+        <a href="/administrateur/ajouterarticle?ch=contacter"><button type="button" class="btn btn-success"><i class="fas fa-pencil-alt"></i>Ajouter un paragraphe</button></a>
+    </div>
 
-
-  <nav th:replace="~{fragments::navbar}"></nav>
-
-  <div class="corps">
-
-   <div class="center" th:if="${pseudoA!=null}">
-           <a class="btnvert" href="/administrateur/ajouterarticle?ch=contacter"><img src="../icones/download.png"/>Ajouter un paragraphe</a>
-      </div>
-
-
-  <div class="paragraphe" th:each="paragraphe : ${paragraphes}">
-  <h4 th:text="${paragraphe.titre}">Nous rejoindre</h4>
-
-  <a th:href="${'administrateur/modifierparagraphe?id='+paragraphe.idBalise}">
-     <img src="icones/edit.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
-  </a>
-  <a th:href="${'administrateur/supprimerparagraphe?id='+paragraphe.idBalise}">
-    <img src="icones/close.png" class="iconesparagraphe" th:if="${pseudoA!=null}"/>
-  </a>
-
-  <blockquote th:text="${paragraphe.texte}">Le Malopolski (polonais : koń małopolski) est une race de chevaux originaire de Pologne. Développée au xixe siècle dans la région de Petite-Pologne, elle en tient son nom. Mise au point à partir de chevaux indigènes polonais, croisés avec des Pur-sangs et des Arabes, elle aboutit ainsi à un type proche de l'Anglo-arabe, et ses origines génétiques sont marquées par la forte influence du Pur-sang. Polyvalent, le Malopolski est utilisé de nos jours pour la traction légère et toute forme d'équitation, avec une recherche de type plus performant dans les sports équestres.
-  </blockquote>
-  </div>
-
-   <hr width="40%">
-
-
-  <a href="mailto:matthias.avinee@hei.yncrea.fr">Nous contacter</a>
-
-  <p>ajouter leur adresse physique</p>
-  <p>ajouter leur adresse mail</p>
-  <p>ajouter leur telephone</p>
-
-
+    <div class="container-fluid mt-3" th:each="paragraphe : ${paragraphes}">
+        <h4>
+            <span th:text="${paragraphe.titre}"></span>
+            <a th:href="${'administrateur/modifierparagraphe?id='+paragraphe.idBalise}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
+            <a th:href="${'administrateur/supprimerparagraphe?id='+paragraphe.idBalise}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
+        </h4>
+        <blockquote class="text-justify mt-3" th:text="${paragraphe.texte}"></blockquote>
+    </div>
 </div>
- </body>
+
+</body>
+
 </html>
+
