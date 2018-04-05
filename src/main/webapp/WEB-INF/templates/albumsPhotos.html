@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-	<title>Photos</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../../css/gos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<title>Accueil | Esprit Gospel</title>
 </head>
+
 <body>
 
 	<nav th:replace="~{fragments::navbar}"></nav>
 
-	<div class="corps" th:if="${pseudoA!=null}">
-		<div class="groupe-boutons" id="btn-alt">
-			<a href="/administrateur/ajouterAlbum">
-				<button class="ok">Ajouter un album</button>
-			</a>
-	    </div>
-    </div>
+	<div class="container mt-3">
 
-	<div class="dispo-photos">
+		<h4>Liste des albums photos</h4>
 
-		<figure th:each="album:${albumsList}">
-			<a class="album" th:href="${'listePhotos?id='+album.idAlbum}"><img class="cover" src="../img/got.jpg"></a>
-			<figcaption th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></figcaption>
-		</figure>
+		<div th:if="${pseudoA!=null}" class="text-center mt-3">
+			<a href="/administrateur/ajouterAlbum"><button type="button" class="btn btn-success"><i class="fas fa-plus"></i>Ajouter un album</button></a>
+		</div>
+
+		<div th:each="album:${albumsList}" style="list-style: none;">
+			<h5><a th:href="${'listePhotos?id='+album.idAlbum}"><i class="far fa-images"></i><span th:text="${album.nomAlbum}"></span></a></h5>
+		</div>
+
 
 	</div>
 
 </body>
+
 </html>

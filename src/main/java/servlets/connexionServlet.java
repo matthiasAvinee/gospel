@@ -68,7 +68,7 @@ public class connexionServlet extends AbstractGenericServlet {
 
         else{
 
-            String errorMessage = "Le compte n'existe pas ou le mot de passe est faux";
+            String errorMessage = "Le compte n'éxiste pas ou le mot de passe est faux";
             req.getSession().setAttribute("errorMessage", errorMessage);
             resp.sendRedirect("connexion");
         }
