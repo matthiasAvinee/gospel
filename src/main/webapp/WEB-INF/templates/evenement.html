@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <title>Événements | Esprit Gospel</title>
+    <title>&eacutev&eacutenements | Esprit Gospel</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <h4>Nos prochains concerts</h4>
 
         <div th:if="${pseudoA!=null}" class="text-center mt-3">
-            <a href="/administrateur/ajouterevenement"><button type="button" class="btn btn-success"><i class="far fa-calendar-plus"></i>Ajouter un événement</button></a>
+            <a href="/administrateur/ajouterevenement"><button type="button" class="btn btn-success"><i class="far fa-calendar-plus"></i>Ajouter un &eacutev&eacutenement</button></a>
 
         </div>
 
@@ -39,8 +39,10 @@
                     <div class="card-body">
                         <ul>
                             <li><strong>Adresse : </strong><span th:text="${evenement.adresse}"></span></li>
-                            <li><strong>Prix : </strong><span th:if="${evenement.prix!=null || evenement.prix!=0.0}" th:text="${evenement.prix}+' €'"></span>
-                          <span th:if="${evenement.prix==0.0 || evenement.prix==null}" th:text="Gratuit"></span>
+                            <li><strong>Prix : </strong><span th:if="${evenement.prix != 0.0 }" th:text="${evenement.prix}+' &euro'"></span>
+
+                                                        <span th:if="${evenement.prix==0.0}" th:text="Gratuit"></span>
+
 
 
                         </ul>

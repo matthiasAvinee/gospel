@@ -57,7 +57,7 @@ public class ajoutEvenement extends AbstractGenericServlet {
             date = req.getParameter("date");
 
 
-        } catch (NumberFormatException e) {
+            } catch (NumberFormatException e) {
 
         }
 
