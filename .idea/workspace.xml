@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="3b78b855-8c30-45a6-b46b-183f911e6cd6" name="Default" comment="" />
-=======
-    <list default="true" id="71a4a7a0-a0e4-4011-9b8a-1ff25be31c6e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
+    <list default="true" id="458555b2-f23e-4e64-92e1-ac52fe3acf2d" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,34 +18,62 @@
       <file leaf-file-name="evenement.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="459">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="42" column="131" lean-forward="false" selection-start-line="42" selection-start-column="131" selection-end-line="42" selection-end-column="131" />
               <folding />
-=======
-<<<<<<< HEAD
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
-=======
-<<<<<<< HEAD
-            <state relative-caret-position="935">
-              <caret line="55" column="123" lean-forward="false" selection-start-line="55" selection-start-column="123" selection-end-line="55" selection-end-column="123" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#h5#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1522937896645" expanded="false" signature="3255:3272" ph="..." />
-              </folding>
-=======
-            <state relative-caret-position="476">
-              <caret line="28" column="121" lean-forward="false" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="121" />
->>>>>>> 5722b2bebb7323a6a87bc28b61fda13107cc74b7
-              <folding />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
->>>>>>> bootstrap
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
+      <file leaf-file-name="modifierMembre.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMembre.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="45" column="97" lean-forward="false" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modifierMdp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMdp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvenementDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/EvenementDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvenementDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/EvenementDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <marker date="1522944142087" expanded="true" signature="706:742" ph="SELECT * FRO... evenement" />
+                <marker date="1522944142087" expanded="true" signature="706:761" ph="SELECT * FRO... evenement" />
+                <marker date="1522944142087" expanded="true" signature="2141:2178" ph="SELECT * FRO... evenement" />
+                <marker date="1522944142087" expanded="true" signature="2141:2197" ph="SELECT * FRO... evenement" />
+                <marker date="1522944142087" expanded="true" signature="3368:3402" ph="SELECT * FRO... evenement" />
+                <marker date="1522944142087" expanded="true" signature="4532:4608" ph="INSERT INTO evenement... " />
+                <marker date="1522944142087" expanded="true" signature="6162:6241" ph="UPDATE evene... " />
+                <marker date="1522944142087" expanded="true" signature="7203:7235" ph="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="gestionServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/gestionServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,7 +87,7 @@
       <file leaf-file-name="gestion.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="170">
               <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
@@ -79,29 +99,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="contacter.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-=======
-<<<<<<< HEAD
-      <file leaf-file-name="dataBaseInit.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/sql/dataBaseInit.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="35" />
-=======
-      <file leaf-file-name="evenement.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
->>>>>>> 5722b2bebb7323a6a87bc28b61fda13107cc74b7
->>>>>>> bootstrap
               <folding />
             </state>
           </provider>
@@ -120,29 +117,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ajoutMembreServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ajoutEvenement.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutEvenement.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/evenementServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/gestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html" />
-=======
-=======
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutEvenement.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/connexionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMembre.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMdp.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/modifierMdpServlet.java" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
->>>>>>> bootstrap
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/EvenementDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html" />
       </list>
     </option>
   </component>
@@ -159,17 +137,8 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
-=======
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds" extendedState="7">
->>>>>>> bootstrap
     <option name="x" value="-7" />
-=======
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
     <option name="width" value="974" />
     <option name="height" value="788" />
   </component>
@@ -219,6 +188,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gospel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gospel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
@@ -444,53 +430,21 @@
       <created>1522872830162</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
       <updated>1522872830162</updated>
       <workItem from="1522872839353" duration="1184000" />
-<<<<<<< HEAD
-      <workItem from="1522932387571" duration="5969000" />
-=======
-      <workItem from="1522932387571" duration="2799000" />
-=======
-      <updated>1522933683200</updated>
-<<<<<<< HEAD
-      <workItem from="1522933684290" duration="6326000" />
-=======
-      <workItem from="1522933684290" duration="5462000" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
->>>>>>> 5722b2bebb7323a6a87bc28b61fda13107cc74b7
->>>>>>> bootstrap
+      <workItem from="1522932387571" duration="7237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="7153000" />
+    <option name="totallyTimeSpent" value="8421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-=======
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="6326000" />
-=======
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="3983000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
-=======
-    <option name="totallyTimeSpent" value="5462000" />
->>>>>>> 5722b2bebb7323a6a87bc28b61fda13107cc74b7
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
->>>>>>> bootstrap
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -507,24 +461,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25244498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -550,7 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -563,179 +498,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutEvenement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="33" column="105" lean-forward="false" selection-start-line="33" selection-start-column="105" selection-end-line="33" selection-end-column="105" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/photos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="42" column="112" lean-forward="false" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/connexionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="70" column="48" lean-forward="false" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html">
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="43" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutMembreServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutEvenement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMembre.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="7" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
->>>>>>> bootstrap
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutMembre.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMdp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/sql/dataBaseInit.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="35" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/modifierMdpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="72" column="55" lean-forward="false" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Filtre/Adminfiltre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/EvenementDaoImpl.java">
-=======
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html">
->>>>>>> bootstrap
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <marker date="1522932208317" expanded="true" signature="706:742" ph="SELECT * FRO... evenement" />
-            <marker date="1522932208317" expanded="true" signature="2122:2159" ph="SELECT * FRO... evenement" />
-            <marker date="1522932208317" expanded="true" signature="3330:3364" ph="SELECT * FRO... evenement" />
-            <marker date="1522932208317" expanded="true" signature="4494:4570" ph="INSERT INTO evenement... " />
-            <marker date="1522932208317" expanded="true" signature="6124:6203" ph="UPDATE evene... " />
-            <marker date="1522932208317" expanded="true" signature="7165:7197" ph="delete from " />
-          </folding>
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="126" lean-forward="false" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/contacter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
->>>>>>> 22ed145e0c61e74b1f24a91555ebdab8643782f7
         </state>
       </provider>
     </entry>
@@ -771,11 +566,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMembre.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="97" lean-forward="false" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierMdp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/EvenementDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/EvenementDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1522944142087" expanded="true" signature="706:742" ph="SELECT * FRO... evenement" />
+            <marker date="1522944142087" expanded="true" signature="706:761" ph="SELECT * FRO... evenement" />
+            <marker date="1522944142087" expanded="true" signature="2141:2178" ph="SELECT * FRO... evenement" />
+            <marker date="1522944142087" expanded="true" signature="2141:2197" ph="SELECT * FRO... evenement" />
+            <marker date="1522944142087" expanded="true" signature="3368:3402" ph="SELECT * FRO... evenement" />
+            <marker date="1522944142087" expanded="true" signature="4532:4608" ph="INSERT INTO evenement... " />
+            <marker date="1522944142087" expanded="true" signature="6162:6241" ph="UPDATE evene... " />
+            <marker date="1522944142087" expanded="true" signature="7203:7235" ph="delete from " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -787,10 +623,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/evenement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="42" column="131" lean-forward="false" selection-start-line="42" selection-start-column="131" selection-end-line="42" selection-end-column="131" />
           <folding />
         </state>
       </provider>

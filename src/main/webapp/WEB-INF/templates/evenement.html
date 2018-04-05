@@ -39,20 +39,14 @@
                     <div class="card-body">
                         <ul>
                             <li><strong>Adresse : </strong><span th:text="${evenement.adresse}"></span></li>
-<<<<<<< HEAD
-                            <li><strong>Prix : </strong><span th:if="${evenement.prix != 0.0 }" th:text="${evenement.prix}+' &euro'"></span>
+
+                            <li><strong>Prix : </strong><span th:if="${evenement.prix != 0.0 }" th:text="${evenement.prix}+'  Euros'"></span>
 
                                                         <span th:if="${evenement.prix==0.0}" th:text="Gratuit"></span>
 
 
 
-=======
-                            <li>
-                                <strong>Prix : </strong>
-                                <span th:if="${evenement.prix!=null && evenement.prix!=0}" th:text="${evenement.prix}+' €'"></span>
-                                <span th:if="${evenement.prix==null && evenement.prix==0}" th:text="${evenement.prix}+' €'">Gratuit !</span>
-                            </li>
->>>>>>> bootstrap
+
                         </ul>
                         <p th:text="${evenement.description}" class="text-justify"></p>
                     </div>
