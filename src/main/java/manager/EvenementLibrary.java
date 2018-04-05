@@ -50,7 +50,7 @@ public class EvenementLibrary {
             return evenementDao.addEvenement(evenement);
         }
 
-        public Evenement updateEvenement(int id, int prix, String nom, String adresse, String description, String date) {
+        public Evenement updateEvenement(int id, Double prix, String nom, String adresse, String description, String date) {
             return evenementDao.updateEvenement(id, prix, nom, adresse, description, date);
         }
 

@@ -22,7 +22,7 @@ public interface EvenementDao {
 
     public Evenement addEvenement(Evenement evenement);
 
-    public Evenement updateEvenement (Integer id, int prix, String nom, String adresse, String description, String date);
+    public Evenement updateEvenement (Integer id, Double prix, String nom, String adresse, String description, String date);
 
     void supprimerEvenement(int id);
 

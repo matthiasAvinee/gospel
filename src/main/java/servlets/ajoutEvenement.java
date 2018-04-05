@@ -37,7 +37,7 @@ public class ajoutEvenement extends AbstractGenericServlet {
 
 
         String nom = null;
-        Integer prix=null;
+        Double prix=null;
         String description = null;
         String date=null;
         String  adresse= null;
@@ -47,9 +47,14 @@ public class ajoutEvenement extends AbstractGenericServlet {
             nom = req.getParameter("nom");
             adresse = req.getParameter("adresse");
             description = req.getParameter("description");
-            prix = Integer.parseInt(req.getParameter("prix"));
-            date = req.getParameter("date");
+            try {
+                prix = Double.parseDouble(req.getParameter("prix"));
+            }
+            catch (NullPointerException e){
+                prix=0.0;
+            }
 
+            date = req.getParameter("date");
 
 
         } catch (NumberFormatException e) {
