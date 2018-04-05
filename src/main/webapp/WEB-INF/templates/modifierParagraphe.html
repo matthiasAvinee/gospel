@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>modifier-paragraphe</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../../css/gos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<title>Modifier un paragraphe | Esprit Gospel</title>
 </head>
 
 <body>
-
-	<nav th:replace="~{fragments::navbar}"></nav>
-
-	<div class="corps">
-
-		<form method="post" class="formulaire">
-
-			<h1>Rédiger un paragraphe</h1>
-
-			<label>Titre</label>
-    		<input type="text" placeholder="Titre du paragraphe" name="titre" th:value="${paragraphe.titre}">
-
-    		<label>Rédiger l'article</label>
-    		<textarea name="article" placeholder="Rédigez votre article (obligatoire)" th:text="${paragraphe.texte}"></textarea>
-
-    		<label>Ordre</label>
-            <input type="number" placeholder="n°" name="ordre" th:value="${paragraphe.ordre}">
-
-
-    		<div class="groupe-boutons">
-      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
-      			<button type="submit" class="ok" >Modifier le paragraphe</button>
-    		</div>
-
-    	</form>
-
-	</div>
-
-	<footer th:replace="~{fragments::footer}"></footer>
-
+<nav th:replace="~{fragments::navbar}"></nav>
+<div class="container mt-3">
+	<h4>Ajouter un paragraphe</h4>
+	<form method="post" class="mt-3">
+		<div class="form-group">
+			<label for="titre-para">Titre du paragraphe :</label>
+			<input type="text" class="form-control" id="titre-para" name="titre" th:value="${paragraphe.titre}">
+		</div>
+		<label for="poz-para">Position du paragraphe :</label>
+		<div class="row">
+			<div class="form-group col-sm-2">
+				<input type="number" class="form-control" id="poz-para" name="ordre" th:value="${paragraphe.ordre}" required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="contenu-para">R&eacutedigez le contenu :</label>
+			<textarea class="form-control" rows="5" id="contenu-para" name="article" th:text="${paragraphe.texte}" required></textarea>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="radio" class="form-check-input" value="home" name="radio" checked="checked">Page d'accueil
+			</label>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="radio" class="form-check-input" value="contacter" name="radio">Page de contacts
+			</label>
+		</div>
+		<button type="submit" class="btn btn-primary form-group mt-3"><i class="fas fa-check-circle"></i>Envoyer</button>
+	</form>
+</div>
 </body>
 
 </html>
