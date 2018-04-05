@@ -29,7 +29,7 @@
                 <div class="card-header">
                     <a class="card-link collapsed" data-toggle="collapse" th:href="'#'+${evenement.id}">
                         <h5 class="mb-0">
-                            <span th:text="${evenement.date}"></span> <span th:text="${evenement.nom}"></span>
+                            <span th:text="${evenement.date.split('-')[2]+'/'+evenement.date.split('-')[1]+'/'+evenement.date.split('-')[0]}"></span> <span th:text="${evenement.nom}"></span>
                             <a th:href="${'administrateur/modifierevenement?id='+evenement.id}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
                             <a th:href="${'administrateur/supprimerevenement?id='+evenement.id}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
                         </h5>
@@ -57,7 +57,7 @@
 
         <ul>
             <li th:each="evenementpasse : ${evenementspasse}">
-                <span th:text="${evenementpasse.date}"></span>
+                <span th:text="${evenementpasse.date.split('-')[2]+'/'+evenementpasse.date.split('-')[1]+'/'+evenementpasse.date.split('-')[0]}"></span>
                 <span th:text="${evenementpasse.nom}"></span>
                 <a th:href="${'administrateur/modifierevenement?id='+evenementpasse.id}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
                 <a th:href="${'administrateur/supprimerevenement?id='+evenementpasse.id}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
