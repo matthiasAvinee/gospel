@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-	<title>modification-mot-de-passe</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
-	<script src="../js/main.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../../css/gos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<title>Réinitialisation du mot de passe| Esprit Gospel</title>
 </head>
+
 <body>
+<nav th:replace="~{fragments::navbar}"></nav>
 
-	<nav th:replace="~{fragments::navbar}"></nav>
+<div class="container mt-3">
 
-	<div class="corps">
+	<h4>Réinitialisation du mot de passe de <span th:text="${membre.pseudo}"></span></h4>
 
-	<p th:if="${error != null}" th:text="${error}"></p>
-
-		<form method="post" class="formulaire">
-
-			<h1>Modifier le mot de passe de <span th:text="${membre.pseudo}"></span></h1>
-
-    		<label>Mot de passe</label>
-    		<input type="password" placeholder="Définissez un mot de passe" name="mdp" required>
-
-    		<label>Confirmez le mot de passe</label>
-    		<input type="password" placeholder="Ressaisissez le mot de passe" name="confirmMdp" required>
-
-    		<div class="groupe-boutons">
-      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
-      			<button type="submit" class="ok">Modification du mot de passe</button>
-    		</div>
-
-    	</form>
-
+	<div class="alert alert-danger alert-dismissible fade show mt-3" th:if="${error != null}">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Erreur ! </strong><span th:text="${error}"></span>
 	</div>
 
-	<footer th:replace="~{fragments::footer}"></footer>
-
+	<form method="post" class="mt-3">
+		<div class="form-group">
+			<label for="mdp-id">Mot de passe :</label>
+			<input type="password" class="form-control" id="mdp-id" name="mdp" required>
+		</div>
+		<div class="form-group">
+			<label for="confmdp-id">Confirmez le mot de passe :</label>
+			<input type="password" class="form-control" id="confmdp-id" name="confirmMdp" required>
+		</div>
+		<button type="submit" class="btn btn-primary form-group mt-3"><i class="fas fa-undo"></i>Changer le mot de passe</button>
+	</form>
+</div>
 </body>
 </html>
