@@ -51,8 +51,14 @@ public class modifieraccueilServlet extends AbstractGenericServlet  {
         Integer idBalise = Integer.parseInt(req.getParameter("id"));
         Paragraphe paragraphe2= ParagrapheLibrary.getInstance().getParagraphe(idBalise);
 
+        try{ titre = req.getParameter("titre");
+
+        }catch (NullPointerException e){
+            titre="";
+        }
+
         try {
-            titre = req.getParameter("titre");
+
             texte = req.getParameter("article");
             ordre= Integer.parseInt(req.getParameter("ordre"));
 
