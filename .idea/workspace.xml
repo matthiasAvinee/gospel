@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a06cadb7-7681-49d8-8db8-065cfd8f5d8c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/impl/ParagrapheDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/ParagrapheDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ajouterArticleServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajoutArticle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/modifierParagraphe.html" />
-    </list>
+    <list default="true" id="a06cadb7-7681-49d8-8db8-065cfd8f5d8c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -389,12 +384,12 @@
       <option name="presentableId" value="Default" />
       <updated>1523113687978</updated>
       <workItem from="1523113696275" duration="1970000" />
-      <workItem from="1523118698486" duration="1390000" />
+      <workItem from="1523118698486" duration="1455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5010000" />
+    <option name="totallyTimeSpent" value="5075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
