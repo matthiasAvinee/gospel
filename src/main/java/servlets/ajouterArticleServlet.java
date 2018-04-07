@@ -44,6 +44,13 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
         try {
             titre = req.getParameter("titre");
+        }
+        catch (NullPointerException e){
+            titre="";
+        }
+
+        try {
+
             texte = req.getParameter("article");
             page = req.getParameter("radio");
             ordre = Integer.parseInt(req.getParameter("ordre"));
