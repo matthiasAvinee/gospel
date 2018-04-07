@@ -70,7 +70,7 @@ public class modifierMdpServlet extends AbstractGenericServlet {
 
                 resp.sendRedirect("/administrateur/reinitialisationDuMdp?id="+id);
             }
-            resp.sendRedirect("/administrateur/modifiermembre?id="+id);
+            resp.sendRedirect("/administrateur/gestion");
         }
         else {
             String errorMessage = "Les deux mots de passe ne sont pas identiques";

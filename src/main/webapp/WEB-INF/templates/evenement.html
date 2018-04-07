@@ -19,15 +19,6 @@
     <div class="container mt-3">
         <h4>Nos prochains concerts</h4>
 
-
-
-
-    <div class="corps">
-
-
-
-
-
         <div th:if="${pseudoA!=null}" class="text-center mt-3">
             <a href="/administrateur/ajouterevenement"><button type="button" class="btn btn-success"><i class="far fa-calendar-plus"></i>Ajouter un événement</button></a>
 
@@ -38,7 +29,7 @@
                 <div class="card-header">
                     <a class="card-link collapsed" data-toggle="collapse" th:href="'#'+${evenement.id}">
                         <h5 class="mb-0">
-                            <span th:text="${evenement.date}"></span> <span th:text="${evenement.nom}"></span>
+                            <span th:text="${evenement.date.split('-')[2]+'/'+evenement.date.split('-')[1]+'/'+evenement.date.split('-')[0]}"></span> <span th:text="${evenement.nom}"></span>
                             <a th:href="${'administrateur/modifierevenement?id='+evenement.id}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
                             <a th:href="${'administrateur/supprimerevenement?id='+evenement.id}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
                         </h5>
@@ -48,9 +39,13 @@
                     <div class="card-body">
                         <ul>
                             <li><strong>Adresse : </strong><span th:text="${evenement.adresse}"></span></li>
-                            <li><strong>Prix : </strong><span th:if="${evenement.prix!=null}" th:text="${evenement.prix}+' €'">Gratuit !</span></li>
-                            <li th:text="${evenement.description}" class="text-justify"></li>
+                            <li>
+                                <strong>Prix : </strong>
+                                <span th:if="${evenement.prix!=null && evenement.prix!=0}" th:text="${evenement.prix}+' €'"></span>
+                                <span th:if="${evenement.prix==null && evenement.prix==0}" th:text="${evenement.prix}+' €'">Gratuit !</span>
+                            </li>
                         </ul>
+                        <p th:text="${evenement.description}" class="text-justify"></p>
                     </div>
                 </div>
             </div>
@@ -58,11 +53,11 @@
 
         <hr class="mt-3">
 
-        <h4>Précédemment</h4>
+        <h4>Nos derniers concerts</h4>
 
         <ul>
             <li th:each="evenementpasse : ${evenementspasse}">
-                <span th:text="${evenementpasse.date}"></span>
+                <span th:text="${evenementpasse.date.split('-')[2]+'/'+evenementpasse.date.split('-')[1]+'/'+evenementpasse.date.split('-')[0]}"></span>
                 <span th:text="${evenementpasse.nom}"></span>
                 <a th:href="${'administrateur/modifierevenement?id='+evenementpasse.id}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
                 <a th:href="${'administrateur/supprimerevenement?id='+evenementpasse.id}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>

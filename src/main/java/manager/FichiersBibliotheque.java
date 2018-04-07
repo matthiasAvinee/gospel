@@ -11,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Explication des fonctions sur FichiertDaoImpl
@@ -53,9 +54,9 @@ public class FichiersBibliotheque {
 
         Path picturePath = null;
         if (picture!=null) {
-            picturePath = Paths.get(IMAGE_DIRECTORY_PATH, picture.getSubmittedFileName());
+            String filename = UUID.randomUUID().toString().substring(0,8) + "-" + picture.getSubmittedFileName();
+            picturePath = Paths.get(IMAGE_DIRECTORY_PATH, filename);
 
-            //picturePath = Paths.get(IMAGE_DIRECTORY_PATH, photo.getIdPhoto().toString());
             try {
                 Files.copy(picture.getInputStream(), picturePath);
             } catch (IOException e) {

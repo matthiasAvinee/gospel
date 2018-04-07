@@ -62,7 +62,7 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
 
         if (listeAdmin.containsKey(pseudo) || listeMembre.containsKey(pseudo)) {
 
-            String errorMessage = "Cet identifiant est utilis&eacute par quelqu'un d'autre";
+            String errorMessage = "Cet identifiant est utilisé par quelqu'un d'autre";
             req.getSession().setAttribute("errorMessage", errorMessage);
             resp.sendRedirect("/administrateur/ajoutermembre");
 
@@ -73,7 +73,7 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
                     Membre createdMembre = MembreLibrary.getInstance().addMembre(newMembre);
 
                 } catch (IllegalArgumentException e) {
-                    String errorMessage = "Les &eacutel&eacutements saisis ne sont pas bon";
+                    String errorMessage = "Les éléments saisis ne sont pas bon";
                     req.getSession().setAttribute("errorMessage", errorMessage);
                     resp.sendRedirect("ajoutermembre");
                 }

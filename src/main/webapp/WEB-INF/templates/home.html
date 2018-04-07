@@ -18,18 +18,22 @@
     <nav th:replace="~{fragments::navbar}"></nav>
 
     <div class="container mt-3">
-            <div th:if="${pseudoA!=null}" class="text-center">
-                <a href="/administrateur/ajouterarticle?ch=home"><button type="button" class="btn btn-success"><i class="fas fa-pencil-alt"></i>Ajouter un paragraphe</button></a>
-            </div>
 
-            <div class="container-fluid mt-3" th:each="paragraphe : ${paragraphes}">
-                <h4>
-                    <span th:text="${paragraphe.titre}"></span>
-                    <a th:href="${'administrateur/modifierparagraphe?id='+paragraphe.idBalise}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
-                    <a th:href="${'administrateur/supprimerparagraphe?id='+paragraphe.idBalise}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
-                </h4>
-                <blockquote class="text-justify mt-3" th:text="${paragraphe.texte}"></blockquote>
-            </div>
+        <h2 class="text-center">Bienvenue chez Esprit Gospel !</h2>
+
+        <div th:if="${pseudoA!=null}" class="text-center mt-3">
+            <a href="/administrateur/ajouterarticle?ch=home"><button type="button" class="btn btn-success"><i class="fas fa-pencil-alt"></i>Ajouter un paragraphe</button></a>
+        </div>
+
+        <div class="container-fluid mt-3" th:each="paragraphe : ${paragraphes}">
+            <h4>
+                <span th:text="${paragraphe.titre}"></span>
+                <a th:href="${'administrateur/modifierparagraphe?id='+paragraphe.idBalise}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
+                <a th:href="${'administrateur/supprimerparagraphe?id='+paragraphe.idBalise}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
+            </h4>
+            <blockquote class="text-justify mt-3" th:text="${paragraphe.texte}"></blockquote>
+        </div>
+
     </div>
 
 </body>

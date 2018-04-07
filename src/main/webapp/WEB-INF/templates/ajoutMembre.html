@@ -1,53 +1,55 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-	<title>ajout-membre</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
-	<script src="js/main.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../../css/gos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<title>Ajouter un membre | Esprit Gospel</title>
 </head>
+
 <body>
+<nav th:replace="~{fragments::navbar}"></nav>
 
-	<nav th:replace="~{fragments::navbar}"></nav>
-	
-	<div class="corps">
+<div class="container mt-3">
 
-	<p th:if="${error != null}" th:text="${error}"></p>
+	<h4>Ajout d'un membre</h4>
 
-		<form method="post" class="formulaire">
-			
-			<h1>Ajouter un choriste</h1>
-
-			<label>Utilisateur</label>
-    		<input type="text" placeholder="Entrez le pseudo du choriste" name="pseudo" required>
-
-    		<label>Mot de passe</label>
-    		<input type="password" placeholder="Définissez un mot de passe" name="mdp" required>
-
-    		<label>Confirmez le mot de passe</label>
-    		<input type="password" placeholder="Ressaisissez le mot de passe" name="confirm-mdp" required>
-    		
-			<label class="container">Membre
-			    <input type="radio" checked="checked" name="radio" value="membre">
-				<span class="checkmark"></span>
-			</label>
-
-			<label class="container">Administrateur
-			    <input type="radio" name="radio" value="administrateur">
-				<span class="checkmark"></span>
-			</label>
-
-    		<div class="groupe-boutons">
-      			<button type="button" class="cancel" onClick="history.back()">Annuler</button>
-      			<button type="submit" class="ok">Ajout du choriste</button>
-    		</div>
-
-
-    	</form>
-
+	<div class="alert alert-danger alert-dismissible fade show mt-3" th:if="${error != null}">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Erreur ! </strong><span th:text="${error}"></span>
 	</div>
 
-<footer th:replace="~{fragments::footer}"></footer>
-
+	<form method="post" class="mt-3">
+		<div class="form-group">
+			<label for="pseudo-id">Pseudo :</label>
+			<input type="text" class="form-control" id="pseudo-id" name="pseudo" required>
+		</div>
+		<div class="form-group">
+			<label for="mdp-id">Mot de passe :</label>
+			<input type="password" class="form-control" id="mdp-id" name="mdp" required>
+		</div>
+		<div class="form-group">
+			<label for="confmdp-id">Confirmez le mot de passe :</label>
+			<input type="password" class="form-control" id="confmdp-id" name="confirm-mdp" required>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="radio" class="form-check-input" value="membre" name="radio" checked="checked">Membre
+			</label>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="radio" class="form-check-input" value="administrateur" name="radio">Administrateur
+			</label>
+		</div>
+		<button type="submit" class="btn btn-primary form-group mt-3"><i class="fas fa-user-plus"></i>Ajout du choriste</button>
+	</form>
+</div>
 </body>
 </html>
