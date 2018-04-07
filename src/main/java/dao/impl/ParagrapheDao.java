@@ -16,6 +16,7 @@ public interface ParagrapheDao {
 
     public List<Paragraphe> listParagraphesContact();
 
+
     public Paragraphe getparagraphe(Integer idBalise);
 
     public Paragraphe addParagraphe(Paragraphe paragraphe);
