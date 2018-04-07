@@ -1,10 +1,10 @@
 package manager;
 
-import dao.impl.FichiersDao;
+import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 import dao.impl.impl.FichiersDaoImpl;
 import entities.Album;
 import entities.Photo;
-
 import javax.servlet.http.Part;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.UUID;
 
+
 /**
  * Explication des fonctions sur FichiertDaoImpl
  */
@@ -20,6 +21,11 @@ import java.util.UUID;
 public class FichiersBibliotheque {
 
     private static final String IMAGE_DIRECTORY_PATH = "C:/imagesDevWeb";
+
+    /*Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
+            "hd81lyvul", "hd81lyvul",
+            "643872995173373", "643872995173373",
+            "VUa867jRuuuZJ9bNqLslfwXAAGg", "VUa867jRuuuZJ9bNqLslfwXAAGg"));*/
 
     private static class FichiersBibliothequeHolder {
         private final static FichiersBibliotheque instance = new FichiersBibliotheque();
