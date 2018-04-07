@@ -22,11 +22,11 @@
 		<h4 class="text-center" th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></h4>
 
 		<div th:if="${pseudoA!=null}" class="text-center mt-3">
-			<a th:href="${'/administrateur/ajouter-photos?id='+album.idAlbum}"><button type="button" class="btn btn-success"><i class="fas fa-upload"></i>Ajouter des photos à l'album</button></a>
+			<a th:href="${'/administrateur/ajouter-photos?id='+album.idAlbum}"><button type="button" class="btn btn-success"><i class="fas fa-upload"></i>Ajouter des photos &agrave l'album</button></a>
 		</div>
 
 		<div class="text-center mt-3">
-			<a href="#"><button type="button" class="btn btn-info"><i class="fas fa-download"></i>Télécharger l'album</button></a>
+			<a href="#"><button type="button" class="btn btn-info"><i class="fas fa-download"></i>T&eacutel&eacutecharger l'album</button></a>
 		</div>
 
 		<div class="row text-center text-lg-left mt-3">
