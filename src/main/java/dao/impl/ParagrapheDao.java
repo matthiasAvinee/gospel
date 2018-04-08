@@ -21,7 +21,7 @@ public interface ParagrapheDao {
 
     public Paragraphe addParagraphe(Paragraphe paragraphe);
 
-    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, int ordre);
+    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, String page, int ordre);
 
     void supprimerParagraphe(Integer idBalise);
 

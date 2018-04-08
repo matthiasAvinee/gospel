@@ -9,8 +9,10 @@ import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class MembreDaoTestCase extends AbstractDaoTestCase {
     private MembreDao membreDao = new MembreDaoImpl();
@@ -28,9 +30,9 @@ public class MembreDaoTestCase extends AbstractDaoTestCase {
         List<Membre> membres = membreDao.listMembres();
         // THEN
         Assertions.assertThat(membres).hasSize(2); //Le compte root ne doit pas s'afficher, il ne doit donc pas apparaître ensuite
-        Assertions.assertThat(membres).extracting("id", "pseudo", "mdp","role").containsOnly(
-                Assertions.tuple(2,"quentin","$argon2i$v=19$m=65536,t=2,p=1$4BBf74e80ETLZiQT/WvCxw$bsZ1wJcaUY1OalxuMgvwXSKyf0LT+HhFp4M516lzlTQ","administrateur"),
-                Assertions.tuple(3,"matthias","$argon2i$v=19$m=65536,t=2,p=1$slv6QY6wp3yJytsnXb3TXg$6MK0sBb8jrp5BD2QUP/SbacltM5YwVHOYJ4ycFb74Z0","membre")
+        Assertions.assertThat(membres).extracting("id", "pseudo", "mdp", "role").containsOnly(
+                Assertions.tuple(2, "quentin", "$argon2i$v=19$m=65536,t=2,p=1$4BBf74e80ETLZiQT/WvCxw$bsZ1wJcaUY1OalxuMgvwXSKyf0LT+HhFp4M516lzlTQ", "administrateur"),
+                Assertions.tuple(3, "matthias", "$argon2i$v=19$m=65536,t=2,p=1$slv6QY6wp3yJytsnXb3TXg$6MK0sBb8jrp5BD2QUP/SbacltM5YwVHOYJ4ycFb74Z0", "membre")
         );
     }
 
@@ -50,13 +52,13 @@ public class MembreDaoTestCase extends AbstractDaoTestCase {
     @Test
     public void shouldAddMembre() throws Exception {
         // GIVEN
-        Membre newMembre = new Membre(null, "Test", "$argon2i$v=19$m=65536,t=2,p=1$4BBf74e80ETLZiQT/WvCxw$bsZ1wJcaUY1OalxuMgvwXSKyf0LT+HhFp4M516lzlTQ","administrateur");
+        Membre newMembre = new Membre(null, "Test", "$argon2i$v=19$m=65536,t=2,p=1$4BBf74e80ETLZiQT/WvCxw$bsZ1wJcaUY1OalxuMgvwXSKyf0LT+HhFp4M516lzlTQ", "administrateur");
         // WHEN
         membreDao.addMembre(newMembre);
         // THEN
-        try(Connection connection = DataSourceProvider.getDataSource().getConnection();
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM membre WHERE pseudo='Test'")){
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM membre WHERE pseudo='Test'")) {
             Assertions.assertThat(resultSet.next()).isTrue();
             Assertions.assertThat(resultSet.getInt("id")).isNotNull();
             Assertions.assertThat(resultSet.getString("pseudo")).isEqualTo("Test");
@@ -66,6 +68,25 @@ public class MembreDaoTestCase extends AbstractDaoTestCase {
         }
     }
 
-    }
+    @Test
+    public void shouldUpdateMembre() throws ExecutionException {
+        //GIVEN
+        membreDao.updateMembre(3, "matmout", "administrateur");
+        // THEN
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM membre WHERE id=3")) {
+            Assertions.assertThat(resultSet.next()).isTrue();
+            Assertions.assertThat(resultSet.getInt("id")).isEqualTo(3);
+            Assertions.assertThat(resultSet.getString("pseudo")).isEqualTo("matmout");
+            Assertions.assertThat(resultSet.getString("role")).isEqualTo("administrateur");
 
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+}
 

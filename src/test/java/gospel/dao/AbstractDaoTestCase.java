@@ -15,9 +15,10 @@ public abstract class AbstractDaoTestCase {
                 Statement statement = connection.createStatement()){
             statement.executeUpdate("DELETE FROM evenement");
             statement.executeUpdate("DELETE FROM paragraphe");
-            statement.executeUpdate("DELETE FROM album");
             statement.executeUpdate("DELETE FROM membre");
             statement.executeUpdate("DELETE FROM photo");
+            statement.executeUpdate("DELETE FROM album");
+
 
             this.insertDataSet(statement);
         }
