@@ -31,7 +31,8 @@
 		<div class="form-group">
 			<label for="contenu-para">R&eacutedigez le contenu :</label>
 			<textarea class="form-control" rows="5" id="contenu-para" name="article" th:text="${paragraphe.texte}" required></textarea>
-		</div>
+
+			<div th:if="${paragraphe.page=='home'}">
 		<div class="form-check">
 			<label class="form-check-label">
 				<input type="radio" class="form-check-input" value="home" name="radio" checked="checked">Page d'accueil
@@ -42,6 +43,19 @@
 				<input type="radio" class="form-check-input" value="contacter" name="radio">Page de contacts
 			</label>
 		</div>
+		</div>
+			<div th:if="${paragraphe.page=='contacter'}">
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="radio" class="form-check-input" value="home" name="radio">Page d'accueil
+			</label>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="radio" class="form-check-input" value="contacter" name="radio" checked="checked">Page de contacts
+			</label>
+		</div>
+			</div>
 		<button type="submit" class="btn btn-primary form-group mt-3"><i class="fas fa-check-circle"></i>Envoyer</button>
 	</form>
 </div>

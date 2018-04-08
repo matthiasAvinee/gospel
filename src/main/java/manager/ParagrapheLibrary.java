@@ -55,7 +55,7 @@ public class ParagrapheLibrary {
     }
 
     public Paragraphe updateParagraphe(int id, String titre, String texte, String chemin, int ordre) {
-        return paragrapheDao.updateParagraphe(id, titre, texte, ordre);
+        return paragrapheDao.updateParagraphe(id, titre, texte, chemin, ordre);
     }
 
 
