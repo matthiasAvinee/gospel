@@ -134,14 +134,14 @@ public class FichiersDaoImpl implements FichiersDao {
         return null;
     }
 
-    public Photo addPhoto(Photo photo, Path picturePath) {
+    public Photo addPhoto(Photo photo, String filename) {
         String query = "INSERT INTO photo (chemin, album_id_fk) VALUES (?,?)";
 
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)
         ){
-            if (picturePath!=null){
-                statement.setString(1, picturePath.toString());
+            if (filename!=null){
+                statement.setString(1, filename);
             }else {
                 statement.setNull(1,Types.VARCHAR);
             }
