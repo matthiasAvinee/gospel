@@ -30,20 +30,40 @@
 			<label for="pseudo-id">Changer le pseudo si besoin :</label>
 			<input type="text" class="form-control" id="pseudo-id" name="pseudo" th:value="${membre.pseudo}" required>
 		</div>
-		<div class="form-check">
-			<label class="form-check-label">
-				<input type="radio" class="form-check-input" value="membre" name="radio" checked="checked">Membre
-			</label>
+
+
+
+		<div th:if="${membre.role=='membre'}">
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" value="membre" name="radio" checked="checked">Membre
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" value="administrateur" name="radio">Administrateur
+				</label>
+			</div>
 		</div>
-		<div class="form-check">
-			<label class="form-check-label">
-				<input type="radio" class="form-check-input" value="administrateur" name="radio">Administrateur
-			</label>
+
+		<div th:if="${membre.role=='administrateur'}">
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" value="membre" name="radio">Membre
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" value="administrateur" name="radio" checked="checked">Administrateur
+				</label>
+			</div>
 		</div>
+
+
 		<button type="submit" class="btn btn-primary form-group mt-3"><i class="fas fa-wrench"></i>Modification des informations</button>
 	</form>
 
-	<h5><a th:href="${'reinitialisationDuMdp?id='+membre.id}"><i class="fas fa-undo"></i>Réinitialisation du mot de passe</a></h5>
+	<h5><a th:href="${'reinitialisationDuMdp?id='+membre.id}"><i class="fas fa-undo"></i>R&eacuteinitialisation du mot de passe</a></h5>
 
 </div>
 </body>

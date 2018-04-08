@@ -1,10 +1,8 @@
 package manager;
 
-import dao.impl.FichiersDao;
 import dao.impl.impl.FichiersDaoImpl;
 import entities.Album;
 import entities.Photo;
-
 import javax.servlet.http.Part;
 import java.io.IOException;
 import java.nio.file.Files;
