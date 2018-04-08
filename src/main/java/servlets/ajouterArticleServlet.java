@@ -62,7 +62,7 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
         Paragraphe newParagraphe = new Paragraphe(null, titre, texte , page,ordre);
 
-      
+
 
 
             try {
