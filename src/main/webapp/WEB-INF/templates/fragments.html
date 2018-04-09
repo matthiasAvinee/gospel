@@ -1,54 +1,69 @@
+
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Fragments</title>
 </head>
 <body>
 
-<nav class="navbar" th:fragment="navbar">
+<nav class="navbar navbar-expand-md bg-light navbar-light border" th:fragment="navbar">
+    <a class="navbar-brand" href="/home">
+        <img src="../../img/logo.png" alt="Logo" class="img-fluid" style="max-width:120px;">
+    </a>
 
-    <ul class="navlinks">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <a class="bouton" href="/home"><img src="../icones/home.png" class="icone"><div>ACCUEIL</div></a>
-        <a class="bouton" href="/contacter"><img src="../icones/phone.png" class="icone"><div>NOUS CONTACTER</div></a>
-        <a class="bouton" href="/evenement"><img src="../icones/calendar.png" class="icone"><div>NOS CONCERTS</div></a>
-        <a class="bouton" href="/membre" th:if="${pseudoM ==null}"><img src="../icones/gospel.png" class="icone"><div>ESPACE MEMBRE</div></a>
-
-        <div class="dropdown-contenu" th:if="${pseudoM !=null}">
-
-            <a class="bouton" href=""><img src="../icones/folder.png" class="icone" th:if="${pseudoM !=null}"><div>FICHIERS</div></a>
-
-            <div class="dropdown-menu">
-                <a class="dropdown" href=""><img src="../icones/lyrics.png" class="icone"><div>PAROLES</div></a>
-                <a class="dropdown" href="/membre/albums-photos"><img src="../icones/camera.png" class="icone"><div>PHOTOS</div></a>
-                <a class="dropdown" href=""><img src="../icones/video.png" class="icone"><div>VIDÉOS</div></a>
-                <a class="dropdown" href=""><img src="../icones/microphone.png" class="icone" ><div>ENREGISTREMENTS</div></a>
-            </div>
-
-        </div>
-
-        <a class="bouton" href="/administrateur/gestion" th:if="${pseudoA!=null}"><img src="../icones/wheel.png" class="icone"><div>GESTION</div></a>
-
-        <div class="dropdown-contenu" th:if="${pseudoM !=null}">
-
-            <a class="bouton" href=""><img src="../icones/folder.png" class="icone"><div th:text="${pseudoM}"></div></a>
-
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/contacter"><i class="fas fa-envelope"></i>Nous contacter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/evenement"><i class="far fa-calendar-alt"></i>Nos concerts</a>
+            </li>
+            <li class="nav-item" th:if="${pseudoM == null and pseudoA == null}">
+                <a class="nav-link" href="/membre"><i class="fas fa-user"></i>Espace membre</a>
+            </li>
+            <li class="nav-item dropdown" th:if="${pseudoM != null or pseudoA != null}">
+                <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown">
+                    <i class="fas fa-folder"></i>Fichiers
+                </a>
                 <div class="dropdown-menu">
-                <a class="dropdown" href="/deconnexion"><img src="../icones/lyrics.png" class="icone"><div>DECONNEXION</div></a>
+                    <a class="dropdown-item" href="/membre/albums-photos"><i class="fas fa-camera"></i>Photos</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-video"></i>Vid&eacuteos</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-file-alt"></i>Paroles</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-microphone"></i>Enregistrements</a>
                 </div>
-
-        </div>
-
-    </ul>
-
+            </li>
+            <li class="nav-item" th:if="${pseudoA != null}">
+                <a class="nav-link" href="/administrateur/gestion"><i class="fas fa-cog"></i>Gestion des membres</a>
+            </li>
+            <!-- On prend toutes les configurations possibles -->
+            <li class="nav-item dropdown" th:if="${pseudoM != null and pseudoA == null}">
+                <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown"><i class="fas fa-user"></i><span th:text="${#strings.capitalize(pseudoM)}"></span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/deconnexion"><i class="fas fa-sign-out-alt"></i>D&eacuteconnexion</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" th:if="${pseudoM == null and pseudoA != null}">
+                <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown"><i class="fas fa-user"></i><span th:text="${#strings.capitalize(pseudoA)}"></span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/deconnexion"><i class="fas fa-sign-out-alt"></i>D&eacuteconnexion</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" th:if="${pseudoM != null and pseudoA != null}">
+                <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown"><i class="fas fa-user"></i><span th:text="${#strings.capitalize(pseudoA)}"></span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/deconnexion"><i class="fas fa-sign-out-alt"></i>D&eacuteconnexion</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 </nav>
-
-<footer th:fragment="footer">
-
-    <p> Ce site a été créé par Quentin Lejour et Matthias Avinée, étudiants à HEI Lille. </p>
-
-</footer>
 
 </body>
 </html>

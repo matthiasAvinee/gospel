@@ -21,8 +21,7 @@ public class modifieraccueilServlet extends AbstractGenericServlet  {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
-        resp.setContentType("text/html;charset=UTF-8");
-        req.setCharacterEncoding("UTF-8");
+
         WebContext context = new WebContext(req, resp, getServletContext());
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
         context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
@@ -46,14 +45,21 @@ public class modifieraccueilServlet extends AbstractGenericServlet  {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String texte = null;
         String titre = null;
+        String page=null;
         Part img=null;
         Integer ordre=null;
 
         Integer idBalise = Integer.parseInt(req.getParameter("id"));
         Paragraphe paragraphe2= ParagrapheLibrary.getInstance().getParagraphe(idBalise);
 
+        try{ titre = req.getParameter("titre");
+
+        }catch (NullPointerException e){
+            titre="";
+        }
+
         try {
-            titre = req.getParameter("titre");
+            page = req.getParameter("radio");
             texte = req.getParameter("article");
             ordre= Integer.parseInt(req.getParameter("ordre"));
 
@@ -61,7 +67,7 @@ public class modifieraccueilServlet extends AbstractGenericServlet  {
 
         }
         try {
-            Paragraphe paragraphe = ParagrapheLibrary.getInstance().updateParagraphe(idBalise,titre,texte,null,ordre);
+            Paragraphe paragraphe = ParagrapheLibrary.getInstance().updateParagraphe(idBalise,titre,texte,page,ordre);
 
         } catch (IllegalArgumentException e) {
             String errorMessage = e.getMessage();

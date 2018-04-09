@@ -21,7 +21,7 @@ public class EvenementDaoImpl implements EvenementDao {
     public List<Evenement> listEvenementsAvant(String date) {
         List<Evenement> list = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getDataSource().getConnection()) {
-            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date<?")) {
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date<? ")) {
 
                 statement.setString(1, date);
 
@@ -29,7 +29,7 @@ public class EvenementDaoImpl implements EvenementDao {
                     while (resultSet.next()) {
                         list.add(new Evenement(
                                         resultSet.getInt("id"),
-                                        resultSet.getInt("prix"),
+                                        resultSet.getDouble("prix"),
                                         resultSet.getString("nom"),
                                         resultSet.getString("adresse"),
                                         resultSet.getString("description"),
@@ -57,7 +57,7 @@ public class EvenementDaoImpl implements EvenementDao {
 
         List<Evenement> list = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getDataSource().getConnection()) {
-            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date>=?")) {
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date>=? ORDER by date ASC")) {
 
                 statement.setString(1, date);
 
@@ -65,7 +65,7 @@ public class EvenementDaoImpl implements EvenementDao {
                     while (resultSet.next()) {
                         list.add(new Evenement(
                                         resultSet.getInt("id"),
-                                        resultSet.getInt("prix"),
+                                        resultSet.getDouble("prix"),
                                         resultSet.getString("nom"),
                                         resultSet.getString("adresse"),
                                         resultSet.getString("description"),
@@ -98,7 +98,7 @@ public class EvenementDaoImpl implements EvenementDao {
                 if (resultSet.next()) {
                     return new Evenement(
                             resultSet.getInt("id"),
-                            resultSet.getInt("prix"),
+                            resultSet.getDouble("prix"),
                             resultSet.getString("nom"),
                             resultSet.getString("adresse"),
                             resultSet.getString("description"),
@@ -124,7 +124,7 @@ public class EvenementDaoImpl implements EvenementDao {
         String query = "INSERT INTO evenement(prix,nom,adresse,description,date) VALUES(?, ?, ?,?,?)";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
-            statement.setInt(1, evenement.getPrix());
+            statement.setDouble(1, evenement.getPrix());
             statement.setString(2, evenement.getNom());
             statement.setString(3, evenement.getAdresse());
             statement.setString(4, evenement.getDescription());
@@ -155,11 +155,11 @@ public class EvenementDaoImpl implements EvenementDao {
      * @return null
      */
     @Override
-    public Evenement updateEvenement(Integer id, int prix, String nom, String adresse, String description, String date) {
+    public Evenement updateEvenement(Integer id, Double prix, String nom, String adresse, String description, String date) {
         String query = "UPDATE evenement SET prix=?,nom=?, adresse=?, description=?, date=?  WHERE id=?";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
-            statement.setInt(1, prix);
+            statement.setDouble(1, prix);
             statement.setString(2, nom);
             statement.setString(3, adresse);
             statement.setString(4, description);

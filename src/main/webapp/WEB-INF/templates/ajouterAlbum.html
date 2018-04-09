@@ -2,35 +2,33 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>Accueil</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../../css/gos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<title>Ajouter un album | Esprit Gospel</title>
 </head>
 
 <body>
 
-	<nav th:replace="~{fragments::navbar}"></nav>
+<nav th:replace="~{fragments::navbar}"></nav>
 
-	<div class="corps">
+<div class="container mt-3">
 
-		<form method="post" class="formulaire">
-			
-			<h1>Ajouter un album</h1>
+	<h4>Ajouter un album</h4>
 
-			<label>Nom de l'album</label>
-    		<input type="text" placeholder="Nom de l'album" name="nom-album">
-
-    		<div class="groupe-boutons">
-      			<button type="button" class="cancel">Annuler</button>
-      			<button type="submit" class="ok">Ajout de l'album</button>
-    		</div>
-
-    	</form>
-
-	</div>	
-
-	<footer th:replace="~{fragments::footer}"></footer>
+	<form method="post" class="mt-3">
+		<div class="form-group">
+			<label for="nomal-id">Nom de l'album :</label>
+			<input type="text" class="form-control" id="nomal-id" name="nom-album" required>
+		</div>
+		<button type="submit" class="btn btn-primary form-group mt-3"><i class="fas fa-plus"></i>Ajout de l'album</button>
+	</form>
+</div>
 
 </body>
-
 </html>

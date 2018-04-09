@@ -11,6 +11,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 
 @WebServlet("/administrateur/ajoutermembre")
@@ -23,12 +25,14 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
         context.setVariable("pseudoM", req.getSession().getAttribute("membreConnecte"));
-        templateEngine.process("ajoutMembre", context, resp.getWriter());
 
-        if(req.getSession().getAttribute("errorMessage") != null) {
+
+        if (req.getSession().getAttribute("errorMessage") != null) {
             context.setVariable("error", req.getSession().getAttribute("errorMessage"));
-            req.getSession().removeAttribute("errorMessage");}
+            req.getSession().removeAttribute("errorMessage");
+        }
 
+        templateEngine.process("ajoutMembre", context, resp.getWriter());
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -37,8 +41,10 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
         String mdp = null;
         String role = null;
         String confirmMdp = null;
-        String motdepasse=null;
-        MotdePasseUtilis motdePasseUtilis= new MotdePasseUtilis();
+        String motdepasse = null;
+        MotdePasseUtilis motdePasseUtilis = new MotdePasseUtilis();
+        Map<String, String> listeAdmin = MembreLibrary.getInstance().listAdminAutorises();
+        Map<String, String> listeMembre = MembreLibrary.getInstance().listMembresAutorises();
 
 
         try {
@@ -52,25 +58,35 @@ public class ajoutMembreServlet extends AbstractGenericServlet {
 
         }
 
-        Membre newMembre = new Membre(null, pseudo,motdepasse , role);
+        Membre newMembre = new Membre(null, pseudo, motdepasse, role);
 
-        if (mdp == confirmMdp || mdp.equals(confirmMdp)) {
-            try {
-                Membre createdMembre = MembreLibrary.getInstance().addMembre(newMembre);
+        if (listeAdmin.containsKey(pseudo) || listeMembre.containsKey(pseudo)) {
 
-            } catch (IllegalArgumentException e) {
-                String errorMessage = e.getMessage();
-
-                req.getSession().setAttribute("errorMessage", errorMessage);
-
-                resp.sendRedirect("ajoutermembre");
-            }
-            resp.sendRedirect("gestion");
-        } else {
-            String errorMessage = "Les deux mots de passe ne sont pas identiques";
+            String errorMessage = "Cet identifiant est utilisé par quelqu'un d'autre";
             req.getSession().setAttribute("errorMessage", errorMessage);
             resp.sendRedirect("/administrateur/ajoutermembre");
+
+        } else {
+
+            if (mdp == confirmMdp || mdp.equals(confirmMdp)) {
+                try {
+                    Membre createdMembre = MembreLibrary.getInstance().addMembre(newMembre);
+
+                } catch (IllegalArgumentException e) {
+                    String errorMessage = "Les éléments saisis ne sont pas bon";
+                    req.getSession().setAttribute("errorMessage", errorMessage);
+                    resp.sendRedirect("ajoutermembre");
+                }
+                resp.sendRedirect("gestion");
+            } else
+
+            {
+                String errorMessage = "Les deux mots de passe ne sont pas identiques";
+                req.getSession().setAttribute("errorMessage", errorMessage);
+                resp.sendRedirect("/administrateur/ajoutermembre");
+            }
+
+
         }
     }
-
 }

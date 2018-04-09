@@ -19,8 +19,7 @@ public class gestionServlet extends AbstractGenericServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
         List<Membre> listOfMembres = MembreLibrary.getInstance().listMembres();
-        resp.setContentType("text/html;charset=UTF-8");
-        req.setCharacterEncoding("UTF-8");
+
 
 
         WebContext context = new WebContext(req, resp, getServletContext());

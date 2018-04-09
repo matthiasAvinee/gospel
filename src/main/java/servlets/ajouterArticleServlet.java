@@ -1,7 +1,5 @@
 package servlets;
 
-
-
 import entities.Paragraphe;
 import manager.ParagrapheLibrary;
 import org.thymeleaf.TemplateEngine;
@@ -12,25 +10,28 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 
-@MultipartConfig
 @WebServlet("/administrateur/ajouterarticle")
 public class ajouterArticleServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        TemplateEngine templateEngine = this.createTemplateEngine(req);
-        resp.setContentType("text/html;charset=UTF-8");
-        req.setCharacterEncoding("UTF-8");
+
         WebContext context = new WebContext(req, resp, getServletContext());
+
         context.setVariable("error", req.getSession().getAttribute("errorMessage"));
         context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
-        templateEngine.process("ajoutArticle", context, resp.getWriter());
+
+
 
 
         if(req.getSession().getAttribute("errorMessage") != null) {
             context.setVariable("error", req.getSession().getAttribute("errorMessage"));
             req.getSession().removeAttribute("errorMessage");}
+
+        TemplateEngine templateEngine = this.createTemplateEngine(req);
+        templateEngine.process("ajoutArticle", context, resp.getWriter());
 
     }
 
@@ -44,22 +45,33 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
         try {
             titre = req.getParameter("titre");
+        }
+        catch (NullPointerException e){
+            titre="";
+        }
+
+        try {
+
             texte = req.getParameter("article");
             page = req.getParameter("radio");
             ordre = Integer.parseInt(req.getParameter("ordre"));
 
-
-
-
-
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException ignored) {
 
         }
 
         Paragraphe newParagraphe = new Paragraphe(null, titre, texte , page,ordre);
 
+
+
+
             try {
+
+
+
                 Paragraphe createdParagraphe = ParagrapheLibrary.getInstance().addParagraphe(newParagraphe);
+
+
                 resp.sendRedirect("/"+createdParagraphe.getPage());
             } catch (IllegalArgumentException e) {
                 String errorMessage = e.getMessage();

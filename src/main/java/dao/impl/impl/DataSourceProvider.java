@@ -6,9 +6,9 @@ import javax.sql.DataSource;
 
 public class DataSourceProvider {
 
-    /*private static MysqlDataSource dataSource;
+    private static MysqlDataSource dataSource;
 
-    public static DataSource getDataSource() {
+    public static DataSource getDataSourceHorsConnection() {
         if (dataSource == null) {
             dataSource = new MysqlDataSource();
             dataSource.setServerName("localhost");
@@ -18,9 +18,9 @@ public class DataSourceProvider {
             dataSource.setPassword("root");
         }
         return dataSource;
-    }*/
+    }
 
-    private static MysqlDataSource dataSource;
+
 
     public static DataSource getDataSource() {
         if (dataSource == null) {

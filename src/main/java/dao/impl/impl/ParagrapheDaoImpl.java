@@ -112,7 +112,7 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
      */
     @Override
     public Paragraphe addParagraphe(Paragraphe paragraphe) {
-        String query = "INSERT INTO paragraphe(titre,texte,page,ordre) VALUES(?, ?,?,?)";
+        String query = "INSERT INTO paragraphe(titre,texte,page,ordre) VALUES(?,?,?,?)";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, paragraphe.getTitre());
@@ -143,15 +143,16 @@ public class ParagrapheDaoImpl implements ParagrapheDao {
      * @return
      */
     @Override
-    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, int ordre) {
+    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, String page,int ordre) {
 
-        String query = "UPDATE paragraphe SET titre=?,texte=?,ordre=? WHERE id=?";
+        String query = "UPDATE paragraphe SET titre=?,texte=?,ordre=?, page=? WHERE id=?";
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, titre);
             statement.setString(2, texte);
             statement.setInt(3, ordre);
-            statement.setInt(4, idBalise);
+            statement.setString(4, page);
+            statement.setInt(5, idBalise);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

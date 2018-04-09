@@ -1,54 +1,62 @@
-<html xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <title>Gestion</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/gospel.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
-  </head>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-  <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/gos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <title>Gestion des membres | Esprit Gospel</title>
+</head>
 
-  <nav th:replace="~{fragments::navbar}"></nav>
+<body>
 
-  <div class="corps">
-<div class="center">
- <a class="btnvert" href="ajoutermembre"><img src="../icones/download.png"/>Ajouter un membre</a>
+<nav th:replace="~{fragments::navbar}"></nav>
+
+<div class="container mt-3">
+
+    <h4>Gestion des membres</h4>
+
+    <div th:if="${pseudoA!=null}" class="text-center mt-3">
+        <a href="/administrateur/ajoutermembre"><button type="button" class="btn btn-success"><i class="fas fa-user-plus"></i>Ajouter un choriste</button></a>
+    </div>
+
+    <table class="table table-hover mt-3 table-bordered">
+        <thead>
+        <tr>
+            <th>Pseudo</th>
+            <th>R&ocircle</th>
+            <th>Modification</th>
+        </tr>
+        </thead>
+        <tbody>
+        <div th:each="membre : ${membres}">
+            <tr th:if="${membre.role=='administrateur'}" th:class="'table-info'">
+                <td th:text="${membre.pseudo}"></td>
+                <td th:text="${membre.role}"></td>
+                <td>
+                    <a th:href="${'modifiermembre?id='+membre.id}"><i class="fas fa-edit"></i></a>
+                    <a th:href="${'supprimermembre?id='+membre.id}"><i class="fas fa-trash-alt text-danger"></i></a>
+                </td>
+            </tr>
+            <tr th:if="${membre.role!='administrateur'}">
+                <td th:text="${membre.pseudo}"></td>
+                <td th:text="${membre.role}"></td>
+                <td>
+                    <a th:href="${'modifiermembre?id='+membre.id}"><i class="fas fa-edit"></i></a>
+                    <a th:href="${'supprimermembre?id='+membre.id}"><i class="fas fa-trash-alt text-danger"></i></a>
+                </td>
+            </tr>
+        </div>
+        </tbody>
+    </table>
+
 </div>
 
-
-        <hr align="center"/>
-  
-        <h2 class="titre">Gestion des membres</h2>
-
-        <hr align="center"/>
-
-
-        <table id="membres">
-              <tr>
-                    <th>Membre</th>
-                    <th>Mot de Passe</th>
-                    <th>Rôle</th>
-              </tr>
-              <tr th:each="membre : ${membres}">
-                    <td th:text="${membre.pseudo}"></td>
-                    <td>***********</td>
-                    <td th:text="${membre.role}">admin</td>
-                    <td>
-                          <a th:href="${'modifiermembre?id='+membre.id}">
-                               <img src="../icones/edit.png">
-                          </a>
-                    </td>
-                    <td>
-                        <a th:href="${'supprimermembre?id='+membre.id}">
-                            <img src="../icones/close.png">
-                        </a>
-                    </td>
-              </tr>
-        </table>
-  </div>
-  <footer th:replace="~{fragments::footer}"></footer>
-
-
 </body>
+
 </html>

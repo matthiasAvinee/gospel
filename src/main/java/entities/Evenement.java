@@ -4,13 +4,13 @@ package entities;
 
 public class Evenement {
     private Integer id;
-    private int prix;
+    private Double prix;
     private String nom;
     private String adresse;
     private String description;
     private String date;
 
-    public Evenement(Integer id, int prix, String nom, String adresse, String description, String date) {
+    public Evenement(Integer id, Double prix, String nom, String adresse, String description, String date) {
         this.id = id;
         this.prix = prix;
         this.nom = nom;
@@ -27,11 +27,11 @@ public class Evenement {
         this.id = id;
     }
 
-    public int getPrix() {
+    public Double getPrix() {
         return prix;
     }
 
-    public void setPrix(int prix) {
+    public void setPrix(Double prix) {
         this.prix = prix;
     }
 
