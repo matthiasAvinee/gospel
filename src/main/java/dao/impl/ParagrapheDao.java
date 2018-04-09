@@ -16,11 +16,12 @@ public interface ParagrapheDao {
 
     public List<Paragraphe> listParagraphesContact();
 
+
     public Paragraphe getparagraphe(Integer idBalise);
 
     public Paragraphe addParagraphe(Paragraphe paragraphe);
 
-    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, int ordre);
+    public Paragraphe updateParagraphe(Integer idBalise, String titre, String texte, String page, int ordre);
 
     void supprimerParagraphe(Integer idBalise);
 

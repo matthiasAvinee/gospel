@@ -22,25 +22,24 @@
 		<h4 class="text-center" th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></h4>
 
 		<div th:if="${pseudoA!=null}" class="text-center mt-3">
-			<a th:href="${'/administrateur/ajouter-photos?id='+album.idAlbum}"><button type="button" class="btn btn-success"><i class="fas fa-upload"></i>Ajouter des photos à l'album</button></a>
+			<a th:href="${'/administrateur/ajouter-photos?id='+album.idAlbum}"><button type="button" class="btn btn-success"><i class="fas fa-upload"></i>Ajouter des photos &agrave l'album</button></a>
 		</div>
 
 		<div class="text-center mt-3">
-			<a href="#"><button type="button" class="btn btn-info"><i class="fas fa-download"></i>Télécharger l'album</button></a>
+			<a href="#"><button type="button" class="btn btn-info"><i class="fas fa-download"></i>T&eacutel&eacutecharger l'album</button></a>
 		</div>
 
 		<div class="row text-center text-lg-left mt-3">
 
 			<div class="col-lg-3 col-md-4 col-xs-6" th:each="photo:${photosList}">
 				<a href="#" class="d-block mb-4 h-100">
-					<img class="img-fluid img-thumbnail" th:src="'/membre/picture?id='+${photo.idPhoto}" alt="">
+					<img class="img-fluid img-thumbnail" th:src="'/membre/picture?id='+${photo.idPhoto}" alt="" th:id="${'photo='+album.idAlbum}">
 				</a>
 			</div>
 
 		</div>
 
 	</div>
-
 
 </body>
 </html>

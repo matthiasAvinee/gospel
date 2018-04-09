@@ -23,8 +23,6 @@ public class ajouterPhotosServlet extends AbstractGenericServlet {
 
         Collection<Part> pictures = request.getParts();
 
-        //Part picture = request.getPart("file");
-
         Album album = null;
         String albumId = request.getParameter("id");
 
