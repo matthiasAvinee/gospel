@@ -46,8 +46,18 @@
                             </li>
                         </ul>
                         <p th:text="${evenement.description}" class="text-justify"></p>
+                        <div class="text-center">
+                        <iframe
+                                width="600"
+                                height="450"
+                                frameborder="0" style="border:0"
+                                th:src="${'https://www.google.com/maps/embed/v1/place?key=AIzaSyDutW-b_FW4FiWRo_dzVFHJb7RHzpCdWMY &q='+ evenement.adresse}">
+
+                        </iframe>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
