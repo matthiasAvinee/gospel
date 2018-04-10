@@ -22,7 +22,7 @@ public interface FichiersDao {
 
     public List<Photo> listPhotos(Integer id);
 
-    public Photo addPhoto(Photo photo, Path picturePath);
+    public Photo addPhoto(Photo photo, String filename);
 
     public void supprimerPhoto(Integer id);
 

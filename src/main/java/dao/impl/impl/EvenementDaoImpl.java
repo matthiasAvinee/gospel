@@ -21,7 +21,11 @@ public class EvenementDaoImpl implements EvenementDao {
     public List<Evenement> listEvenementsAvant(String date) {
         List<Evenement> list = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getDataSource().getConnection()) {
+<<<<<<< HEAD
             try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date<? ORDER by date desc")) {
+=======
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date<? ")) {
+>>>>>>> master
 
                 statement.setString(1, date);
 
@@ -57,7 +61,11 @@ public class EvenementDaoImpl implements EvenementDao {
 
         List<Evenement> list = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getDataSource().getConnection()) {
+<<<<<<< HEAD
             try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date>=? order by date desc")) {
+=======
+            try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM evenement WHERE date>=? ORDER by date ASC")) {
+>>>>>>> master
 
                 statement.setString(1, date);
 

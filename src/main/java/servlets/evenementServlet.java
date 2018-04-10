@@ -22,6 +22,10 @@ public class evenementServlet extends AbstractGenericServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 
         WebContext context = new WebContext(req, resp, getServletContext());
 

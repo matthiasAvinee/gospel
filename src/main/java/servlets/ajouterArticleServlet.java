@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 
 @WebServlet("/administrateur/ajouterarticle")
@@ -44,6 +45,13 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
         try {
             titre = req.getParameter("titre");
+        }
+        catch (NullPointerException e){
+            titre="";
+        }
+
+        try {
+
             texte = req.getParameter("article");
             page = req.getParameter("radio");
             ordre = Integer.parseInt(req.getParameter("ordre"));
@@ -54,8 +62,16 @@ public class ajouterArticleServlet extends AbstractGenericServlet {
 
         Paragraphe newParagraphe = new Paragraphe(null, titre, texte , page,ordre);
 
+
+
+
             try {
+
+
+
                 Paragraphe createdParagraphe = ParagrapheLibrary.getInstance().addParagraphe(newParagraphe);
+
+
                 resp.sendRedirect("/"+createdParagraphe.getPage());
             } catch (IllegalArgumentException e) {
                 String errorMessage = e.getMessage();

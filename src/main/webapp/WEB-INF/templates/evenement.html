@@ -9,7 +9,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<<<<<<< HEAD
     <title>&eacutev&eacutenements | Esprit Gospel</title>
+=======
+    <title>Concerts | Esprit Gospel</title>
+>>>>>>> master
 </head>
 
 <body>
@@ -26,15 +30,39 @@
 
         <div id="accordion" class="mt-3">
             <div class="card" th:each="evenement : ${evenements}">
-                <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" th:href="'#'+${evenement.id}">
-                        <h5 class="mb-0">
-                            <span th:text="${evenement.date.split('-')[2]+'/'+evenement.date.split('-')[1]+'/'+evenement.date.split('-')[0]}"></span> <span th:text="${evenement.nom}"></span>
-                            <a th:href="${'administrateur/modifierevenement?id='+evenement.id}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
-                            <a th:href="${'administrateur/supprimerevenement?id='+evenement.id}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
-                        </h5>
-                    </a>
+                <!-- Si c'est le premier événement de la liste -->
+                <div th:if="${evenement.id==evenements.get(0).id}">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" th:href="'#'+${evenement.id}">
+                            <h5 class="mb-0">
+                                <span th:text="${evenement.date.split('-')[2]+'/'+evenement.date.split('-')[1]+'/'+evenement.date.split('-')[0]}"></span> <span th:text="${evenement.nom}"></span>
+                                <a th:href="${'administrateur/modifierevenement?id='+evenement.id}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
+                                <a th:href="${'administrateur/supprimerevenement?id='+evenement.id}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
+                            </h5>
+                        </a>
+                    </div>
+                    <div th:id="${evenement.id}" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Adresse : </strong><span th:text="${evenement.adresse}"></span></li>
+                                <li>
+                                    <strong>Prix : </strong>
+                                    <span th:if="${evenement.prix!=0}" th:text="${evenement.prix}+' euros'"></span>
+                                    <span th:if="${evenement.prix==0}" th:text="' Gratuit !'"></span>
+                                </li>
+                            </ul>
+                            <p th:text="${evenement.description}" class="text-justify"></p>
+                            <iframe
+                                    width="100%"
+                                    height="300px"
+                                    frameborder="0" style="border:0;"
+                                    th:src="${'https://www.google.com/maps/embed/v1/place?key=AIzaSyDutW-b_FW4FiWRo_dzVFHJb7RHzpCdWMY &q='+ evenement.adresse}">
+                            </iframe>
+
+                        </div>
+                    </div>
                 </div>
+<<<<<<< HEAD
                 <div th:id="${evenement.id}" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <ul>
@@ -49,8 +77,42 @@
 
                         </ul>
                         <p th:text="${evenement.description}" class="text-justify"></p>
+=======
+                <!-- Si ce n'est pas le premier événement de la liste -->
+                <div th:if="${evenement.id!=evenements.get(0).id}">
+                    <div class="card-header">
+                        <a class="card-link collapsed" data-toggle="collapse" th:href="'#'+${evenement.id}">
+                            <h5 class="mb-0">
+                                <span th:text="${evenement.date.split('-')[2]+'/'+evenement.date.split('-')[1]+'/'+evenement.date.split('-')[0]}"></span> <span th:text="${evenement.nom}"></span>
+                                <a th:href="${'administrateur/modifierevenement?id='+evenement.id}" style="margin-left: 6px;" th:if="${pseudoA!=null}"><i class="fas fa-edit"></i></a>
+                                <a th:href="${'administrateur/supprimerevenement?id='+evenement.id}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
+                            </h5>
+                        </a>
+                    </div>
+                    <div th:id="${evenement.id}" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Adresse : </strong><span th:text="${evenement.adresse}"></span></li>
+                                <li>
+                                    <strong>Prix : </strong>
+                                    <span th:if="${evenement.prix!=0}" th:text="${evenement.prix}+' euros'"></span>
+                                    <span th:if="${evenement.prix==0}" th:text="' Gratuit !'"></span>
+                                </li>
+                            </ul>
+                            <p th:text="${evenement.description}" class="text-justify"></p>
+                            <iframe
+                                    width="100%"
+                                    height="300px"
+                                    frameborder="0" style="border:0;"
+                                    th:src="${'https://www.google.com/maps/embed/v1/place?key=AIzaSyDutW-b_FW4FiWRo_dzVFHJb7RHzpCdWMY &q='+ evenement.adresse}">
+
+                            </iframe>
+
+                        </div>
+>>>>>>> master
                     </div>
                 </div>
+
             </div>
         </div>
 

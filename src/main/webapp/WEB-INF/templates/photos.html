@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-	<title>Album exemple</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/gospel.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../../css/gos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<title>Album | Esprit Gospel</title>
 </head>
+
 <body>
 
-<nav th:replace="~{fragments::navbar}"></nav>
+	<nav th:replace="~{fragments::navbar}"></nav>
 
-	<a th:href="${'/administrateur/ajouter-photos?id='+album.idAlbum}">Ajouter donc des photos</a>
+	<div class="container mt-3">
 
-	<h1 th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></h1>
+		<h4 class="text-center" th:ref="${'album?id='+album.idAlbum}" th:text="${album.nomAlbum}"></h4>
 
-	<div class="dispo-photos">
+		<div th:if="${pseudoA!=null}" class="text-center mt-3">
+			<a th:href="${'/administrateur/ajouter-photos?id='+album.idAlbum}"><button type="button" class="btn btn-success"><i class="fas fa-upload"></i>Ajouter des photos &agrave l'album</button></a>
+		</div>
 
-		<img th:each="photo:${photosList}" class="photo" th:src="'/membre/picture?id='+${photo.idPhoto}">
+		<div class="text-center mt-3">
+			<a href="#"><button type="button" class="btn btn-info"><i class="fas fa-download"></i>T&eacutel&eacutecharger l'album</button></a>
+		</div>
+
+		<div class="row text-center text-lg-left mt-3">
+
+			<div class="col-lg-3 col-md-4 col-xs-6" th:each="photo:${photosList}">
+				<a href="#" class="d-block mb-4 h-100">
+					<img class="img-fluid img-thumbnail" th:src="'/membre/picture?id='+${photo.idPhoto}" alt="" th:id="${'photo='+album.idAlbum}">
+				</a>
+			</div>
+
+		</div>
 
 	</div>
 
