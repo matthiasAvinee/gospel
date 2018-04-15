@@ -32,8 +32,11 @@
 		<div class="row text-center text-lg-left mt-3">
 
 			<div class="col-lg-3 col-md-4 col-xs-6" th:each="photo:${photosList}">
-				<a href="#" class="d-block mb-4 h-100">
-					<img class="img-fluid img-thumbnail" th:src="'/membre/picture?id='+${photo.idPhoto}" alt="" th:id="${'photo='+album.idAlbum}">
+				<div class="d-block mb-4 h-100 text-center">
+					<img class="img-fluid img-thumbnail" th:src="'/membre/picture?id='+${photo.idPhoto}">
+				</div>
+				<a th:if="${pseudoA!=null}" th:ref="${'supprimer-photo'+album.idAlbum}">
+					<i class="fas fa-trash-alt text-danger"></i>
 				</a>
 			</div>
 
