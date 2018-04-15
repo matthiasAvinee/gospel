@@ -15,3 +15,27 @@ CREATE TABLE `photo` (
 )
 
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `pdf` (
+  `pdf_id` int(10) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`pdf_id`),
+)
+
+ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `video` (
+  `video_id` int(10) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`pdf_id`),
+)
+
+ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `enregis` (
+  `enregis_id` int(10) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`pdf_id`),
+)
+
+ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
