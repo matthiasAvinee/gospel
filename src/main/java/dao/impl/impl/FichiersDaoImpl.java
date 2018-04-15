@@ -110,6 +110,29 @@ public class FichiersDaoImpl implements FichiersDao {
         return listOfPhotos;
     }
 
+    @Override
+    public Photo getPhoto(Integer id) {
+        String query = "SELECT * FROM photo JOIN album ON photo.album_id_fk = album.album_id WHERE photo_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    return  new Photo(resultSet.getInt("photo_id"),
+                            new Album(resultSet.getInt("album_id"),
+                                    resultSet.getString("nom_album")));
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 
     public Path getPicturePath(Integer id){
         String query = "SELECT chemin FROM photo WHERE photo_id=?";
@@ -134,14 +157,14 @@ public class FichiersDaoImpl implements FichiersDao {
         return null;
     }
 
-    public Photo addPhoto(Photo photo, String filename) {
+    public Photo addPhoto(Photo photo, Path path) {
         String query = "INSERT INTO photo (chemin, album_id_fk) VALUES (?,?)";
 
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)
         ){
-            if (filename!=null){
-                statement.setString(1, filename);
+            if (path!=null){
+                statement.setString(1, path.toString());
             }else {
                 statement.setNull(1,Types.VARCHAR);
             }
