@@ -20,12 +20,12 @@ public class supprimerPhotoServlet extends AbstractGenericServlet {
         String photoId = request.getParameter("id");
 
         Photo photo = FichiersBibliotheque.getInstance().getPhoto(Integer.parseInt(photoId));
-        File MyFile = new File(String.valueOf(FichiersBibliotheque.getInstance().getPhotoPicturePath(Integer.parseInt(photoId))));
 
+        File MyFile = new File(String.valueOf(FichiersBibliotheque.getInstance().getPhotoPicturePath(Integer.parseInt(photoId))));
         FichiersBibliotheque.getInstance().supprimerPhoto(Integer.parseInt(photoId));
         MyFile.delete();
 
-        response.sendRedirect("/home");
+        response.sendRedirect("/membre/listePhotos?id="+photo.getAlbum().getIdAlbum());
 
     }
 }

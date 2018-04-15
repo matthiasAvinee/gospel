@@ -1,6 +1,8 @@
 package servlets;
 
 import entities.Paragraphe;
+import entities.Photo;
+import manager.FichiersBibliotheque;
 import manager.ParagrapheLibrary;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
@@ -25,6 +27,9 @@ public class homeservlet extends AbstractGenericServlet {
             List<Paragraphe> listOfMembres = ParagrapheLibrary.getInstance().listParagraphesAcceuil();
 
             WebContext context = new WebContext(req, resp, getServletContext());
+
+            List<Photo> galeriePhoto = FichiersBibliotheque.getInstance().listPhotos(1);
+            context.setVariable("galerie", galeriePhoto);
 
             context.setVariable("paragraphes", listOfMembres);
             context.setVariable("pseudoA", req.getSession().getAttribute("adminConnecte"));
