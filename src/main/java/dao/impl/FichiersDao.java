@@ -43,4 +43,12 @@ public interface FichiersDao {
 
     public void supprimerVideo (Integer id);
 
+    public List<Musique> listMusiques();
+
+    public Musique getMusique (Integer id);
+
+    public Musique addMusique (Musique musique, Path path);
+
+    public void supprimerMusique (Integer id);
+
 }

@@ -460,4 +460,139 @@ public class FichiersDaoImpl implements FichiersDao {
         }
     }
 
+    /**
+     *
+     * Musiques
+     *
+     */
+
+    public List<Path> listPathMusiques() {
+        String query = "SELECT musique_chemin FROM musique ORDER BY musique_id";
+        List<Path> listOfPathMusiques = new ArrayList<>();
+
+        try(
+                Connection connection = DataSourceProvider.getDataSource().getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)
+        ){
+            while (resultSet.next()){
+                listOfPathMusiques.add(Paths.get(resultSet.getString("musique_chemin")));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return listOfPathMusiques;
+    }
+
+    public Path getMusiquePath(Integer id){
+        String query = "SELECT musique_chemin FROM musique WHERE musique_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    String musiquePath = resultSet.getString("musique_chemin");
+                    if (musiquePath!=null){
+                        return Paths.get(musiquePath);
+                    }
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    @Override
+    public List<Musique> listMusiques() {
+        String query = "SELECT * FROM musique ORDER BY musique_id";
+        List<Musique> listOfMusiques = new ArrayList<>();
+
+        try(
+                Connection connection = DataSourceProvider.getDataSource().getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)
+        ){
+            while (resultSet.next()){
+                listOfMusiques.add
+                        (new Musique(resultSet.getInt("musique_id"),
+                                resultSet.getString("musique_nom")));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return listOfMusiques;
+    }
+
+    @Override
+    public Musique getMusique(Integer id) {
+        String query = "SELECT * FROM musique WHERE musique_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    return  new Musique(resultSet.getInt("musique_id"),
+                            resultSet.getString("musique_nom"));
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    @Override
+    public Musique addMusique(Musique musique, Path path) {
+        String query = "INSERT INTO musique (musique_chemin, musique_nom) VALUES (?,?)";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)
+        ){
+            if (path!=null){
+                statement.setString(1, path.toString());
+            }else {
+                statement.setNull(1,Types.VARCHAR);
+            }
+            statement.setString(2, musique.getNomMusique());
+
+            statement.executeUpdate();
+
+            try (ResultSet ids = statement.getGeneratedKeys()) {
+                if (ids.next()) {
+                    int generatedId = ids.getInt(1);
+                    musique.setIdMusique(generatedId);
+                    return musique;
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public void supprimerMusique(Integer id) {
+        String query = "DELETE FROM musique WHERE musique_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

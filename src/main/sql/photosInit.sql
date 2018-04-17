@@ -34,11 +34,11 @@ CREATE TABLE `video` (
 
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `enregis` (
-  `enregis_id` int(10) NOT NULL AUTO_INCREMENT,
-  `enregis_nom` varchar(50) NOT NULL,
-  `enregis_chemin` varchar(100) NOT NULL,
-  PRIMARY KEY (`enregis_id`)
+CREATE TABLE `musique` (
+  `musique_id` int(10) NOT NULL AUTO_INCREMENT,
+  `musique_nom` varchar(50) NOT NULL,
+  `musique_chemin` varchar(100) NOT NULL,
+  PRIMARY KEY (`musique_id`)
 )
 
 ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -7,28 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c235894-777a-4edd-bf4c-577d68cd021c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/entities/PDF.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/entities/Video.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ajoutPDFServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ajoutVideoServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/listePDFServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/listeVideosServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/supprimerPDFServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/supprimerVideoServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPDF.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pdf.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/videos.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/entities/Musique.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ajouterMusiqueServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/listeMusiquesServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/supprimerMusiqueServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterMusique.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" afterPath="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/listePhotosServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/listePhotosServlet.java" />
       <change beforePath="$PROJECT_DIR$/src/main/sql/photosInit.sql" afterPath="$PROJECT_DIR$/src/main/sql/photosInit.sql" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/albumsPhotos.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/albumsPhotos.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,67 +34,63 @@
       <file leaf-file-name="FichiersDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="410" column="21" lean-forward="true" selection-start-line="410" selection-start-column="21" selection-end-line="410" selection-end-column="21" />
+            <state relative-caret-position="11">
+              <caret line="504" column="32" lean-forward="false" selection-start-line="504" selection-start-column="32" selection-end-line="504" selection-end-column="32" />
               <folding>
-                <marker date="1524006458516" expanded="true" signature="360:397" ph="SELECT * FRO... album" />
-                <marker date="1524006458516" expanded="true" signature="1117:1153" ph="SELECT * FRO... album" />
-                <marker date="1524006458516" expanded="true" signature="1829:1867" ph="INSERT INTO album... " />
-                <marker date="1524006458516" expanded="true" signature="2293:2327" ph="DELETE FROM album... " />
-                <marker date="1524006458516" expanded="true" signature="2749:2861" ph="SELECT * FRO... photo" />
-                <marker date="1524006458516" expanded="true" signature="3733:3818" ph="SELECT * FRO... photo" />
-                <marker date="1524006458516" expanded="true" signature="4558:4599" ph="SELECT chemi... photo" />
-                <marker date="1524006458516" expanded="true" signature="5331:5383" ph="INSERT INTO photo... " />
-                <marker date="1524006458516" expanded="true" signature="6334:6368" ph="DELETE FROM photo... " />
-                <marker date="1524006458516" expanded="true" signature="6812:6845" ph="SELECT * FRO... pdf" />
-                <marker date="1524006458516" expanded="true" signature="7544:7576" ph="SELECT * FRO... pdf" />
-                <marker date="1524006458516" expanded="true" signature="8226:8268" ph="SELECT pdf_c... pdf" />
-                <marker date="1524006458516" expanded="true" signature="8890:8931" ph="SELECT pdf_c... pdf" />
-                <marker date="1524006458516" expanded="true" signature="9661:9711" ph="INSERT INTO pdf... " />
-                <marker date="1524006458516" expanded="true" signature="10643:10673" ph="DELETE FROM pdf... " />
-                <marker date="1524006458516" expanded="true" signature="11115:11152" ph="SELECT * FRO... video" />
-                <marker date="1524006458516" expanded="true" signature="11858:11894" ph="SELECT * FRO... video" />
-                <marker date="1524006458516" expanded="true" signature="12553:12601" ph="SELECT video... video" />
-                <marker date="1524006458516" expanded="true" signature="13233:13280" ph="SELECT video... video" />
-                <marker date="1524006458516" expanded="true" signature="14012:14068" ph="INSERT INTO video... " />
-                <marker date="1524006458516" expanded="true" signature="14998:15032" ph="DELETE FROM video... " />
+                <marker date="1524007736792" expanded="true" signature="360:397" ph="SELECT * FRO... album" />
+                <marker date="1524007736792" expanded="true" signature="1117:1153" ph="SELECT * FRO... album" />
+                <marker date="1524007736792" expanded="true" signature="1829:1867" ph="INSERT INTO album... " />
+                <marker date="1524007736792" expanded="true" signature="2293:2327" ph="DELETE FROM album... " />
+                <marker date="1524007736792" expanded="true" signature="2749:2861" ph="SELECT * FRO... photo" />
+                <marker date="1524007736792" expanded="true" signature="3733:3818" ph="SELECT * FRO... photo" />
+                <marker date="1524007736792" expanded="true" signature="4558:4599" ph="SELECT chemi... photo" />
+                <marker date="1524007736792" expanded="true" signature="5331:5383" ph="INSERT INTO photo... " />
+                <marker date="1524007736792" expanded="true" signature="6334:6368" ph="DELETE FROM photo... " />
+                <marker date="1524007736792" expanded="true" signature="6812:6845" ph="SELECT * FRO... pdf" />
+                <marker date="1524007736792" expanded="true" signature="7544:7576" ph="SELECT * FRO... pdf" />
+                <marker date="1524007736792" expanded="true" signature="8226:8268" ph="SELECT pdf_c... pdf" />
+                <marker date="1524007736792" expanded="true" signature="8890:8931" ph="SELECT pdf_c... pdf" />
+                <marker date="1524007736792" expanded="true" signature="9661:9711" ph="INSERT INTO pdf... " />
+                <marker date="1524007736792" expanded="true" signature="10643:10673" ph="DELETE FROM pdf... " />
+                <marker date="1524007736792" expanded="true" signature="11115:11152" ph="SELECT * FRO... video" />
+                <marker date="1524007736792" expanded="true" signature="11858:11894" ph="SELECT * FRO... video" />
+                <marker date="1524007736792" expanded="true" signature="12553:12601" ph="SELECT video... video" />
+                <marker date="1524007736792" expanded="true" signature="13233:13280" ph="SELECT video... video" />
+                <marker date="1524007736792" expanded="true" signature="14012:14068" ph="INSERT INTO video... " />
+                <marker date="1524007736792" expanded="true" signature="14998:15032" ph="DELETE FROM video... " />
+                <marker date="1524007736792" expanded="true" signature="15481:15535" ph="SELECT video... video" />
+                <marker date="1524007736792" expanded="true" signature="16180:16233" ph="SELECT video... video" />
+                <marker date="1524007736792" expanded="true" signature="16977:17018" ph="SELECT * FRO... musique" />
+                <marker date="1524007736792" expanded="true" signature="17756:17796" ph="SELECT * FRO... musique" />
+                <marker date="1524007736792" expanded="true" signature="18494:18556" ph="INSERT INTO musique... " />
+                <marker date="1524007736792" expanded="true" signature="19512:19550" ph="DELETE FROM musique... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajouterVideo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html">
+      <file leaf-file-name="FichiersBibliotheque.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            <state relative-caret-position="776">
+              <caret line="191" column="1" lean-forward="false" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajoutVideoServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutVideoServlet.java">
+      <file leaf-file-name="listeMusiquesServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeMusiquesServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="408">
+              <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listeVideosServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeVideosServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videos.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/videos.html">
+      <file leaf-file-name="musiques.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
               <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
@@ -112,34 +99,62 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="supprimerMusiqueServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerMusiqueServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="supprimerVideoServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerVideoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="supprimerPDFServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerPDFServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="29" column="51" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="29" selection-end-column="51" />
+              <caret line="29" column="48" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="29" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pdf.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pdf.html">
+      <file leaf-file-name="ajouterMusique.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterMusique.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="22" column="123" lean-forward="false" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="123" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajouterMusiqueServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterMusiqueServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajoutVideoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutVideoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="45" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listeVideosServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeVideosServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="36" column="72" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="36" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,9 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Musique.java" />
-        <option value="$PROJECT_DIR$/src/main/sql/photosInit.sql" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/listePhotosServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/listeAlbumsServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/albumsPhotos.html" />
@@ -178,16 +190,23 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pdf.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/supprimerPDFServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Video.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/listeVideosServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPDF.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ajoutVideoServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/supprimerVideoServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/videos.html" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/Musique.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java" />
+        <option value="$PROJECT_DIR$/src/main/sql/photosInit.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/listeMusiquesServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterMusique.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/ajouterMusiqueServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/supprimerMusiqueServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html" />
       </list>
     </option>
   </component>
@@ -204,7 +223,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -300,6 +319,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="servlets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gospel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gospel" type="b2602c69:ProjectViewProjectNode" />
@@ -527,15 +553,15 @@
       <option name="presentableId" value="Default" />
       <updated>1523804957951</updated>
       <workItem from="1523804959228" duration="755000" />
-      <workItem from="1523963135476" duration="25533000" />
+      <workItem from="1523963135476" duration="27948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26288000" />
+    <option name="totallyTimeSpent" value="28703000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -609,22 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Musique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -714,31 +724,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding>
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="false" />
+            <element signature="e#248#249#0" expanded="false" />
+            <element signature="e#291#292#0" expanded="false" />
+            <element signature="e#325#326#0" expanded="false" />
+            <element signature="e#358#359#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/photosInit.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,42 +744,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterPDF.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -832,69 +794,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Musique.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        <state relative-caret-position="204">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#296#297#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#426#427#0" expanded="false" />
+            <element signature="e#459#460#0" expanded="false" />
+            <element signature="e#511#512#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/FichiersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutVideoServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Video.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#272#273#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#511#512#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeVideosServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/sql/photosInit.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerVideoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="677">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/impl/FichiersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="410" column="21" lean-forward="true" selection-start-line="410" selection-start-column="21" selection-end-line="410" selection-end-column="21" />
+        <state relative-caret-position="11">
+          <caret line="504" column="32" lean-forward="false" selection-start-line="504" selection-start-column="32" selection-end-line="504" selection-end-column="32" />
           <folding>
-            <marker date="1524006458516" expanded="true" signature="360:397" ph="SELECT * FRO... album" />
-            <marker date="1524006458516" expanded="true" signature="1117:1153" ph="SELECT * FRO... album" />
-            <marker date="1524006458516" expanded="true" signature="1829:1867" ph="INSERT INTO album... " />
-            <marker date="1524006458516" expanded="true" signature="2293:2327" ph="DELETE FROM album... " />
-            <marker date="1524006458516" expanded="true" signature="2749:2861" ph="SELECT * FRO... photo" />
-            <marker date="1524006458516" expanded="true" signature="3733:3818" ph="SELECT * FRO... photo" />
-            <marker date="1524006458516" expanded="true" signature="4558:4599" ph="SELECT chemi... photo" />
-            <marker date="1524006458516" expanded="true" signature="5331:5383" ph="INSERT INTO photo... " />
-            <marker date="1524006458516" expanded="true" signature="6334:6368" ph="DELETE FROM photo... " />
-            <marker date="1524006458516" expanded="true" signature="6812:6845" ph="SELECT * FRO... pdf" />
-            <marker date="1524006458516" expanded="true" signature="7544:7576" ph="SELECT * FRO... pdf" />
-            <marker date="1524006458516" expanded="true" signature="8226:8268" ph="SELECT pdf_c... pdf" />
-            <marker date="1524006458516" expanded="true" signature="8890:8931" ph="SELECT pdf_c... pdf" />
-            <marker date="1524006458516" expanded="true" signature="9661:9711" ph="INSERT INTO pdf... " />
-            <marker date="1524006458516" expanded="true" signature="10643:10673" ph="DELETE FROM pdf... " />
-            <marker date="1524006458516" expanded="true" signature="11115:11152" ph="SELECT * FRO... video" />
-            <marker date="1524006458516" expanded="true" signature="11858:11894" ph="SELECT * FRO... video" />
-            <marker date="1524006458516" expanded="true" signature="12553:12601" ph="SELECT video... video" />
-            <marker date="1524006458516" expanded="true" signature="13233:13280" ph="SELECT video... video" />
-            <marker date="1524006458516" expanded="true" signature="14012:14068" ph="INSERT INTO video... " />
-            <marker date="1524006458516" expanded="true" signature="14998:15032" ph="DELETE FROM video... " />
+            <marker date="1524007736792" expanded="true" signature="360:397" ph="SELECT * FRO... album" />
+            <marker date="1524007736792" expanded="true" signature="1117:1153" ph="SELECT * FRO... album" />
+            <marker date="1524007736792" expanded="true" signature="1829:1867" ph="INSERT INTO album... " />
+            <marker date="1524007736792" expanded="true" signature="2293:2327" ph="DELETE FROM album... " />
+            <marker date="1524007736792" expanded="true" signature="2749:2861" ph="SELECT * FRO... photo" />
+            <marker date="1524007736792" expanded="true" signature="3733:3818" ph="SELECT * FRO... photo" />
+            <marker date="1524007736792" expanded="true" signature="4558:4599" ph="SELECT chemi... photo" />
+            <marker date="1524007736792" expanded="true" signature="5331:5383" ph="INSERT INTO photo... " />
+            <marker date="1524007736792" expanded="true" signature="6334:6368" ph="DELETE FROM photo... " />
+            <marker date="1524007736792" expanded="true" signature="6812:6845" ph="SELECT * FRO... pdf" />
+            <marker date="1524007736792" expanded="true" signature="7544:7576" ph="SELECT * FRO... pdf" />
+            <marker date="1524007736792" expanded="true" signature="8226:8268" ph="SELECT pdf_c... pdf" />
+            <marker date="1524007736792" expanded="true" signature="8890:8931" ph="SELECT pdf_c... pdf" />
+            <marker date="1524007736792" expanded="true" signature="9661:9711" ph="INSERT INTO pdf... " />
+            <marker date="1524007736792" expanded="true" signature="10643:10673" ph="DELETE FROM pdf... " />
+            <marker date="1524007736792" expanded="true" signature="11115:11152" ph="SELECT * FRO... video" />
+            <marker date="1524007736792" expanded="true" signature="11858:11894" ph="SELECT * FRO... video" />
+            <marker date="1524007736792" expanded="true" signature="12553:12601" ph="SELECT video... video" />
+            <marker date="1524007736792" expanded="true" signature="13233:13280" ph="SELECT video... video" />
+            <marker date="1524007736792" expanded="true" signature="14012:14068" ph="INSERT INTO video... " />
+            <marker date="1524007736792" expanded="true" signature="14998:15032" ph="DELETE FROM video... " />
+            <marker date="1524007736792" expanded="true" signature="15481:15535" ph="SELECT video... video" />
+            <marker date="1524007736792" expanded="true" signature="16180:16233" ph="SELECT video... video" />
+            <marker date="1524007736792" expanded="true" signature="16977:17018" ph="SELECT * FRO... musique" />
+            <marker date="1524007736792" expanded="true" signature="17756:17796" ph="SELECT * FRO... musique" />
+            <marker date="1524007736792" expanded="true" signature="18494:18556" ph="INSERT INTO musique... " />
+            <marker date="1524007736792" expanded="true" signature="19512:19550" ph="DELETE FROM musique... " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/FichiersBibliotheque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="191" column="1" lean-forward="false" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="67" lean-forward="false" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeVideosServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="36" column="72" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="36" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterVideo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajoutVideoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="45" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/ajouterMusique.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ajouterMusiqueServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerVideoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="48" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="29" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/supprimerMusiqueServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/listeMusiquesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/musiques.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />

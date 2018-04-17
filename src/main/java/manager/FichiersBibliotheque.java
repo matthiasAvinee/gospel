@@ -1,10 +1,7 @@
 package manager;
 
 import dao.impl.impl.FichiersDaoImpl;
-import entities.Album;
-import entities.PDF;
-import entities.Photo;
-import entities.Video;
+import entities.*;
 
 import javax.servlet.http.Part;
 import java.io.*;
@@ -24,6 +21,7 @@ public class FichiersBibliotheque {
     private static final String IMAGE_DIRECTORY_PATH = "C:/projet100h/images";
     private static final String PDF_DIRECTORY_PATH = "C:/projet100h/pdf";
     private static final String VIDEO_DIRECTORY_PATH = "C:/projet100h/videos";
+    private static final String MUSIC_DIRECTORY_PATH = "C:/projet100h/enregistrements";
 
     private static class FichiersBibliothequeHolder {
         private final static FichiersBibliotheque instance = new FichiersBibliotheque();
@@ -150,5 +148,45 @@ public class FichiersBibliotheque {
     }
 
     public void supprimerVideo(Integer id){fichiersDao.supprimerVideo(id);}
+
+    /**
+     *
+     * Musiques
+     *
+     */
+
+    public List<Path> listPathMusiques(){return  fichiersDao.listPathMusiques();}
+
+    public Path getMusiquePath(Integer id){
+        Path VideoPath = fichiersDao.getMusiquePath(id);
+
+        return VideoPath;
+    }
+
+    public List<Musique> listMusiques(){return fichiersDao.listMusiques();}
+
+    public Musique getMusique(Integer id) {
+        return fichiersDao.getMusique(id);
+    }
+
+    public Musique addMusique(Musique musique, Part fileMusic) {
+
+        // on génère un nombre aléatoire afin de ne pas avoir de doublons dans la base de données
+        String filename = UUID.randomUUID().toString().substring(0,8) + "-" + fileMusic.getSubmittedFileName();
+        Path MusicPath = null;
+
+        if (fileMusic!=null) {
+            MusicPath = Paths.get(MUSIC_DIRECTORY_PATH, filename);
+            try {
+                Files.copy(fileMusic.getInputStream(), MusicPath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return fichiersDao.addMusique(musique, MusicPath);
+    }
+
+    public void supprimerMusique(Integer id){fichiersDao.supprimerMusique(id);}
 
 }
