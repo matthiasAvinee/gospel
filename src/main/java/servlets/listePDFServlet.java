@@ -1,7 +1,6 @@
 package servlets;
 
-import entities.Album;
-import entities.Photo;
+import entities.PDF;
 import manager.FichiersBibliotheque;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
@@ -15,8 +14,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 
-@WebServlet("/membre/listePhotos")
-public class listePhotosServlet extends AbstractGenericServlet {
+@WebServlet("/membre/liste-pdf")
+public class listePDFServlet extends AbstractGenericServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -25,19 +24,17 @@ public class listePhotosServlet extends AbstractGenericServlet {
 
         WebContext context = new WebContext(request, response, request.getServletContext());
 
-        String albumId = request.getParameter("id");
+        List<PDF> listOfPDF = FichiersBibliotheque.getInstance().listPDF();
+        context.setVariable("pdfList", listOfPDF);
 
-        Album album = FichiersBibliotheque.getInstance().getAlbum(Integer.parseInt(albumId));
-        context.setVariable("album", album);
-
-        List<Photo> listOfPhotos = FichiersBibliotheque.getInstance().listPhotos(Integer.parseInt(albumId));
-        context.setVariable("photosList", listOfPhotos);
+        List<Path> listOfPathPDF = FichiersBibliotheque.getInstance().listPathPDF();
+        context.setVariable("pdfPathsList",listOfPathPDF);
 
         context.setVariable("pseudoA", request.getSession().getAttribute("adminConnecte"));
         context.setVariable("pseudoM", request.getSession().getAttribute("membreConnecte"));
 
         TemplateEngine templateEngine = this.createTemplateEngine(request);
-        templateEngine.process("photos", context, response.getWriter());
+        templateEngine.process("pdf", context, response.getWriter());
 
     }
 }

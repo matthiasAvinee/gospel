@@ -1,7 +1,6 @@
 package dao.impl;
 
-import entities.Album;
-import entities.Photo;
+import entities.*;
 
 import java.nio.file.Path;
 import java.util.List;
@@ -27,5 +26,21 @@ public interface FichiersDao {
     public Photo addPhoto(Photo photo, Path path);
 
     public void supprimerPhoto(Integer id);
+
+    public List<PDF> listPDF();
+
+    public PDF getPDF(Integer id);
+
+    public PDF addPDF (PDF pdf, Path path);
+
+    public void supprimerPDF (Integer id);
+
+    public List<Video> listVideos();
+
+    public Video getVideo (Integer id);
+
+    public Video addVideo (Video video, Path path);
+
+    public void supprimerVideo (Integer id);
 
 }

@@ -25,11 +25,13 @@
 			<a href="/administrateur/ajouterAlbum"><button type="button" class="btn btn-success"><i class="fas fa-plus"></i>Ajouter un album</button></a>
 		</div>
 
-		<hr class="mt-3">
-			<h5 th:if="${pseudoA!=null}">
+		<th:block th:if="${pseudoA!=null}">
+			<hr class="mt-3">
+			<h5>
 				<a href="listePhotos?id=1" class="text-info"><i class="far fa-images"></i>Photos page d'accueil</a>
 			</h5>
-		<hr class="mt-3 mb-3">
+			<hr class="mt-3 mb-3">
+		</th:block>
 
 		<div th:each="album:${albumsList}" style="list-style: none;">
 			<h5  th:if="${album.idAlbum!=1}">

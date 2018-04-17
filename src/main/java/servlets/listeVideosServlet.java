@@ -1,7 +1,6 @@
 package servlets;
 
-import entities.Album;
-import entities.Photo;
+import entities.Video;
 import manager.FichiersBibliotheque;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
@@ -15,8 +14,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 
-@WebServlet("/membre/listePhotos")
-public class listePhotosServlet extends AbstractGenericServlet {
+@WebServlet("/membre/videos")
+public class listeVideosServlet extends AbstractGenericServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -25,19 +24,17 @@ public class listePhotosServlet extends AbstractGenericServlet {
 
         WebContext context = new WebContext(request, response, request.getServletContext());
 
-        String albumId = request.getParameter("id");
+        List<Video> listOfVideos = FichiersBibliotheque.getInstance().listVideos();
+        context.setVariable("videosList", listOfVideos);
 
-        Album album = FichiersBibliotheque.getInstance().getAlbum(Integer.parseInt(albumId));
-        context.setVariable("album", album);
-
-        List<Photo> listOfPhotos = FichiersBibliotheque.getInstance().listPhotos(Integer.parseInt(albumId));
-        context.setVariable("photosList", listOfPhotos);
+        List<Path> listOfPathVideos = FichiersBibliotheque.getInstance().listPathVideos();
+        context.setVariable("videosPathsList",listOfPathVideos);
 
         context.setVariable("pseudoA", request.getSession().getAttribute("adminConnecte"));
         context.setVariable("pseudoM", request.getSession().getAttribute("membreConnecte"));
 
         TemplateEngine templateEngine = this.createTemplateEngine(request);
-        templateEngine.process("photos", context, response.getWriter());
+        templateEngine.process("videos", context, response.getWriter());
 
     }
 }

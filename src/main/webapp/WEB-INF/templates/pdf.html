@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/gos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <title>Chansons | Esprit Gospel</title>
+</head>
+<body>
+
+    <nav th:replace="~{fragments::navbar}"></nav>
+
+    <div class="container mt-3">
+
+        <h4>Liste des paroles</h4>
+
+        <div th:if="${pseudoA!=null}" class="text-center mt-3">
+            <a href="/administrateur/ajout-pdf"><button type="button" class="btn btn-success"><i class="fas fa-upload"></i>Ajouter une chanson</button></a>
+        </div>
+
+        <div th:each="pdf:${pdfList}" style="list-style: none;">
+            <h5>
+                <a th:href="${pdfPathsList.get(pdfList.indexOf(pdf)).toString()}"><i class="far fa-file-pdf"></i><span th:text="${pdf.nomPDF}"></span></a>
+                <a th:href="${'/administrateur/supprimer-pdf?id='+pdf.idPDF}" th:if="${pseudoA!=null}"><i class="fas fa-trash-alt text-danger"></i></a>
+            </h5>
+        </div>
+
+    </div>
+
+</body>
+</html>

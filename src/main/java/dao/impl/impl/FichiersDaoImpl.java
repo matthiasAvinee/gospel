@@ -1,8 +1,7 @@
 package dao.impl.impl;
 
 import dao.impl.FichiersDao;
-import entities.Album;
-import entities.Photo;
+import entities.*;
 
 import javax.xml.crypto.Data;
 import java.nio.file.Path;
@@ -12,8 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FichiersDaoImpl implements FichiersDao {
-
-
 
     @Override
     public List<Album> listAlbums() {
@@ -198,4 +195,269 @@ public class FichiersDaoImpl implements FichiersDao {
             e.printStackTrace();
         }
     }
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public List<PDF> listPDF() {
+        String query = "SELECT * FROM pdf ORDER BY pdf_id";
+        List<PDF> listOfPDF = new ArrayList<>();
+
+        try(
+                Connection connection = DataSourceProvider.getDataSource().getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)
+        ){
+            while (resultSet.next()){
+                listOfPDF.add
+                        (new PDF(resultSet.getInt("pdf_id"),
+                                resultSet.getString("pdf_nom")));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return listOfPDF;
+    }
+
+    @Override
+    public PDF getPDF(Integer id) {
+        String query = "SELECT * FROM pdf WHERE pdf_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    return  new PDF(resultSet.getInt("pdf_id"),
+                            resultSet.getString("pdf_nom"));
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public List<Path> listPathPDF() {
+        String query = "SELECT pdf_chemin FROM pdf ORDER BY pdf_id";
+        List<Path> listOfPathPDF = new ArrayList<>();
+
+        try(
+                Connection connection = DataSourceProvider.getDataSource().getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)
+        ){
+            while (resultSet.next()){
+                listOfPathPDF.add(Paths.get(resultSet.getString("pdf_chemin")));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return listOfPathPDF;
+    }
+
+    public Path getPDFPath(Integer id){
+        String query = "SELECT pdf_chemin FROM pdf WHERE pdf_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    String pdfPath = resultSet.getString("pdf_chemin");
+                    if (pdfPath!=null){
+                        return Paths.get(pdfPath);
+                    }
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    @Override
+    public PDF addPDF(PDF pdf, Path path) {
+        String query = "INSERT INTO pdf (pdf_chemin, pdf_nom) VALUES (?,?)";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)
+        ){
+            if (path!=null){
+                statement.setString(1, path.toString());
+            }else {
+                statement.setNull(1,Types.VARCHAR);
+            }
+            statement.setString(2, pdf.getNomPDF());
+
+            statement.executeUpdate();
+
+            try (ResultSet ids = statement.getGeneratedKeys()) {
+                if (ids.next()) {
+                    int generatedId = ids.getInt(1);
+                    pdf.setIdPDF(generatedId);
+                    return pdf;
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public void supprimerPDF(Integer id) {
+        String query = "DELETE FROM pdf WHERE pdf_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     *
+     * Vidéos
+     *
+     */
+
+    public List<Video> listVideos() {
+        String query = "SELECT * FROM video ORDER BY video_id";
+        List<Video> listOfVideos = new ArrayList<>();
+
+        try(
+                Connection connection = DataSourceProvider.getDataSource().getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)
+        ){
+            while (resultSet.next()){
+                listOfVideos.add
+                        (new Video(resultSet.getInt("video_id"),
+                                resultSet.getString("video_nom")));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return listOfVideos;
+    }
+
+    public Video getVideo(Integer id) {
+        String query = "SELECT * FROM video WHERE video_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    return  new Video(resultSet.getInt("video_id"),
+                            resultSet.getString("video_nom"));
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public List<Path> listPathVideos() {
+        String query = "SELECT video_chemin FROM video ORDER BY video_id";
+        List<Path> listOfPathVideo = new ArrayList<>();
+
+        try(
+                Connection connection = DataSourceProvider.getDataSource().getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)
+        ){
+            while (resultSet.next()){
+                listOfPathVideo.add(Paths.get(resultSet.getString("video_chemin")));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return listOfPathVideo;
+    }
+
+    public Path getVideoPath(Integer id){
+        String query = "SELECT video_chemin FROM video WHERE video_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ){
+            statement.setInt(1,id);
+            try (ResultSet resultSet = statement.executeQuery()){
+                if (resultSet.next()){
+                    String videoPath = resultSet.getString("video_chemin");
+                    if (videoPath!=null){
+                        return Paths.get(videoPath);
+                    }
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public Video addVideo(Video video, Path path) {
+        String query = "INSERT INTO video (video_chemin, video_nom) VALUES (?,?)";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)
+        ){
+            if (path!=null){
+                statement.setString(1, path.toString());
+            }else {
+                statement.setNull(1,Types.VARCHAR);
+            }
+            statement.setString(2, video.getNomVideo());
+
+            statement.executeUpdate();
+
+            try (ResultSet ids = statement.getGeneratedKeys()) {
+                if (ids.next()) {
+                    int generatedId = ids.getInt(1);
+                    video.setIdVideo(generatedId);
+                    return video;
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void supprimerVideo(Integer id) {
+        String query = "DELETE FROM video WHERE video_id=?";
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

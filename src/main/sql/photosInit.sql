@@ -18,21 +18,27 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `pdf` (
   `pdf_id` int(10) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`pdf_id`),
+  `pdf_nom` varchar(50) NOT NULL,
+  `pdf_chemin` varchar(100) NOT NULL,
+  PRIMARY KEY (`pdf_id`)
 )
 
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `video` (
   `video_id` int(10) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`pdf_id`),
+  `video_nom` varchar(50) NOT NULL,
+  `video_chemin` varchar(100) NOT NULL,
+  PRIMARY KEY (`video_id`)
 )
 
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `enregis` (
   `enregis_id` int(10) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`pdf_id`),
+  `enregis_nom` varchar(50) NOT NULL,
+  `enregis_chemin` varchar(100) NOT NULL,
+  PRIMARY KEY (`enregis_id`)
 )
 
 ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -34,7 +34,5 @@ public class listeAlbumsServlet extends AbstractGenericServlet {
         TemplateEngine templateEngine = this.createTemplateEngine(request);
         templateEngine.process("albumsPhotos", context, response.getWriter());
 
-
-
     }
 }
