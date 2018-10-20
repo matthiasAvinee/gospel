@@ -1,0 +1,8 @@
+Ce site internet est notre projet de fin d'année de 4e année d'école d'ingénieur. Il à été réalisé par Quentin Lejour et moi. 
+Le but était de proposer un site internet pour une chorale de gospel. Ce site à été réalisé en J2ee, nous avons également utilisé 
+thymleaf
+
+Ce site est composé de trois parties, une pur les visiteur -> vitrine de la chorale
+                                      une pour les memebres -> ils peuvent ajouter/consuler/telecharger des mp3/photos/vidéos
+                                      une pour les administrateurs ->ils peuvent modifier/ajouter/supprimer des membres et modifier 
+                                      tous les textes du site
